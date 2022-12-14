@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Patua+One&display=swap');
+body {
+    /*background-color: 1 - #444444 , 2 - #252525; */
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url("./webbackground.jpg");
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252525;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7CFCDA;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #20cfa1;
+}
+.navBar {
+  position: fixed;
+  top: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);   
+    font-family: 'Lato', sans-serif;
+    background-color: #2525258a;
+    margin: 40px;
+}
+.wrapper div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+p {
+  margin: 0;
+}
+#logo{
+    color: #7CFCDA;
+    font-size: 46px;
+    font-weight: bolder;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 3px;
+}
+.container {
+  margin: 100px 40px 20px 40px;
+}
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100% 100%;
+    margin: 180px 40px 0px 40px;
+}
+.aboutText p span {
+  background-color: #444444e3;
+}
+.heading {
+    padding: 50px;
+}
+.heading h1 {
+    padding: 50px 0px 20px 0px;
+    margin: 0;
+    font-size: 100px;
+    color: #7CFCDA;
+/*
+    outline: none;
+    animation: animate 5s linear infinite;*/
+}
+/*
+@keyframes animate
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #252525;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: #7CFCDA;
+    text-shadow: 0 0 10px #7CFCDA,
+    0 0 20px #7CFCDA,
+    0 0 40px #7CFCDA,
+    0 0 80px #7CFCDA,
+    0 0 160px #7CFCDA;
+  }
+  
+}*/
+.heading h2 {
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+}
+.footer {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #252525;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-family: Lato, sans-serif;
+}
+.footer i {
+    margin: 0px 20px;
+}
+.footer i:hover {
+  color: #7CFCDA;
+}
+.footer span {
+    margin-right: 20px;
+}
+
+
+/*
+#signBorder {
+    border: 4px solid #7CFCDA;
+    border-radius: 18px;
+	box-shadow:
+    2px 2px 1px rgba(0,0,0,0.5) inset,
+    2px 2px 1px rgba(0,0,0,0.5),
+    0 0 25px #7CFCDA inset,
+    0 0 20px #fff inset,
+    0 0 25px #7CFCDA,
+    0 0 20px #7CFCDA,
+    0 0 25px #7CFCDA;
+}
+*/
+
+
+.signName {
+    margin: 5px 15px;
+    color: #7CFCDA;
+    font-size: 46px;
+    font-weight: bolder;
+    font-family: 'Patua One', cursive;
+    text-shadow:2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #7CFCDA, 0 0 10px #7CFCDA, 0 0 50px #7CFCDA;
+}
+
+/* BLINK FAST */
+.highFreq { 
+  -webkit-animation: blinkFast 0.0009s infinite alternate;
+  -moz-animation: blinkFast 0.0009s infinite alternate;
+  -o-animation: blinkFast 0.0009s infinite alternate;
+  animation: blinkFast 0.0009s infinite alternate;
+}
+
+@-moz-keyframes blinkFast { 70% { opacity: 0.7; }}
+@-webkit-keyframes blinkFast { 45% { opacity: 0.5; }}
+@-o-keyframes blinkFast { 70% { opacity: 0.7; }}
+@keyframes blinkFast { 70% { opacity: 0.7; }}
+
+/* Flicker Effect */
+.flicker {
+  color: #7CFCDA;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #7CFCDA, 0 0 10px #7CFCDA, 0 0 50px#7CFCDA;
+  -webkit-animation: flickerer 3s infinite alternate;
+  -moz-animation: flickerer 3s infinite alternate;
+  -o-animation: flickerer 3s infinite alternate;
+  animation: flickerer 3s infinite alternate;
+}
+
+@-moz-keyframes flickerer {
+  40%{opacity:0.8;}
+  42%{opacity:0.1;}
+  43%{opacity:0.8;}
+  45%{opacity:0.1;}
+  46%{opacity:0.8;}
+}
+
+@-webkit-keyframes flickerer {
+  40%{opacity:0.8;}
+  42%{opacity:0.1;}
+  43%{opacity:0.8;}
+  45%{opacity:0.1;}
+  46%{opacity:0.8;}
+}
+
+@-o-keyframes flickerer {
+  40%{opacity:0.8;}
+  42%{opacity:0.1;}
+  43%{opacity:0.8;}
+  45%{opacity:0.1;}
+  46%{opacity:0.8;}
+}
+
+@keyframes flickerer {
+  40%{opacity:0.8;}
+  42%{opacity:0.1;}
+  43%{opacity:0.8;}
+  45%{opacity:0.1;}
+  46%{opacity:0.8;}
+}
+
+.aboutImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*   text light flicking letter by letter
+
+    <ul>
+        <li>M</li>
+        <li>O</li>
+        <li>H</li>
+        <li>S</li>
+        <li>I</li>
+        <li>N</li>
+        <li>E</li>
+    </ul> 
+
+  #logo ul{
+    display:flex;
+  }
+  #logo ul li{
+    list-style:none;
+    text-shadow:none;
+    animation-iteration-count: 5;
+    animation:animate 1s infinite linear;
+  }
+  @keyframes animate{
+    0%{
+      color:#484848;
+      text-shadow:none;
+    }
+    18%{
+      color:#484848;
+      text-shadow:none;
+    }
+    20%{
+      color:#7CFCDA;
+      text-shadow:0 0 7px #7CFCDA,0 0 20px #9ffce3;
+    }
+    30%{
+      color:#484848;
+      text-shadow:none;
+    }
+    35%{
+      color:#7CFCDA;
+      text-shadow:0 0 7px #7CFCDA,0 0 20px #9ffce3;
+    }
+    70%{
+      color:#484848;
+      text-shadow:none;
+    }
+    85%{
+      color:#7CFCDA;
+      text-shadow:0 0 7px#7CFCDA,0 0 20px #9ffce3;
+    }
+    90%{
+      color:#484848;
+      text-shadow:none;
+    }
+    100%{
+      color:#484848;
+      text-shadow:none;
+    }
+  }
+  #logo ul li:nth-child(1){
+    animation-delay:.2s;
+  }
+  #logo ul li:nth-child(2){
+    animation-delay:.4s;
+  }
+  #logo ul li:nth-child(3){
+    animation-delay:.6s;
+  }
+  #logo ul li:nth-child(4){
+    animation-delay:.8s;
+  }
+  #logo ul li:nth-child(5){
+    animation-delay:1s;
+  }
+  #logo ul li:nth-child(6){
+    animation-delay:1.2s;
+  }
+  #logo ul li:nth-child(7){
+    animation-delay:1.4s;
+  }
+
+  */
