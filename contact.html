@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsine - Contact</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+    .contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0px;
+    font-family: 'Lato', sans-serif;
+    }  
+    .container {
+    width: 60%;
+    padding: 20px;
+    background-color: #444444b2;
+    }
+
+    .container h2 {
+    width: 100%;
+    color: #7CFCDA;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    .container .row100 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px;
+    }
+
+    .container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+    }
+
+    .container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #7CFCDA;
+    }
+
+    .container .row100 .inputBox input,
+    .container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #444444;
+    }
+
+    .container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    }
+
+    .container .row100 .inputBox input:focus + .text,
+    .container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+    }
+
+    .container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #7CFCDA;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    }
+
+    .container .row100 .inputBox input:focus ~ .line,
+    .container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+    }
+
+    .container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    }
+
+    .container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+    }
+
+    .container .row100 .inputBox textarea:focus + .text,
+    .container .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+    }
+
+    .container .row100 .inputBox textarea:focus ~ .line,
+    .container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+    }
+
+    input[type="submit"] {
+    color: #7CFCDA;
+    padding: 7px 35px;
+    cursor: pointer;
+    background: transparent;
+    border: solid 3px #7CFCDA;
+    font-size: 18px;
+    border-radius: 2px;
+    }
+    input[type="submit"]:hover {
+        background-color: #7CFCDA;
+        border: solid 3px #7CFCDA;
+        color: #444444;
+    }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <div class="wrapper">
+            <div><a href="./about-me.html">A propos de moi</a></div>
+            <div><a href="./projects.html">Projects</a></div>
+            <div id="logoContainer">
+                <a href="../index.html"><div id="signBorder" class="sign highFreq">
+                  <div class="signName">
+                    <span class="highFreq">M<span class="flicker">O</span>HSINE</span>
+                  </div>
+                </div></a>
+            </div>
+            <div><a href="./contact.html">contact</a></div>
+            <div><a href="./blog.html">blog</a></div>
+        </div>
+    </div>
+    <div class="contactForm">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span class="text">First Name</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span class="text">Last Name</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span class="text">Email</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span class="text">Mobile</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox textarea">
+              <textarea required="required"></textarea>
+              <span class="text">Type your message Here...</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row100">
+          <div class="col">
+            <input type="submit" value="Send">
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+      <span><i class="fa-regular fa-envelope"></i>contact@mohsine.dev</span>
+      <span><i class="fa-brands fa-whatsapp"></i>+212 6 15 67 70 47</span>
+      <a href="https://www.linkedin.com/in/mohsine-bakhcha-471a21246/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://github.com/Mohsiinee" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://stackoverflow.com/users/19641689/mohsine" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7e108338d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
