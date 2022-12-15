@@ -5,7 +5,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    background-image: url("./webbackground.jpg");
+    background-image: url("webbackground.jpg");
     font-family: 'Lato', sans-serif;
 }
 /* width */
