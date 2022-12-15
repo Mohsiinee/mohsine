@@ -5,7 +5,8 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    background-image: url("webbackground-min.jpg");
+    background-image: url("./webbackground.jpg");
+    font-family: 'Lato', sans-serif;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -26,6 +27,8 @@ body {
 .navBar {
   position: fixed;
   top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .wrapper {
     display: grid;
@@ -63,8 +66,11 @@ p {
     grid-template-rows: 100% 100%;
     margin: 180px 40px 0px 40px;
 }
-.aboutText p span {
+
+.aboutText{
+  padding: 60px 40px;
   background-color: #444444e3;
+  box-shadow: #252525 0px 0px 25px 10px;
 }
 .heading {
     padding: 50px;
@@ -75,6 +81,7 @@ p {
     font-size: 100px;
     color: #7CFCDA;
 }
+
 .heading h2 {
     font-size: 20px;
     font-family: Lato, sans-serif;
@@ -89,6 +96,7 @@ p {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-family: Lato, sans-serif;
+    z-index: 10;
 }
 .footer i {
     margin: 0px 20px;
@@ -107,16 +115,21 @@ p {
     font-family: 'Patua One', cursive;
     text-shadow:2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #7CFCDA, 0 0 10px #7CFCDA, 0 0 50px #7CFCDA;
 }
+
+/* BLINK FAST */
 .highFreq { 
   -webkit-animation: blinkFast 0.0009s infinite alternate;
   -moz-animation: blinkFast 0.0009s infinite alternate;
   -o-animation: blinkFast 0.0009s infinite alternate;
   animation: blinkFast 0.0009s infinite alternate;
 }
+
 @-moz-keyframes blinkFast { 70% { opacity: 0.7; }}
 @-webkit-keyframes blinkFast { 45% { opacity: 0.5; }}
 @-o-keyframes blinkFast { 70% { opacity: 0.7; }}
 @keyframes blinkFast { 70% { opacity: 0.7; }}
+
+/* Flicker Effect */
 .flicker {
   color: #7CFCDA;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #7CFCDA, 0 0 10px #7CFCDA, 0 0 50px#7CFCDA;
@@ -125,6 +138,7 @@ p {
   -o-animation: flickerer 3s infinite alternate;
   animation: flickerer 3s infinite alternate;
 }
+
 @-moz-keyframes flickerer {
   40%{opacity:0.8;}
   42%{opacity:0.1;}
