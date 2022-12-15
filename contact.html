@@ -5,157 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsine - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Patua+One&display=swap" rel="stylesheet">
     <style>
-    .contactForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 90px 0px;
-    font-family: 'Lato', sans-serif;
-    }  
-    .container {
-    width: 60%;
-    padding: 20px;
-    background-color: #444444b2;
-    }
+      .contactForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 90px 0px;
+      font-family: 'Lato', sans-serif;
+      }  
+      .container {
+      width: 60%;
+      padding: 20px;
+      background-color: #444444b2;
+      box-shadow: #252525 0px 0px 25px 10px;
+      }
 
-    .container h2 {
-    width: 100%;
-    color: #7CFCDA;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-    }
+      .container h2 {
+      width: 100%;
+      color: #7CFCDA;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      }
 
-    .container .row100 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 40px;
-    }
+      .container .row100 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      grid-gap: 40px;
+      }
 
-    .container .row100 .col {
-    position: relative;
-    width: 100%;
-    padding: 0 10px;
-    margin: 30px 0 10px;
-    transition: 0.5s;
-    }
+      .container .row100 .col {
+      position: relative;
+      width: 100%;
+      padding: 0 10px;
+      margin: 30px 0 10px;
+      transition: 0.5s;
+      }
 
-    .container .row100 .inputBox {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    color: #7CFCDA;
-    }
+      .container .row100 .inputBox {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      color: #7CFCDA;
+      }
 
-    .container .row100 .inputBox input,
-    .container .row100 .inputBox.textarea textarea {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    padding: 0 10px;
-    z-index: 1;
-    color: #444444;
-    }
+      .container .row100 .inputBox input,
+      .container .row100 .inputBox.textarea textarea {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 0 10px;
+      z-index: 1;
+      color: white;
+      }
 
-    .container .row100 .inputBox .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 40px;
-    font-size: 18px;
-    padding: 0 10px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
-    }
+      .container .row100 .inputBox .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 40px;
+      font-size: 18px;
+      padding: 0 10px;
+      display: block;
+      transition: 0.5s;
+      pointer-events: none;
+      }
 
-    .container .row100 .inputBox input:focus + .text,
-    .container .row100 .inputBox input:valid + .text {
-    top: -35px;
-    left: -10px;
-    }
+      .container .row100 .inputBox input:focus + .text,
+      .container .row100 .inputBox input:valid + .text {
+      top: -35px;
+      left: -10px;
+      }
 
-    .container .row100 .inputBox .line {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #7CFCDA;
-    transition: 0.5s;
-    border-radius: 2px;
-    pointer-events: none;
-    }
+      .container .row100 .inputBox .line {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #7cfcda50;
+      transition: 0.5s;
+      border-radius: 2px;
+      pointer-events: none;
+      }
 
-    .container .row100 .inputBox input:focus ~ .line,
-    .container .row100 .inputBox input:valid ~ .line {
-    height: 100%;
-    }
+      .container .row100 .inputBox input:focus ~ .line,
+      .container .row100 .inputBox input:valid ~ .line {
+      height: 100%;
+      }
 
-    .container .row100 .inputBox.textarea {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    padding: 10px 0;
-    }
+      .container .row100 .inputBox.textarea {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0;
+      }
 
-    .container .row100 .inputBox.textarea textarea {
-    height: 100%;
-    resize: none;
-    }
+      .container .row100 .inputBox.textarea textarea {
+      height: 100%;
+      resize: none;
+      font-family: 'Lato', sans-serif;
+      }
 
-    .container .row100 .inputBox textarea:focus + .text,
-    .container .row100 .inputBox textarea:valid + .text {
-    top: -35px;
-    left: -10px;
-    }
+      .container .row100 .inputBox textarea:focus + .text,
+      .container .row100 .inputBox textarea:valid + .text {
+      top: -35px;
+      left: -10px;
+      }
 
-    .container .row100 .inputBox textarea:focus ~ .line,
-    .container .row100 .inputBox textarea:valid ~ .line {
-    height: 100%;
-    }
+      .container .row100 .inputBox textarea:focus ~ .line,
+      .container .row100 .inputBox textarea:valid ~ .line {
+      height: 100%;
+      }
 
-    input[type="submit"] {
-    color: #7CFCDA;
-    padding: 7px 35px;
-    cursor: pointer;
-    background: transparent;
-    border: solid 3px #7CFCDA;
-    font-size: 18px;
-    border-radius: 2px;
-    }
-    input[type="submit"]:hover {
-        background-color: #7CFCDA;
-        border: solid 3px #7CFCDA;
-        color: #444444;
-    }
+      input[type="submit"] {
+      color: #7CFCDA;
+      padding: 7px 35px;
+      cursor: pointer;
+      background: transparent;
+      border: solid 3px #7CFCDA;
+      font-size: 18px;
+      border-radius: 2px;
+      }
+      input[type="submit"]:hover {
+          background-color: #7CFCDA;
+          border: solid 3px #7CFCDA;
+          color: #444444;
+      }
     </style>
 </head>
 <body>
     <div class="navBar">
         <div class="wrapper">
-            <div><a href="about-me.html">A propos de moi</a></div>
-            <div><a href="projects.html">Projects</a></div>
+            <div><a href="./about-me.html">A propos de moi</a></div>
+            <div><a href="./projects.html">Projects</a></div>
             <div id="logoContainer">
-                <a href="index.html"><div id="signBorder" class="sign highFreq">
+                <a href="../index.html"><div id="signBorder" class="sign highFreq">
                   <div class="signName">
                     <span class="highFreq">M<span class="flicker">O</span>HSINE</span>
                   </div>
                 </div></a>
             </div>
-            <div><a href="contact.html">contact</a></div>
-            <div><a href="blog.html">blog</a></div>
+            <div><a href="./contact.html">contact</a></div>
+            <div><a href="./blog.html">blog</a></div>
         </div>
     </div>
     <div class="contactForm">
