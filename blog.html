@@ -5,29 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsine - Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Patua+One&display=swap" rel="stylesheet">
+
+    <style>
+        .blogcontainer{
+            margin: 180px 40px 20px 40px;
+        }
+        .blogitems{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .blogcard{
+            height: fit-content;
+            background-color: #444444e3;
+            padding: 40px;
+            width: 60%;
+            position: relative;
+            box-shadow: #252525 0px 0px 25px 10px;
+        }
+        .blogcardtitle h2{
+            margin-top: 0;
+        }
+        .blogcardbtn span{
+            border-bottom: solid 2px #7CFCDA;
+            color: #7CFCDA;
+            padding: 5px 15px;
+        }
+        .blogcardpara{
+            margin-bottom: 10px;
+        }
+        .blogcard h5{
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="navBar">
         <div class="wrapper">
-            <div><a href="about-me.html">A propos de moi</a></div>
-            <div><a href="projects.html">Projects</a></div>
+            <div><a href="./about-me.html">A propos de moi</a></div>
+            <div><a href="./projects.html">Projects</a></div>
             <div id="logoContainer">
-                <a href="index.html"><div id="signBorder" class="sign highFreq">
+                <a href="../index.html"><div id="signBorder" class="sign highFreq">
                   <div class="signName">
                     <span class="highFreq">M<span class="flicker">O</span>HSINE</span>
                   </div>
                 </div></a>
             </div>
-            <div><a href="contact.html">contact</a></div>
-            <div><a href="blog.html">blog</a></div>
+            <div><a href="./contact.html">contact</a></div>
+            <div><a href="./blog.html">blog</a></div>
         </div>
     </div>
 
+    <div class="blogcontainer">
+        <div class="blogitems">
+            <div class="blogcard">
+                <h5>Date: day-month-year</h5>
+                <div class="blogcardtitle"><h2>Blog Title 1</h2></div>
+                <div class="blogcardpara"><p>Small introduction paragraph</p></div>
+                <div class="blogcardbtn"><span>Read more</span></div>
+            </div>
+        </div>
     
+        <div class="blogitems">
+            <div class="blogcard">
+                <h5>Date: day-month-year</h5>
+                <div class="blogcardtitle"><h2>Blog Title 2</h2></div>
+                <div class="blogcardpara"><p>Small introduction paragraph</p></div>
+                <div class="blogcardbtn"><span>Read more</span></div>
+            </div>
+        </div>
+
+        <div class="blogitems">
+            <div class="blogcard">
+                <h5>Date: day-month-year</h5>
+                <div class="blogcardtitle"><h2>Blog Title 3</h2></div>
+                <div class="blogcardpara"><p>Small introduction paragraph</p></div>
+                <div class="blogcardbtn"><span>Read more</span></div>
+            </div>
+        </div>
+
+        <div class="blogitems">
+            <div class="blogcard">
+                <h5>Date: day-month-year</h5>
+                <div class="blogcardtitle"><h2>Blog Title 4</h2></div>
+                <div class="blogcardpara"><p>Small introduction paragraph</p></div>
+                <div class="blogcardbtn"><span>Read more</span></div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <span><i class="fa-regular fa-envelope"></i>contact@mohsine.dev</span>
