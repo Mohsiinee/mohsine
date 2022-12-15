@@ -5,30 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsine - Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        .projectcontainer{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background-color: #444444e3;
+            margin: 180px 40px 60px 40px;
+            height: fit-content;
+            box-shadow: #252525 0px 0px 25px 10px;
+        }
+        .cardimg{
+            background-image: url("../assets/homme-technicien-electricien-travaillant-dans-standard-fusibles_169016-24062.webp");
+            background-size: cover;
+            height: 500px;
+        }
+        
+        .cardcontent{
+            padding: 20px;
+        }
+
+        .btn {
+            color: white;
+            transition: background-color 0.5s;
+            position: relative;
+            background-color: #7cfcda2f;  
+            line-height: 50px;
+            height: 50px;
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #7cfcda50; 
+            border: solid 2px #7cfcdac5; 
+        }
+        .cardbtn {
+            height: 33.33%;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="navBar">
         <div class="wrapper">
-            <div><a href="about-me.html">A propos de moi</a></div>
-            <div><a href="projects.html">Projects</a></div>
+            <div><a href="./about-me.html">A propos de moi</a></div>
+            <div><a href="./projects.html">Projects</a></div>
             <div id="logoContainer">
-                <a href="index.html"><div id="signBorder" class="sign highFreq">
+                <a href="../index.html"><div id="signBorder" class="sign highFreq">
                   <div class="signName">
                     <span class="highFreq">M<span class="flicker">O</span>HSINE</span>
                   </div>
                 </div></a>
             </div>
-            <div><a href="contact.html">contact</a></div>
-            <div><a href="blog.html">blog</a></div>
+            <div><a href="./contact.html">contact</a></div>
+            <div><a href="./blog.html">blog</a></div>
         </div>
     </div>
 
-
-
+    <div class="projectcontainer">
+        <div class="cardimg"></div>
+        <div class="cardcontent">
+            <div class="cardtitle"><h2>Project 1</h2></div>
+            <div class="carddetail">
+                In the highly competitive era of today, case studies have become vital for every business. Companies that have been in a particular industry for years are likely to have dealt with and successfully managed a number of projects. They would have delivered exceptional results and gained a strong reputation. For such companies, it is important to document their project management case study examples effectively. It can help the companies to market their brand better and attract more leads. </div>
+            <div class="cardbtn">
+                <a href=""><div class="btn">
+                    <span>Case Study</span>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    
     <div class="footer">
         <span><i class="fa-regular fa-envelope"></i>contact@mohsine.dev</span>
         <span><i class="fa-brands fa-whatsapp"></i>+212 6 15 67 70 47</span>
