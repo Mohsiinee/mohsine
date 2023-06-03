@@ -47,8 +47,7 @@ h1 {
   text-decoration: none;
   overflow: hidden;
   transition: .3s;
-  margin-top: 4em;
-  font-weight: 600;
+  font-weight: 800;
 }
 .btn-box .btn:hover {
   background: var(--color);
@@ -135,12 +134,6 @@ header {
     width: 100%;
 }
 /*--------------------------------- Navbar - START -------------------------*/
-.navbar-wrapper {
-    position: absolute;
-    width: 100%;
-    top: 1em;
-    height: 100%;
-}
 .navbar {
     width: fit-content;
     padding: 0em 2.5em;
@@ -152,7 +145,8 @@ header {
     background-color: #0c111ba1;
     backdrop-filter: blur(5px);
     z-index: 1000;
-    box-shadow: black 0px 0px 15px 4px;
+    box-shadow: black 0px 0px 20px 5px;
+    border-bottom: solid 2px #7cfcda2c;
 }
 .navbar-container {
     display: flex;
@@ -169,6 +163,12 @@ header {
     color: #ffffff; 
     font-size: 1rem; 
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7CFCDA;
+  background-color: #7cfcda2c;
 }
 a.nav-link {
     padding: 1em 2em;
@@ -448,4 +448,80 @@ a.nav-link {
   font-weight: 900;
   opacity: 5%;
   color: #7CFCDA;
+}
+
+.categories {
+  text-align: center;
+  margin: 4em;
+}
+.category-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+.category-btn.active {
+  background-color: #7CFCDA;
+  color: #101826;
+}
+
+.category-btn:not(.active):hover {
+  background-color: #ddd;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #0B1320;
+  padding: 2em;
+  box-shadow: black 0px 0px 15px 5px;
+  box-sizing: border-box;
+  margin: 0em 8em;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  position: relative;
+}
+
+.project-card .project-title {
+  margin: 20px 0;
+}
+.project-title {
+  color: #7CFCDA;
+}
+.project-card .project-button {
+  background-color: #7CFCDA;
+  color: #0B1320;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2em 0em 0em 0em;
+}
+.slick-track {
+  padding: 1.5em 0em;
+}
+/* Slick Slider */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev, .slick-next {
+  font-size: 2em;
+  color: #7CFCDA;
+}
+
+.slick-prev::before, .slick-next::before {
+  content: '';
+}
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 8px !important;
 }

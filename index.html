@@ -10,29 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  </head>
 <body>
-    <div class="navbar-wrapper">
-      <nav class="navbar">
-          <div class="navbar-container">
-              <div class="navbar-left">
-                  <a href="#about-me" class="nav-link">About Me</a>
-                  <a href="#my-services" class="nav-link">My Services</a>
-                  <a href="#my-work" class="nav-link">My Work</a>
-              </div>
-              
-              <div class="navbar-center">
-                  <a href="#home" class="nav-logo">Mohsine</a>
-              </div>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <a href="#about-me" class="nav-link">About Me</a>
+            <a href="#my-services" class="nav-link">My Services</a>
+            <a href="#my-work" class="nav-link">My Work</a>
+        </div>
+        
+        <div class="navbar-center">
+            <a href="#home" class="nav-logo">Mohsine</a>
+        </div>
 
-              <div class="navbar-right">
-                  <a href="#contact-me" class="nav-link">Contact Me</a>
-                  <a href="#blogs" class="nav-link">Blogs</a>
-                  <a href="#resume" class="nav-link">Resume/CV</a>
-              </div>
-          </div>
-      </nav>
+        <div class="navbar-right">
+            <a href="#contact-me" class="nav-link">Contact Me</a>
+            <a href="#blogs" class="nav-link">Blogs</a>
+            <a href="#resume" class="nav-link">Resume/CV</a>
+        </div>
     </div>
+  </nav>
     <header class="hero">
       <div class="hero-split">
         <div class="hero-half electrician">
@@ -67,7 +67,7 @@
           <span></span>
           Discover my work
         </a>
-      </div>            
+      </div>
     </section> 
     <section class="about-me">
       <h1>About me</h1>
@@ -188,6 +188,36 @@
           <p>Balancing quality and cost-effectiveness, striving to provide the best solutions within your budget.</p>
         </div>
       </div>
-    </section>    
+    </section>  
+
+    <section class="projects">
+      <h1>Projects</h1>
+      <div class="categories">
+          <div class="btn-box">
+            <a href="#" class="btn category-btn active" data-category="Programming">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Programming
+            </a>
+          </div>
+          <div class="btn-box">
+            <a href="#" class="btn category-btn" data-category="Electricity">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Electricity
+            </a>
+          </div>
+      </div>
+      <div id="projects-container" class="slick-slider">
+          <!-- Project cards will be inserted here via JavaScript -->
+      </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 </html>
