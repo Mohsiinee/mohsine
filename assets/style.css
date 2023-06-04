@@ -48,6 +48,9 @@ h1 {
   overflow: hidden;
   transition: .3s;
   font-weight: 800;
+  cursor: pointer;
+  background-color: #7cfcda18;
+  border: solid 2px #7cfcda77;
 }
 .btn-box .btn:hover {
   background: var(--color);
@@ -139,7 +142,7 @@ header {
     padding: 0em 2.5em;
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     top: 1em;
     margin: auto;
     background-color: #0c111ba1;
@@ -152,6 +155,13 @@ header {
     display: flex;
     justify-content: space-around;
 }
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
 .navbar-left, .navbar-right {
     display: flex;
 }
@@ -259,7 +269,7 @@ a.nav-link {
   z-index: 1;
 }
 
-.contact-info {
+.hero-info .contact-info {
   display: flex;
   justify-content: space-between;
   padding: 0 5em;
@@ -278,12 +288,14 @@ a.nav-link {
 .social-icons a {
   color: #ffffff;
 }
+.social-icons a:hover {
+  color: #7CFCDA;
+}
 
 /*--------------------------------- introduction - START -------------------------*/
 #intro {
     width: 80%;
     margin: 0 auto;
-    padding: 50px 0;
     text-align: center;
 }
 
@@ -296,7 +308,10 @@ a.nav-link {
     font-size: 1rem;
     line-height: 1.5rem;
     width: 30%;
-    margin: 2em auto;
+    margin-top: 4em;
+    margin-bottom: 6.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------- about me - START -------------------------*/
@@ -317,11 +332,10 @@ a.nav-link {
   width: 100%;
   height: 100%;
   background: rgba(16, 24, 38, 0.6); 
-
 }
 .about-me .content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
@@ -342,6 +356,10 @@ a.nav-link {
   height: 100%;
   object-fit: cover;
   border-left: solid 2px #7CFCDA;
+}
+.about-me .title {
+  position: relative;
+  z-index: 1;
 }
 
 /*--------------------------------- Services - START -------------------------*/
@@ -451,27 +469,25 @@ a.nav-link {
 }
 
 .categories {
-  text-align: center;
   margin: 4em;
+  display: flex;
+  justify-content: center;
 }
 .category-btn {
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  font-size: 1.2em;
+  margin: 0em 2em;
 }
-
 .category-btn.active {
   background-color: #7CFCDA;
   color: #101826;
+  box-shadow: 0 0 2px var(--color),
+              0 0 5px var(--color),
+              0 0 10px var(--color),
+              0 0 20px var(--color);
 }
 
-.category-btn:not(.active):hover {
-  background-color: #ddd;
-}
+/*.category-btn:not(.active):hover {
+  background-color: ;
+}*/
 
 /* Project Cards */
 .project-card {
@@ -486,6 +502,15 @@ a.nav-link {
 .project-card img {
   width: 100%;
   position: relative;
+}
+.project-card img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 24, 38, 0.6); 
 }
 
 .project-card .project-title {
@@ -503,6 +528,9 @@ a.nav-link {
   transition: background-color 0.3s ease;
   margin: 2em 0em 0em 0em;
 }
+.project-card p {
+  margin: 0em 0em 1em 0em;
+}
 .slick-track {
   padding: 1.5em 0em;
 }
@@ -517,11 +545,231 @@ a.nav-link {
   font-size: 2em;
   color: #7CFCDA;
 }
-
+.slick-prev:before, .slick-next:before {
+  font-size: 25px !important;
+}
 .slick-prev::before, .slick-next::before {
   content: '';
 }
 .slick-dots li button:before {
-  color: white !important;
+  color: #7CFCDA !important;
   font-size: 8px !important;
+}
+
+/*----------------------------- Clentis feedback - START -------------------------*/
+.slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.client-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.client-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-info {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.client-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.project-name, .stars {
+  font-size: 1em;
+}
+.extra-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0em 0em 0em;
+}
+
+.stars {
+  color: #7CFCDA;
+}
+
+/*------------------- Contact me - START --------------------*/
+#contact-me {
+  width: 65%;
+  margin: auto;
+}
+
+#contact-me .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2.5em;
+  background-color: #0B1320;
+  box-shadow: black 0px 0px 20px 5px;
+}
+
+#contact-me .row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2em 0em;
+}
+
+#contcat-me .contact-info p, .social-info i {
+  margin: 10px;
+}
+.contact-info i {
+  margin-right: 1em;
+}
+.contact-info p {
+  margin: 1em 0em;
+  font-weight: 600;
+}
+form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2.5em 0em;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+  width: 48%;
+}
+
+.form-group:last-child {
+  width: 100%;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7CFCDA;
+  background: transparent;
+  padding: 0.5em 0.5em 0.5em 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.form-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  color: #7CFCDA;
+  font-weight: 600;
+}
+
+.form-group input:focus, .form-group textarea:focus,
+.form-group input:valid, .form-group textarea:valid {
+  background: rgba(124, 252, 218, 0.3);
+}
+
+.form-group input:focus + label, .form-group textarea:focus + label,
+.form-group input:valid + label, .form-group textarea:valid + label {
+  transform: translateY(-20px);
+  font-size: 0.8em;
+  color: #7CFCDA;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30em;
+  margin-top: 15em;
+}
+
+.blog-post {
+  display: flex;
+  gap: 12em;
+  border: solid 2px #7DC;
+  border-radius: 40px;
+}
+
+.post-image {
+  width: 30%;
+  object-fit: cover;
+  transform: scale(1.5);
+  left: 10em;
+  position: relative;
+  box-shadow: black 0px 0px 15px 5px;
+  border: solid 2px #7DC;
+}
+.blog-post.reverse-order .post-image {
+  left: -10em !important;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  width: 70%;
+  padding: 3em 2em 3em 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.post-content h2 {
+  color: #7DC;
+  margin-bottom: 1em;
+}
+/* This will alternate the order of the image and content for each post */
+.blog-post.reverse-order .post-image {
+  order: 2;
+}
+
+.blog-post.reverse-order .post-content {
+  order: 1;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pagination-container {
+  margin-top: 15em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: .5em;
+  margin: 0em .8em;
+  background-color: transparent;
+  border: solid 1px #7CFCDA;
+  color: #7DC;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: ease .3s;
+}
+.pagination button:hover {
+  background-color: #7CFCDA;
+  color: #101826;
 }

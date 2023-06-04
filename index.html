@@ -14,24 +14,26 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-left">
-            <a href="#about-me" class="nav-link">About Me</a>
-            <a href="#my-services" class="nav-link">My Services</a>
-            <a href="#my-work" class="nav-link">My Work</a>
-        </div>
-        
-        <div class="navbar-center">
-            <a href="#home" class="nav-logo">Mohsine</a>
-        </div>
-
-        <div class="navbar-right">
-            <a href="#contact-me" class="nav-link">Contact Me</a>
-            <a href="#blogs" class="nav-link">Blogs</a>
-            <a href="#resume" class="nav-link">Resume/CV</a>
-        </div>
-    </div>
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <div class="navbar-container">
+          <div class="navbar-left">
+              <a href="#about-me" class="nav-link">About Me</a>
+              <a href="#my-services" class="nav-link">My Services</a>
+              <a href="#my-work" class="nav-link">My Work</a>
+          </div>
+          
+          <div class="navbar-center">
+              <a href="#home" class="nav-logo">Mohsine</a>
+          </div>
+  
+          <div class="navbar-right">
+              <a href="#contact-me" class="nav-link">Contact Me</a>
+              <a href="#blogs" class="nav-link">Blogs</a>
+              <a href="#resume" class="nav-link">Resume/CV</a>
+          </div>
+      </div>
+  </div>
   </nav>
     <header class="hero">
       <div class="hero-split">
@@ -70,7 +72,7 @@
       </div>
     </section> 
     <section class="about-me">
-      <h1>About me</h1>
+      <div class="title"><h1>About me</h1></div>
       <div class="content">
           <div class="text-column">
               <p></p>
@@ -194,7 +196,7 @@
       <h1>Projects</h1>
       <div class="categories">
           <div class="btn-box">
-            <a href="#" class="btn category-btn active" data-category="Programming">
+            <a class="btn category-btn active" data-category="Programming">
               <span></span>
               <span></span>
               <span></span>
@@ -203,7 +205,7 @@
             </a>
           </div>
           <div class="btn-box">
-            <a href="#" class="btn category-btn" data-category="Electricity">
+            <a class="btn category-btn" data-category="Electricity">
               <span></span>
               <span></span>
               <span></span>
@@ -216,8 +218,71 @@
           <!-- Project cards will be inserted here via JavaScript -->
       </div>
   </section>
+  <section class="feedback">
+    <h1>clients feedback</h1>
+    <div class="slider">
+        <!-- Slides will be inserted here via JavaScript -->
+    </div>
+  </section>
+  
+  <section id="contact-me">
+    <h1>Contact me</h1>
+    <div class="row">
+      <div class="col contact-info">
+          <p><i class="fas fa-phone"></i> +112 6 15 67 70 47</p>
+          <p><i class="fas fa-envelope"></i> contact@mohsine.dev</p>
+      </div>
+      <div class="col social-info">
+        <div class="social-icons">
+          <a href="#"><i id="facebook" class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i id="github" class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastname" placeholder="" required>
+                <label for="lastname">Last Name</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="" required>
+                <label for="subject">Subject</label>
+            </div>
+            <div class="form-group" style="width: 100%;">
+                <textarea id="message" placeholder="" rows="10" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="btn-box">
+              <a href="#" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Send
+              </a>
+            </div>
+        </form>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h1>Blog</h1>
+    <div class="blog-container"></div>
+    <div class="pagination-container"></div>
+  </section>
+  
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./assets/script.js"></script>
+  <script src="./assets/projects.js"></script>
+  <script src="./assets/clients.js"></script>
+  <script src="./assets/blog.js"></script>
 </body>
 </html>
