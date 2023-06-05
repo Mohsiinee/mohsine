@@ -60,7 +60,7 @@ h1 {
               0 0 10px var(--color),
               0 0 20px var(--color),
               0 0 40px var(--color);
-}
+}/*
 .btn-box .btn span {
   position: absolute;
   display: block;
@@ -132,7 +132,7 @@ h1 {
     bottom: 100%;
   }
 }
-
+*/
 header {
     width: 100%;
 }
@@ -278,8 +278,11 @@ a.nav-link {
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
-  width: 130px;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons i {
+  margin: 1em;
 }
 .fa-brands, .fab {
     font-size: 1.5em;
@@ -638,6 +641,12 @@ a.nav-link {
   margin: 1em 0em;
   font-weight: 600;
 }
+#contact-me .social-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 form {
   position: relative;
   width: 100%;
@@ -749,6 +758,10 @@ form {
   align-items: center;
 }
 
+.post-buttons i {
+  margin-left: 1em;
+}
+
 .pagination-container {
   margin-top: 15em;
 }
@@ -772,4 +785,48 @@ form {
 .pagination button:hover {
   background-color: #7CFCDA;
   color: #101826;
+}
+
+
+footer {
+  width: 100%;
+  background-color: #0B1320;
+  padding: 5em 5em 1.5em 5em;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px #77ddcc4a;
+}
+
+footer .right-column {
+  padding: 2em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .left-column {
+  border-right: solid 1px #77ddcc4a;
+  padding: 5em;
+}
+
+footer .logo {
+  margin-bottom: 1.5em;
+}
+
+.quote p {
+  font-style: italic; 
+  text-align: justify;
+  font-size: 1.2rem;
+}
+footer .social-media {
+  text-align: center;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 12px; 
+  text-align: center;
 }

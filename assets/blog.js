@@ -85,10 +85,14 @@ function createPost(post, index) {
     dateSpan.textContent = post.date;
     buttonsDiv.appendChild(dateSpan);
   
-    let shareBtn = document.createElement("button");
-    shareBtn.classList.add("share");
-    shareBtn.textContent = "Share";
-    buttonsDiv.appendChild(shareBtn);
+    let shareBtn = document.createElement("i");
+    shareBtn.classList.add("fa-solid");
+    shareBtn.classList.add("fa-share-from-square");
+    
+    let shareBtnText = document.createElement("p");
+    shareBtnText.textContent = "Share";
+    buttonsDiv.appendChild(shareBtnText);
+    shareBtnText.appendChild(shareBtn);
   
     contentDiv.appendChild(buttonsDiv);
     postDiv.appendChild(imageDiv);
