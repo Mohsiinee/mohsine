@@ -6,44 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsine | Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   </head>
-<body>
+<body id="body" class="not-scroll">
+  <div id="loading">
+    <p>Loading...</p>
+  </div>
+  <!-- The Modal -->
+  <div class="overlay-modal"></div>
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div class="mobile-logo">
+    <div class="hamburger-container">
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  <div class="logo">Mohsine</div>
+  </div>
   <div class="navbar-wrapper">
     <nav class="navbar">
+      <span class="close-nav">&times;</span>
       <div class="navbar-container">
-          <div class="navbar-left">
-              <a href="#about-me" class="nav-link">About Me</a>
-              <a href="#my-services" class="nav-link">My Services</a>
-              <a href="#my-work" class="nav-link">My Work</a>
-          </div>
-          
-          <div class="navbar-center">
-              <a href="#home" class="nav-logo">Mohsine</a>
-          </div>
-  
-          <div class="navbar-right">
-              <a href="#contact-me" class="nav-link">Contact Me</a>
-              <a href="#blogs" class="nav-link">Blogs</a>
-              <a href="#resume" class="nav-link">Resume/CV</a>
-          </div>
+        <div class="navbar-left">
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#services" class="nav-link">My Services</a>
+            <a href="#work" class="nav-link">My Work</a>
+        </div>
+        
+        <div class="navbar-center">
+            <a href="#home" class="nav-logo">Mohsine</a>
+        </div>
+
+        <div class="navbar-right">
+            <a href="#contact" class="nav-link">Contact Me</a>
+            <a href="#blog" class="nav-link">Blogs</a>
+            <a href="./documents/mohsine-bakhcha-cv.pdf" class="nav-link">Resume/CV</a>
+        </div>
+        
       </div>
+    </nav>
   </div>
-  </nav>
     <header class="hero">
       <div class="hero-split">
         <div class="hero-half electrician">
           <h1>Electrician</h1>
-          <!--<video src="#" autoplay muted loop></video>-->
+          <video src="./vd/vdelectrician.mp4" autoplay muted loop></video>
         </div>
         <div class="hero-half programmer">
           <h1>Programmer</h1>
-          <!--<video src="#" autoplay muted loop></video>-->
+          <video src="./vd/vdprogramming.mp4" autoplay muted loop></video>
         </div>
       </div>
       <div class="hero-info">
@@ -59,55 +86,56 @@
       </div>        
     </header>  
     <section id="intro">
-      <h2><span style="color: #7CFCDA; font-size: 3rem;">Professional</span> electrician and programmer</h2>
-      <p>in this portfolio you will find a collection of my projects showcasing my expertise on both electricity and programming fields</p>
-      <div class="btn-box">
-        <a href="#work" class="btn">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+      <h2><span style="color: #7CFCDA; font-size: 3rem;"> Aspiring </span> electrician and programmer</h2>
+      <p><span style="font-size: 1.2rem; font-weight: 600;">Welcome</span> to my portfolio. <br>Here, you'll find projects that highlight my skills in both electrical work and programming. 
+        explore my journey in these two exciting fields now.</p>
+      <button href="#work" class="btn">
           Discover my work
-        </a>
-      </div>
+      </button>
     </section> 
-    <section class="about-me">
+    <section id="about" class="about">
       <div class="title"><h1>About me</h1></div>
       <div class="content">
           <div class="text-column">
-              <p></p>
+              <p>
+                Greetings! I'm <span style="color: #7CFCDA; font-weight: 700;">Mohsine Bakhcha</span>, an aspiring electrician and computer science enthusiast from Beni Mellal, Morocco. At the moment, I'm in the midst of a two-year 'Electricité Industrielle' training program at ISTA Beni Mellal. Equipped with a spirit of independence and a creative mindset, I am excited to apply my skills in practical settings and look forward to leveraging my training to contribute to the electrical industry in Morocco.
+                <br><br>Imagine electricity and computer science as two sides of the same coin. One brings power and light to our homes and cities, while the other illuminates the digital world, powering up our devices and applications. This unique interplay between these two fields captivates me - their ability to complement each other and create something truly innovative.
+                <br><br>My voyage into these domains began with a spark of curiosity - fueling a desire to understand how things work. Each challenge, from experimenting with electrical circuits to crafting my first program, became an opportunity for growth and learning. This journey ignited a passion that continues to grow with every hurdle I overcome. Now, my mission is to harness the transformative power of innovative solutions. Whether I'm rewiring a house or developing a new app, I'm driven by the endless possibilities that the right tools and mindset can unlock.
+                <br><br>Kick-boxing and football are my go-to activities when I'm not immersed in my studies or projects. But it's not all about sports. I also invest time in community service, working with charities and local development groups. This balance of physical activity and community involvement keeps me grounded, constantly reminding me of the positive change we can bring about in our communities.
+                <br><br>So, that's a snapshot of me - a cheerful, amiable individual with a potent drive to innovate and transform, one project at a time. I'm thrilled about the journey that lies ahead and the opportunities it presents. Let's light up the world together, shall we?
+              </p>
           </div>
           <div class="image-column">
               <img src="./img/Mohsine-bakhcha.png" alt="Your Name">
           </div>
       </div>
     </section>  
-    <section id="my-services">
+    <section id="services" class="services">
       <h1>My services</h1>
       <div class="services-cards">
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <img src="./img/icon/residential-electricity-icon.svg" alt="Service 1">
           <h3>Residential electrician</h3>
-          <a href="#modal1">Learn More</a>
+          <a onclick="openModal('residential-electricity.html')">Learn More</a>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <img src="./img/icon/industrial-electricity-icon.svg" alt="Service 2">
           <h3>Industrial electrician</h3>
-          <a href="#modal2">Learn More</a>
+          <a onclick="openModal('industrial-electricity.html')">Learn More</a>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-left">
           <img src="./img/icon/software-developement-icon.svg" alt="Service 3">
           <h3>Software developer</h3>
-          <a href="#modal3">Learn More</a>
+          <a onclick="openModal('software-developer.html')">Learn More</a>
         </div>
       </div>
 
       <div class="problem-solving">
         <div class="row">
           <div class="col svg-col">
-            <img src="./img/software-service.svg" alt="Illustration">
+            <img src="./img/software-service.svg" alt="Illustration" data-aos="fade-right">
           </div>
-          <div class="col text-col">
+          <div class="col text-col" data-aos="fade-left">
             <h3>Transform Your Vision Into Reality with Custom Software Development :</h3>
             <p>I am not just building software, I am building solutions to your business challenges.</p>
             <h3>Troubleshooting & Support, Keep Your Business Running Smoothly :</h3>
@@ -117,7 +145,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col text-col">
+          <div class="col text-col" data-aos="fade-right">
             <h3>Empower Your Home with Safe and Reliable Electrical Installations:</h3>
             <p>From modern lighting fixtures to new appliances, ensure every addition to your home is installed correctly and safely.</p>
             <h3>Maximize Efficiency with Professional Machine Wiring:</h3>
@@ -126,7 +154,7 @@
             <p>From programming PLCs to installing sensors and actuators, let's take your business to the next level.</p>
           </div>
           <div class="col svg-col">
-            <img src="./img/Electricity-service-svg.svg" alt="Illustration 2">
+            <img src="./img/electrician-vector.svg" alt="Illustration 2" data-aos="fade-left">
           </div>
         </div>
       </div>
@@ -135,13 +163,7 @@
       <div class="why-choose-me">
         <div>
           <p>
-            But it's not just about what I can do – it's also about how I do it. I pride myself on my excellent communication and customer 
-            service skills. I understand that every project is unique, and I make it a point to listen carefully to your requirements and 
-            preferences.
-            <br><br>
-            Choosing the right professional for your project is crucial, and I believe I can be that choice for you. I bring to the table years 
-            of experience as an electrician and a programmer, two fields that require precision, creativity, and a deep understanding of 
-            technical details.
+            But it's not just about <span style="text-decoration: underline;">what I can do </span> – it's also about <span data-text="how I do it" class="glow-txt">how I do it </span> .
           </p>
         </div>
       </div>
@@ -192,44 +214,36 @@
       </div>
     </section>  
 
-    <section class="projects">
-      <h1>Projects</h1>
-      <div class="categories">
-          <div class="btn-box">
-            <a class="btn category-btn active" data-category="Programming">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Programming
-            </a>
-          </div>
-          <div class="btn-box">
-            <a class="btn category-btn" data-category="Electricity">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Electricity
-            </a>
-          </div>
+    <section id="work" class="projects video-background">
+      <div class="vdoverlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="./vd/vd-earth.mp4" type="video/mp4">
+      </video>
+      <div class="work-wrapper">
+        <h1>Projects</h1>
+        <div class="categories">
+
+              <button class="btn category-btn active" data-category="Programming">
+                Programming
+              </button>
+
+              <button class="btn category-btn" data-category="Electricity">
+                Electricity
+              </button>
+        </div>
+        <div id="projects-container" class="slick-slider"></div>
       </div>
-      <div id="projects-container" class="slick-slider">
-          <!-- Project cards will be inserted here via JavaScript -->
-      </div>
-  </section>
+    </section>
+
   <section class="feedback">
     <h1>clients feedback</h1>
-    <div class="slider">
-        <!-- Slides will be inserted here via JavaScript -->
-    </div>
+    <div class="slider"></div>
   </section>
   
-  <section id="contact-me">
+  <section id="contact" class="contact">
     <h1>Contact me</h1>
     <div class="row">
       <div class="col contact-info">
-          <p><i class="fa-solid fa-clock"></i> Local time: <span id="clock1"></span></p>
           <p><i class="fa-solid fa-location-dot"></i> Beni Mellal, Morocco</p>
           <p><i class="fas fa-phone"></i> +212 6 15 67 70 47</p>
           <p><i class="fas fa-envelope"></i> contact@mohsine.dev</p>
@@ -262,10 +276,6 @@
             </div>
             <div class="btn-box">
               <a href="#" class="btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
                 Send
               </a>
             </div>
@@ -280,13 +290,13 @@
   </section>
   
   <footer>
+    <div class="footer-bg"></div>
     <div class="footer-container">
         <div class="left-column">
             <div class="logo">
                 <h1>Mohsine</h1>
             </div>
             <div class="contact-info">
-              <p><i class="fa-solid fa-clock"></i> Local time: <span id="clock2"></span> GMT+1</p>
               <p><i class="fa-solid fa-location-dot"></i> Beni Mellal, Morocco</p>
               <p><i class="fas fa-phone"></i> +212 6 15 67 70 47</p>
               <p><i class="fas fa-envelope"></i> contact@mohsine.dev</p>
@@ -318,10 +328,10 @@
     </div>
   </footer>
 
-
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="./assets/script.js"></script>
   <script src="./assets/projects.js"></script>
   <script src="./assets/clients.js"></script>

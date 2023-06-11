@@ -1,21 +1,9 @@
 const feedbacks = [
     {
-        name: "Client 1",
+        name: "Yahya",
         photo: "https://www.mckinsey.com/~/media/mckinsey/our%20people/alexander%20weiss/alexander%20weiss_std_img.jpg",
         review: " Paragraphe describing this section, Choosing the right professional for your project is crucial, and I believe I can be that choice for you. I bring to the table years of experience as an electrician and a programmer, two fields that require precision, creativity, and a deep understanding of technical details.",
-        project: "Project : www.mohsine.dev",
-    },
-    {
-        name: "Client 2",
-        photo: "https://www.mckinsey.com/~/media/mckinsey/our%20people/alexander%20weiss/alexander%20weiss_std_img.jpg",
-        review: "I'm really satisfied with the project outcome.",
-        project: "Project 2",
-    },
-    {
-        name: "Client 3",
-        photo: "https://www.mckinsey.com/~/media/mckinsey/our%20people/alexander%20weiss/alexander%20weiss_std_img.jpg",
-        review: "Highly professional team and superb customer service.",
-        project: "Project 3",
+        project: "Project : www.yahya.com",
     },
 ];
 
@@ -52,6 +40,27 @@ function loadFeedbacks() {
         autoplaySpeed: 4000,
         arrows: true,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                    
+                }
+            },
+        ]
     });
 }
 

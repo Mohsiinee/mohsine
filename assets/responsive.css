@@ -1,0 +1,292 @@
+@media (max-width:601px) {
+      #loading p {
+        font-size: 2em;
+      }
+    .navbar {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        backdrop-filter: blur(10px);
+        border-right: solid 2px #7cfcda2c;
+        border-bottom: 0px;
+    }
+    .navbar-container {
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+    }
+
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+    }
+    .navbar-center {
+        position: absolute;
+        top: 2.5em;
+        left: 2.5em;
+    }
+    .nav-logo {
+        margin: 0em;
+    }
+    .mobile-logo {
+        width: 100%;
+        padding: 0em 2.5em;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 1em;
+        margin: auto;
+        background-color: #0c111ba1;
+        backdrop-filter: blur(5px);
+        z-index: 11;
+        box-shadow: black 0px 0px 20px 5px;
+        border-bottom: solid 2px #7cfcda2c;
+    }
+    .mobile-logo .logo, .mobile-logo .hamburger {
+        padding: 1em 2em;
+    }
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        width: 30px;
+        height: 22px;
+    }
+    
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 70%;
+        background: #ffff;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+    }
+    .hamburger-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+    
+    .hamburger span:nth-child(2) {
+        top: 10px;
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 20px;
+    }
+    .close-nav {
+        display: block;
+        position: absolute;
+        top: 1.5em;
+        left: 11em;
+        z-index: 20;
+        display: block;
+        font-size: 1.5rem;
+        color: red;
+        background-color: #ff000030;
+        padding: .1em 1em;
+    }
+    .hero-half video {
+        transform: skewY(20deg);
+    }
+    .hero-split {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .hero-half h1 {
+        font-size: 2em;
+        transform: skewX(20deg);
+    }
+    .electrician {
+        margin-top: -4.2em;
+        margin-left: 0em;
+    }
+    .programmer {
+        margin-bottom: -4.2em;
+        margin-right: 0em;
+    }
+    .hero-half {
+        width: 100%;
+        height: 50%;
+        border-right: none;
+        border-bottom: 2px solid var(--color);
+        transform: skewY(-20deg);
+    }
+    .hero-half h1 {
+        transform: skewY(20deg);
+    }
+    .hero-info .contact-info {
+        justify-content: space-around;
+        padding: 0em;
+        font-size: .8em;
+    }
+    .social-icons {
+        display: none;
+    }
+    section {
+        padding: 7em 2em;
+    }
+    #intro p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    #intro h2 span {
+        font-size: 2rem;
+    }
+    #intro h2 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .about .content {
+        flex-direction: column;
+        max-height: none;
+    }
+    .text-column {
+        width: 100%;
+        padding: 20px;
+        word-wrap: break-word;
+    }
+    .image-column img {
+        width: 100%;
+        border-top: solid 2px var(--color);
+        border-left: none;
+    }
+    .image-column {
+        width: 100%;
+    }
+
+    .services .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .services-cards .card {
+        width: 90%;
+        text-align: center;
+        padding: 4em 0em;
+        margin: 3em 0em;
+    }
+    .services .services-cards .card h3 {
+        margin: 1.1em;
+        font-size: 1.3rem;
+    }
+    .services .problem-solving .row {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+    .services .problem-solving .col {
+        width: 100%;
+    }
+    .services .problem-solving img {
+        width: 100%;
+    }
+    .services .why-choose-me div {
+        width: 100%;
+    }
+    .services .why-choose-me p {
+        padding-left: 2em;
+    }
+    .services .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .categories {
+        margin: 4em 0em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-box {
+        margin: 2em 0em;
+    }
+
+    .project-card {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .slide {
+        padding: 0px;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .client-info {
+        margin-left: 0em;
+        width: 100%;
+    }
+    .contact .container {
+        flex-direction: column;
+        padding: 1em 2.5em;
+    }
+    .contact {
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        gap: 20em;
+        margin-top: 10em;
+    }
+    .blog-post {
+        gap: 0em;
+        flex-direction: column;
+    }
+    .post-image {
+        width: 100%;
+        transform: scale(1);
+        left: 0em;
+        border: none;
+    }
+    .post-content {
+        width: 100%;
+        flex-direction: column;
+        padding: 1em;
+    }
+    .post-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .post-buttons p {
+        margin: 1em 0em;
+    }
+    .blog-post.reverse-order .post-image {
+        order: 1;
+        left: 0em !important;
+    }
+    footer {
+        width: 100%;
+        padding: 5em 2.5em 1.5em 2.5em;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 1px #77ddcc4a;
+        flex-direction: column;
+    }
+    footer .left-column {
+        border-bottom: solid 1px #77ddcc4a;
+        border-right: none;
+        padding: 2em 0em;
+    }
+    footer .right-column {
+        padding: 4em 0em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

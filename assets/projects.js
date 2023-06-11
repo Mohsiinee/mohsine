@@ -3,49 +3,15 @@ const projects = [
         category: "Programming",
         image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
         title: "Programming Project 1",
+        modalurl: "case-study-1.html",
         id: 1
     },
     {
         category: "Electricity",
         image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
         title: "Electricity Project 1",
+        modalurl: "case-study-1",
         id: 2
-    },
-    {
-        category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Programming Project 2",
-        id: 3
-    },
-    {
-        category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Electricity Project 2",
-        id: 4
-    },
-    {
-        category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Programming Project 3",
-        id: 5
-    },
-    {
-        category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Electricity Project 3",
-        id: 6
-    },
-    {
-        category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Programming Project 4",
-        id: 7
-    },
-    {
-        category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Electricity Project 4",
-        id: 8
     },
 ];
 
@@ -61,15 +27,9 @@ function loadProjects(category) {
                 <h3 class="project-title">${project.title}</h3>
                 <p>Text here</p>
 
-                <div class="btn-box">
-                <a class="btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="btn" onclick="openModal('${project.modalurl}')">
                     Case Study
-                </a>
-            </div>
+                </button>
             </div>`;
             projectsContainer.insertAdjacentHTML('beforeend', projectCard);
         }
@@ -81,6 +41,26 @@ function loadProjects(category) {
         autoplay: false,
         arrows: true,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            },
+        ]
     });
 }
 
