@@ -1,17 +1,17 @@
 const feedbacks = [
     {
-        name: "Yahya",
-        photo: "https://www.mckinsey.com/~/media/mckinsey/our%20people/alexander%20weiss/alexander%20weiss_std_img.jpg",
+        name: "Client Name",
+        photo: "#",
         review: " Paragraphe describing this section, Choosing the right professional for your project is crucial, and I believe I can be that choice for you. I bring to the table years of experience as an electrician and a programmer, two fields that require precision, creativity, and a deep understanding of technical details.",
-        project: "Project : www.yahya.com",
+        project: "Project : Client Project",
     },
 ];
 
 function loadFeedbacks() {
-    const slider = $('.slider');
+    const slider = $('.client-slider');
     for (let feedback of feedbacks) {
         let slide = `
-        <div class="slide">
+        <div class="client-slide">
             <div class="client-photo">
                 <img src="${feedback.photo}" alt="${feedback.name}">
             </div>
