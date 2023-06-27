@@ -1,9 +1,9 @@
 let blogPosts = [
     {
       id: 1,
-      title: "Blog Post Title 1",
-      description: "Brief description of the blog post...",
-      imageUrl: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+      title: "Electricity and computer science: importance and future",
+      description: "Brief description of the blog article...",
+      imageUrl: "/mohsine.dev/img/Blog-article-electricity and computer science.png",
       date: "2023-01-01",
     },
 ];

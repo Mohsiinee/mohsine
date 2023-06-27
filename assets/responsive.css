@@ -1,4 +1,29 @@
 @media (max-width:1401px) {
+    #intro p {
+        width: 50%;
+    }
+    .services .services-cards .card {
+        width: 29%;
+    }
+    .services .services-cards .card h3 {
+        margin: 1em;
+    }
+    .services .why-choose-me div {
+        width: 80%;
+    }
+    .contact {
+        width: 80%;
+    }
+}
+@media (max-width:601px) {
+    #loading {
+        z-index: 12;
+    }
+    #loading p {
+    font-size: 2em;
+    }
+
+
     .navbar {
         height: 100vh;
         position: fixed;
@@ -27,12 +52,14 @@
     }
     .mobile-logo {
         width: 100%;
-        padding: 0.5em 2.5em;
+        padding: 1em 2.5em;
         display: flex;
         justify-content: space-between;
         position: fixed;
         margin: auto;
         z-index: 11;
+        background-color: #171a2e;
+        box-shadow: black 0px 10px 20px 2px;
     }
     .mobile-logo .logo, .mobile-logo .hamburger {
         padding: 1em 2em;
@@ -88,29 +115,6 @@
         padding: .1em 1em;
     }
 
-    #intro p {
-        width: 50%;
-    }
-    .services .services-cards .card {
-        width: 29%;
-    }
-    .services .services-cards .card h3 {
-        margin: 1em;
-    }
-    .services .why-choose-me div {
-        width: 80%;
-    }
-    .contact {
-        width: 80%;
-    }
-}
-@media (max-width:961px) {
-    #loading {
-        z-index: 12;
-    }
-    #loading p {
-    font-size: 2em;
-    }
     
     .hero-half video {
         transform: skewY(20deg);
@@ -263,10 +267,7 @@
         margin: 2em 0em;
     }
 
-    .project-card {
-        padding: 1em;
-        margin: 1em;
-    }
+
 
     .client-slide {
         padding: 0px;

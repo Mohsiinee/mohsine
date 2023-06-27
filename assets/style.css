@@ -6,20 +6,26 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #101826;
-    color: #ffffff;
+    background-color: var(--dark-color);
+    color: var(--white-color);
     position: relative;
     overflow-x: hidden;
 }
 :root {
-  --color: #7CFCDA;
-  --coloropacity: #7cfcda73;
+  --dark-color: rgb(27, 31, 36);
+  --dark-overlay-color: rgb(27, 31, 36, 0.7);
+  --darker-color: rgb(22, 25, 28);
+  --semi-dark-color: rgb(36 42 48);
+  --color: rgb(124, 252, 218);
+  --white-color: rgb(255, 255, 255);
+  --gray-color: rgb(93, 108, 131);
+  --accents-color: #FCC46A;
 }
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #101826;
+  background: var(--dark-color);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color);
@@ -28,7 +34,7 @@ body {
   background: #2b6152;
 }
 ::selection {
-  color: #101826;
+  color: var(--dark-color);
   background: var(--color);
 }
 .not-scroll {
@@ -44,14 +50,14 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  background: #101826;
+  background: var(--dark-color);
   z-index: 11;
 }
 
 #loading p {
   font-size: 3em;
   font-weight: 900;
-  color: #8d8d8d;
+  color: var(--semi-dark-color);
   animation: fade 1s infinite;
   margin: 2em;
 }
@@ -76,9 +82,11 @@ h1 {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 1em 3.5em;
+  padding: 10px 80px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: fit-content;
   color: var(--color);
-  font-size: 1rem;
   text-decoration: none;
   overflow: hidden;
   transition: .3s;
@@ -89,7 +97,7 @@ h1 {
 }
 .btn:hover {
   background: var(--color);
-  color: #101826;
+  color: var(--dark-color);
   border-radius: 5px;
   box-shadow: 0 0 5px var(--color),
               0 0 10px var(--color),
@@ -108,7 +116,7 @@ header {
     position: fixed;
     top: 1em;
     margin: auto;
-    background-color: #0c111ba1;
+    background-color: var(--dark-overlay-color);
     backdrop-filter: blur(5px);
     z-index: 10;
     box-shadow: black 0px 0px 20px 5px;
@@ -136,7 +144,7 @@ header {
 }
 .nav-link {
     text-decoration: none;
-    color: #ffffff; 
+    color: var(--white-color); 
     font-size: 1rem; 
     font-weight: 600;
     transition: all 0.3s ease;
@@ -186,7 +194,7 @@ a.nav-link {
   align-items: center;
   overflow: hidden;
   color: var(--color);
-  border-right: 2px solid var(--color);
+  border-right: 2px solid var(--gray-color);
   transform: skewX(-20deg);
 }
 
@@ -217,7 +225,7 @@ a.nav-link {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #101826af;
+  background: var(--dark-overlay-color);
   z-index: 1;
 }
 .electrician {
@@ -226,6 +234,7 @@ a.nav-link {
 }
 .electrician h1 {
   margin-left: 1em;
+  margin-bottom: 0;
 }
 .programmer {
     margin-right: -15em;
@@ -233,6 +242,7 @@ a.nav-link {
 }
 .programmer h1 {
   margin-right: 4em;
+  margin-bottom: 0;
 }
 .electrician video {
   margin-right: -22em;
@@ -245,7 +255,7 @@ a.nav-link {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
   z-index: 1;
 }
 
@@ -253,7 +263,7 @@ a.nav-link {
   display: flex;
   justify-content: space-between;
   padding: 0 5em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .social-icons {
@@ -269,7 +279,7 @@ footer .social-icons i {
 }
 
 .social-icons a {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .social-icons a:hover {
   color: var(--color);
@@ -303,7 +313,7 @@ footer .social-icons i {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  color: var(--white-color);
 }
 .about::after {
   content: "";
@@ -312,7 +322,7 @@ footer .social-icons i {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(16, 24, 38, 0.6); 
+  background: var(--dark-overlay-color); 
 }
 .about .content {
   position: relative;
@@ -321,7 +331,8 @@ footer .social-icons i {
   justify-content: space-between;
   box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
   margin: auto;
-  background-color: #101826;
+  background-color: var(--dark-overlay-color);
+  backdrop-filter: blur(4px);
   max-height: 70vh;
   border: solid 2px var(--color);
   border-radius: 3em;
@@ -356,18 +367,19 @@ footer .social-icons i {
 
 /*--------------------------------- Services - START -------------------------*/
 .services {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .services .services-cards {
   display: flex;
   justify-content: space-around;
+  padding: 7em 7em;
 }
 
 .services .services-cards .card {
   width: 23%;
   text-align: center;
-  background-color: #0B1320;
+  background-color: var(--darker-color);
   padding: 4em 0em;
   box-shadow: black 0px 0px 20px 3px;
 }
@@ -381,16 +393,16 @@ footer .social-icons i {
   font-size: 1.4rem;
 }
 .services .services-cards .card a {
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 .services .problem-solving .row {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  padding: 7em 7em;
 }
 
 .services .problem-solving .col {
@@ -400,8 +412,14 @@ footer .social-icons i {
 .problem-solving {
   margin: 10em 0em;
 }
+.problem-solving .row:nth-child(1) {
+  background-color: var(--semi-dark-color);
+}
 .services .problem-solving img {
   width: 100%;
+}
+section.services {
+  padding: 7em 0em;
 }
 .services .problem-solving .text-col {
   display: flex;
@@ -423,9 +441,9 @@ footer .social-icons i {
 }
 .why-choose-me .glow-txt {
   position: relative;
-  color: #7CFCDA;
+  color: var(--color);
   font-size: 3.5rem;
-  text-shadow: #7CFCDA 0px 0px 6px;
+  text-shadow: var(--color) 0px 0px 6px;
 }
 
 .services .why-choose-me div {
@@ -474,9 +492,9 @@ footer .social-icons i {
 .services .grid .grid-item h3 {
   font-size: 1.2rem;
   padding: .5em 1em;
-  background-color: #7CFCDA;
+  background-color: var(--color);
   border-radius: 2em;
-  color: #101826;
+  color: var(--dark-color);
   box-shadow: black 0px 0px 10px 2px;
 }
 .services .grid .grid-item div {
@@ -502,7 +520,7 @@ footer .social-icons i {
 }
 .category-btn.active {
   background-color: var(--color);
-  color: #101826;
+  color: var(--dark-color);
   box-shadow: 0 0 2px var(--color),
               0 0 5px var(--color),
               0 0 10px var(--color),
@@ -520,9 +538,9 @@ footer .social-icons i {
   height: 100%;
   overflow: hidden;
   transform: skewY(-7deg);
-  box-shadow: #000000 0px 0px 40px 5px;
-  border-top: solid 1px #7dddc2;
-  border-bottom: solid 1px #7dddc2;
+  box-shadow: black 0px 0px 40px 5px;
+  border-top: solid 1px var(--color);
+  border-bottom: solid 1px var(--color);
 }
 
 .video-background video {
@@ -547,7 +565,7 @@ footer .social-icons i {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #101826cf;
+  background: var(--dark-overlay-color);
   z-index: 1;
 }
 .work-wrapper {
@@ -556,18 +574,18 @@ footer .social-icons i {
   transform: skewY(7deg);
 }
 .project-card {
-  background-color: #0B1320;
+  background-color: var(--darker-color);
+  height: 60vh;
   position: relative;
-  width: 50vh !important;
   margin: 1em;
-  padding: 2em;
   box-shadow: black 0px 0px 15px 5px;
   box-sizing: border-box;
   text-align: center;
 }
-.slick-list {
-  height: fit-content !important;
+.project-card .txt-project {
+  padding: 2em;
 }
+
 .slick-track {
   display: flex !important;
   justify-content: center;
@@ -576,15 +594,24 @@ footer .social-icons i {
   width: 100% !important;
 }
 .project-card .project-title {
+  font-size: 1.4rem;
   margin: 20px 0;
-}
-.project-title {
   color: var(--color);
 }
 .project-card p {
   margin: 0em 0em 1em 0em;
 }
-
+.slick-dots li.slick-active button:before {
+  color: var(--color) !important;
+  font-size: 10px !important;
+}
+.slick-dots li button:before {
+  color: var(--white-color) !important;
+  font-size: 10px !important;
+}
+.slick-prev::before, .slick-next::before {
+  font-size: 25px !important;
+}
 /*----------------------------- Clentis feedback - START -------------------------*/
 .feedback {
   height: 100vh;
@@ -650,7 +677,7 @@ footer .social-icons i {
   flex-direction: column;
   align-items: center;
   padding: 1em 2.5em;
-  background-color: #0B1320;
+  background-color: var(--darker-color);
   box-shadow: black 0px 0px 20px 5px;
 }
 
@@ -702,7 +729,7 @@ form {
   border-bottom: 2px solid var(--color);
   background: transparent;
   padding: 0.5em 0.5em 0.5em 0;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 1.2rem;
   outline: none;
 }
@@ -728,12 +755,20 @@ form {
   color: var(--color);
 }
 
-
+.page-count {
+  padding: 2em 0em;
+  font-size: 1.2rem;
+}
+.page-count span {
+  margin: 0em 1em;
+  font-size: 1.5rem;
+  color: var(--color);
+}
 .blog-container {
   display: flex;
   flex-direction: column;
   gap: 30em;
-  margin-top: 15em;
+  margin-top: 5em;
 }
 
 .blog-post {
@@ -753,6 +788,8 @@ form {
   object-fit: cover;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+  transform: scale(1.02);
+  box-shadow: black 0px 0px 25px 2px;
 }
 
 .post-content {
@@ -812,7 +849,7 @@ form {
 footer {
   width: 100%;
   position: relative;
-  background-color: #0B1320;
+  background-color: var(--darker-color);
   padding: 5em 5em 1.5em 5em;
   box-sizing: border-box;
   border-top: solid 5px var(--color);
@@ -830,7 +867,9 @@ footer .footer-bg {
 .footer-container {
   display: flex;
   justify-content: space-around;
-  border-bottom: solid 1px #ffffff4a;
+  border-bottom: solid 1px var(--gray-color);
+  position: relative;
+  z-index: 1;
 }
 
 footer .right-column {
@@ -841,7 +880,7 @@ footer .right-column {
   align-items: center;
 }
 footer .left-column {
-  border-right: solid 1px #ffffff4a;
+  border-right: solid 1px var(--gray-color);
   padding: 5em;
   display: flex;
   flex-direction: column;

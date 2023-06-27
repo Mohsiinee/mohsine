@@ -1,18 +1,60 @@
 const projects = [
     {
         category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Programming Project 1",
-        modalurl: "case-study-1.html",
+        image: "/mohsine.dev/img/Project-card-img.png",
+        title: "Chef Portfolio",
+        tag: "HTML, CSS, Javascript",
+        modalurl: "case-study-chef-portfolio.html",
         id: 1
+    },
+    {
+        category: "Programming",
+        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+        title: "Shopify Theme",
+        tag: "Javascript, Liquid, HTML, CSS",
+        modalurl: "case-study-chef-portfolio.html",
+        id: 2
+    },
+    {
+        category: "Programming",
+        image: "/mohsine.dev/img/Project-card-img.png",
+        title: "Wordpress Website",
+        tag: "HTML, CSS",
+        modalurl: "case-study-chef-portfolio.html",
+        id: 1
+    },
+    {
+        category: "Programming",
+        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+        title: "Shopify Theme",
+        tag: "Javascript, Liquid, HTML, CSS",
+        modalurl: "case-study-chef-portfolio.html",
+        id: 5
     },
     {
         category: "Electricity",
         image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Electricity Project 1",
+        title: "motor control circuit",
+        tag: "motor 3 phase, protection tools",
         modalurl: "case-study-1.html",
-        id: 2
+        id: 3
     },
+    {
+        category: "Electricity",
+        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+        title: "system to control lights using Arduino",
+        tag: "",
+        modalurl: "case-study-1.html",
+        id: 4
+    },
+    {
+        category: "Electricity",
+        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+        title: "Safety System",
+        tag: "",
+        modalurl: "case-study-1.html",
+        id: 6
+    }
 ];
 
 function loadProjects(category) {
@@ -26,7 +68,7 @@ function loadProjects(category) {
                 <div class="img-container"><img class="project-image" src="${project.image}"></div>
                 <div class="txt-project">
                     <h3 class="project-title">${project.title}</h3>
-                    <p>Text here</p>
+                    <p>${project.tag}</p>
                     <button class="btn" onclick="openModal('${project.modalurl}')">
                         Case Study
                     </button>
@@ -39,10 +81,20 @@ function loadProjects(category) {
     $(document).ready(function(){
         $('.projects-carousel').slick({
           dots: true,
+          arrows: true,
           infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
+          speed: 800,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 1
+              }
+            }
+          ]
         });
     });           
 }
