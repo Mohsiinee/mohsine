@@ -4,6 +4,7 @@ let blogPosts = [
       title: "Electricity and computer science: importance and future",
       description: "Brief description of the blog article...",
       imageUrl: "/mohsine.dev/img/Blog-article-electricity and computer science.png",
+      articleURL: "#",
       date: "2023-01-01",
     },
 ];
@@ -21,9 +22,6 @@ function createPost(post, index) {
     let imageDiv = document.createElement("div");
     imageDiv.classList.add("post-image");
   
-    let img = document.createElement("img");
-    img.src = post.imageUrl;
-    imageDiv.appendChild(img);
   
     let contentDiv = document.createElement("div");
     contentDiv.classList.add("post-content");
@@ -44,17 +42,12 @@ function createPost(post, index) {
     buttonsDiv.classList.add("post-buttons");
   
     let btnBoxDiv = document.createElement("div");
-    btnBoxDiv.classList.add("btn-box");
+    btnBoxDiv.classList.add("read-btn-box");
   
     let readMoreBtn = document.createElement("a");
-    readMoreBtn.href = "#";
-    readMoreBtn.classList.add("btn");
+    readMoreBtn.href = post.articleURL;
+    readMoreBtn.classList.add("read-btn");
     readMoreBtn.textContent = "Read more";
-  
-    for (let i = 0; i < 4; i++) {
-      let span = document.createElement("span");
-      readMoreBtn.insertBefore(span, readMoreBtn.firstChild);
-    }
   
     btnBoxDiv.appendChild(readMoreBtn);
     buttonsDiv.appendChild(btnBoxDiv);
