@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsine | Portfolio</title>
+    <link rel="icon" href="./img/icon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Literata:opsz,wght@7..72,200;7..72,300;7..72,400;7..72,500;7..72,600;7..72,700;7..72,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
@@ -29,16 +30,6 @@
       <span class="close">&times;</span>
       <div id="modal-body"></div>
     </div>
-  </div>
-  <div class="mobile-logo">
-    <div class="hamburger-container">
-      <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  <div class="nav-logo">Mohsine</div>
   </div>
   <div class="navbar-wrapper">
     <nav class="navbar">
@@ -77,17 +68,18 @@
       <div class="hero-info">
         <div class="contact-info">
           <div class="social-icons">
-            <a href="#"><i id="facebook" class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i id="github" class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
           </div>
           <p>Available for new projects</p>
-          <p>+212 6 15 67 70 47</p>
+          <p>+212 06 15 67 70 47</p>
         </div>
       </div>        
     </header>  
+    <div class="section-separator"></div>
     <section id="intro">
-      <h2><span style="color: #FCC46A; font-size: 3rem;"> Aspiring </span> electrician and software developer</h2>
+      <h2><span style="color: rgb(255 110 110); font-size: 3rem;"> Aspiring </span> electrician and software developer</h2>
       <p><span style="font-size: 1.2rem; font-weight: 600;">Welcome</span> to my portfolio. <br>Here, you'll find projects that highlight my skills in both electrical work and programming. 
         explore my journey in these two exciting fields now.</p>
       <button href="#work" class="btn">
@@ -102,7 +94,7 @@
               Greetings!
             </p>
               <p>
-                I'm <span style="color: #FCC46A; font-weight: 700; font-size: 1.4rem;">Mohsine Bakhcha</span>, an aspiring electrician and computer science enthusiast from Beni Mellal, Morocco. 
+                I'm <span style="color: rgb(255 110 110); font-weight: 700; font-size: 1.4rem;">Mohsine Bakhcha</span>, an aspiring electrician and computer science enthusiast from Beni Mellal, Morocco. 
               </p>
               <p>
                 Each challenge, from experimenting with electrical circuits to crafting my first program, became an opportunity for growth and learning. 
@@ -116,6 +108,40 @@
           </div>
       </div>
     </section>  
+
+    <section class="resume-section">
+      <div class="section-content">
+        <div class="general-info-wrapper">
+          <div class="info-grid">
+            <div class="info-wrapper">
+              <span class="key">Date of birth</span>
+              <span class="value">06/27/2000</span>
+            </div>
+            <div class="info-wrapper">
+              <span class="key">Nationality</span>
+              <span class="value">Moroccan</span>
+            </div>
+            <div class="info-wrapper">
+              <span class="key">Email address</span>
+              <a class="value">contact@mohsine.dev</a>
+            </div>
+            <div class="info-wrapper">
+              <span class="key">Address</span>
+              <span class="value">Beni Mellal, Morocco</span>
+            </div>
+            <div class="info-wrapper">
+              <span class="key">Phone number</span>
+              <span class="value">+212 06 15 67 70 47</span>
+            </div>
+            <div class="info-wrapper">
+              <span class="key">Web</span>
+              <a class="value" href="https://www.mohsine.dev" target="_blank">https://www.mohsine.dev</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
     <section id="services" class="services">
       <h1>My services</h1>
       <div class="services-cards">
@@ -136,40 +162,14 @@
         </div>
       </div>
 
-      <div class="problem-solving">
-        <div class="row">
-          <div class="col svg-col">
-            <img src="./img/software-service.svg" alt="Illustration" data-aos="fade-right">
-          </div>
-          <div class="col text-col" data-aos="fade-left">
-            <h3>Transform Your Vision Into Reality with Custom Software Development :</h3>
-            <p>I am not just building software, I am building solutions to your business challenges.</p>
-            <h3>Troubleshooting & Support, Keep Your Business Running Smoothly :</h3>
-            <p>Don't let software issues slow you down. I am here to ensure you stay on track.</p>
-            <h3>E-commerce Development, Boost Your Online Sales :</h3>
-            <p>From shopping cart to payment gateway, I can develop an intuitive and secure e-commerce platform that converts visitors into buyers and boosts your online sales.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-col" data-aos="fade-right">
-            <h3>Empower Your Home with Safe and Reliable Electrical Installations:</h3>
-            <p>From modern lighting fixtures to new appliances, ensure every addition to your home is installed correctly and safely.</p>
-            <h3>Maximize Efficiency with Professional Machine Wiring:</h3>
-            <p>Whether you're adding new equipment or optimizing existing systems, ensure your machines operate efficiently and safely.</p>
-            <h3>Boost Productivity with Custom Industrial Automation Solutions:</h3>
-            <p>From programming PLCs to installing sensors and actuators, let's take your business to the next level.</p>
-          </div>
-          <div class="col svg-col">
-            <img src="./img/electrician-vector.svg" alt="Illustration 2" data-aos="fade-left">
-          </div>
-        </div>
-      </div>
+      
+
     
       <!-- Why Choose Me -->
       <div class="why-choose-me">
         <div>
           <p>
-            But it's not just about <span style="text-decoration: underline;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
+            But it's not just about <span style="text-decoration: underline; line-height: inherit;font-size: inherit;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
           </p>
         </div>
       </div>
@@ -227,14 +227,14 @@
     <div class="row">
       <div class="col contact-info">
           <p><i class="fa-solid fa-location-dot"></i> Beni Mellal, Morocco</p>
-          <p><i class="fas fa-phone"></i> +2126 15 67 70 47</p>
+          <p><i class="fas fa-phone"></i> +212 06 15 67 70 47</p>
           <p><i class="fas fa-envelope"></i> contact@mohsine.dev</p>
       </div>
       <div class="col social-info">
         <div class="social-icons">
-          <a href="#"><i id="facebook" class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i id="github" class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
         </div>
       </div>
     </div>
@@ -275,6 +275,7 @@
   </section>-->
   
   <footer>
+    <div class="section-separator"></div>
     <div class="footer-bg"></div>
     <div class="footer-container">
         <div class="left-column">
@@ -283,21 +284,21 @@
             </div>
             <div class="contact-info">
               <p><i class="fa-solid fa-location-dot"></i> Beni Mellal, Morocco</p>
-              <p><i class="fas fa-phone"></i> +2126 15 67 70 47</p>
+              <p><i class="fas fa-phone"></i> +212 06 15 67 70 47</p>
               <p><i class="fas fa-envelope"></i> contact@mohsine.dev</p>
             </div>
             <div class="social-media">
               <div class="social-icons">
-                <a href="#"><i id="facebook" class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i id="github" class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
               </div>
             </div>
         </div>
         <div class="right-column">
             <div class="quote">
                 <p>
-                  “......      I believe in the power of technology to change the world. As an electrician and programmer, I've seen firsthand 
+                  “      I believe in the power of technology to change the world. As an electrician and programmer, I've seen firsthand 
                   how innovative solutions can transform businesses and make our lives easier. I strive to bring this transformative potential
                    to all of my projects, whether I'm rewiring a home or building a new app. I'm always looking for the next challenge, the 
                    next problem to solve. That's what drives me – the endless possibilities of what we can achieve with the right tools and 

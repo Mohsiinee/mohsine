@@ -87,10 +87,31 @@ section.modal {
   color: var(--color);
 } 
 
+.modal-wrapper .row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 1em 7em;
+}
+
+
+.modal-wrapper .text-col {
+  display: flex;
+  justify-content: center;
+}
+.modal-wrapper h3{
+  margin: 1.5em 0em;
+  font-size: 1.5rem;
+  color: var(--color);
+}
+.modal-wrapper p {
+  margin: 0em 0em 2.5em 0em;
+}
+.modal-wrapper .svg-col img {
+  height: 60vh;
+}
+
 @media (max-width:601px) {
-  .modal-wrapper .row {
-    flex-direction: column;
-  }
   #myModal {
     width: 100%;
     height: 100%;
@@ -104,5 +125,16 @@ section.modal {
   .modal .container .row .text:nth-child(1) {
     border-right: none;
     border-bottom: 1px solid var(--gray-color);
+  }
+  .modal-wrapper .svg-col img {
+    width: 85vw;
+  }
+  .modal .text {
+    padding: 0em;
+  }
+  .modal-wrapper .row {
+    display: block;
+    margin: 0;
+    padding: 0em;
 }
 }

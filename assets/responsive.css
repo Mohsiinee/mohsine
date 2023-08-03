@@ -134,9 +134,13 @@
     }
     .electrician h1 {
         margin-left: 0em;
+        bottom: 0;
+        position: absolute;
     }
     .programmer h1 {
         margin-right: 0em;
+        top: 0;
+        position: absolute;
     }
     .electrician video {
         margin-top: 8em;
@@ -179,12 +183,12 @@
         font-size: 1rem;
         width: 100%;
     }
-    #intro h2 span {
-        font-size: 2rem;
+
+
+    .btn {
+        padding: 10px 50px;
     }
-    #intro h2 {
-        font-size: 1.2rem;
-    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -214,9 +218,13 @@
         width: 100%;
     }
 
+    .info-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .services .services-cards {
         flex-direction: column;
         align-items: center;
+        padding: 0em;
     }
     .services .services-cards .card {
         width: 90%;
@@ -246,6 +254,7 @@
     }
     .services .why-choose-me p {
         padding-left: 0em;
+        font-size: 2.1rem;
     }
     .services .why-choose-me p .glow-txt {
         font-size: 3rem;
@@ -329,7 +338,6 @@
     }
     footer {
         width: 100%;
-        padding: 5em 2.5em 1.5em 2.5em;
     }
     .footer-container {
         display: flex;
@@ -343,10 +351,13 @@
         padding: 2em 0em;
     }
     footer .right-column {
-        padding: 4em 0em;
+        padding: 4em 2em;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .section-separator {
+        background-size: 100px 100px;
     }
 }
