@@ -1,60 +1,28 @@
 const projects = [
     {
         category: "Programming",
-        image: "/mohsine.dev/img/Project-card-img.png",
+        image: "../img/Chef Portfolio img.png",
         title: "Chef Portfolio",
-        tag: "HTML, CSS, Javascript",
+        tag: "",
         modalurl: "case-study-chef-portfolio.html",
         id: 1
     },
     {
         category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Shopify Theme",
-        tag: "Javascript, Liquid, HTML, CSS",
+        image: "../img/Tiler Portfolio img.png",
+        title: "Tiler Portfolio",
+        tag: "",
         modalurl: "case-study-chef-portfolio.html",
         id: 2
     },
     {
-        category: "Programming",
-        image: "/mohsine.dev/img/Project-card-img.png",
-        title: "Wordpress Website",
-        tag: "HTML, CSS",
-        modalurl: "case-study-chef-portfolio.html",
-        id: 1
-    },
-    {
-        category: "Programming",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Shopify Theme",
-        tag: "Javascript, Liquid, HTML, CSS",
-        modalurl: "case-study-chef-portfolio.html",
-        id: 5
-    },
-    {
         category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
+        image: "../img/SE.png",
         title: "motor control circuit",
-        tag: "motor 3 phase, protection tools",
+        tag: "",
         modalurl: "case-study-1.html",
         id: 3
     },
-    {
-        category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "system to control lights using Arduino",
-        tag: "",
-        modalurl: "case-study-1.html",
-        id: 4
-    },
-    {
-        category: "Electricity",
-        image: "https://webstyle.unicomm.fsu.edu/3.4/img/placeholders/ratio-pref-1-1.png",
-        title: "Safety System",
-        tag: "",
-        modalurl: "case-study-1.html",
-        id: 6
-    }
 ];
 
 function loadProjects(category) {

@@ -133,14 +133,14 @@
         margin-left: 0em;
     }
     .electrician h1 {
-        margin-left: 0em;
         bottom: 0;
         position: absolute;
+        right: auto;
     }
     .programmer h1 {
-        margin-right: 0em;
         top: 0;
         position: absolute;
+        left: auto;
     }
     .electrician video {
         margin-top: 8em;
@@ -171,7 +171,10 @@
     .hero-info .contact-info {
         justify-content: space-around;
         padding: 0em;
-        font-size: .8em;
+        font-size: .9rem;
+    }
+    .contact-info p {
+        font-size: .9rem;
     }
     .social-icons {
         display: none;
@@ -218,9 +221,6 @@
         width: 100%;
     }
 
-    .info-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .services .services-cards {
         flex-direction: column;
         align-items: center;
@@ -275,8 +275,6 @@
     .btn-box {
         margin: 2em 0em;
     }
-
-
 
     .client-slide {
         padding: 0px;

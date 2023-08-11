@@ -242,16 +242,18 @@ a.nav-link {
     width: 100%;
 }
 .electrician h1 {
-  margin-left: 1em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
+  position: absolute;
+  right: 0;
 }
 .programmer {
     margin-right: -15em;
     width: 100%;
 }
 .programmer h1 {
-  margin-right: 4em;
-  margin-bottom: 0;
+  margin-bottom: -1em;
+  position: absolute;
+  left: 0;
 }
 .electrician video {
   margin-right: -22em;
@@ -373,35 +375,7 @@ footer .social-icons i {
   position: relative;
   z-index: 1;
 }
-/*----------------------------------Personal info -----------------------------*/
-.general-info-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 3em;
-  column-gap: 15em;
-  margin: 0 auto;
-}
 
-.info-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding: 10px;
-}
-
-.key {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.value {
-  color: var(--color);
-}
 
 /*--------------------------------- Services - START -------------------------*/
 .services {
@@ -598,7 +572,6 @@ footer .social-icons i {
 }
 .project-card .project-title {
   font-size: 1.4rem;
-  margin: 20px 0;
   color: var(--color);
 }
 .project-card p {
@@ -731,7 +704,7 @@ form {
 .form-group input, .form-group textarea {
   width: 100%;
   border: none;
-  border-bottom: 2px solid var(--color);
+  border-bottom: 1px solid var(--color);
   background: transparent;
   padding: 0.5em 0.5em 0.5em 0;
   color: var(--white-color);
@@ -746,6 +719,7 @@ form {
   transition: 0.5s;
   color: var(--color);
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .form-group input:focus, .form-group textarea:focus,
@@ -855,7 +829,7 @@ footer .footer-bg {
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url(../../istabmprototype/images/footer-bg.png);
+  background-image: url(../img/footer-bg.png);
   opacity: 2%;
 }
 .footer-container {
