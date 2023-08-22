@@ -79,7 +79,7 @@
     </header>  
     <div class="section-separator"></div>
     <section id="intro">
-      <h2><span style="color: rgb(255 110 110); font-size: 3rem;"> Aspiring </span> electrician and software developer</h2>
+      <h2><span style="color: var(--accents-color); font-size: 3rem;"> Aspiring </span> electrician and software developer</h2>
       <p><span style="font-size: 1.2rem; font-weight: 600;">Welcome</span> to my portfolio. <br>Here, you'll find projects that highlight my skills in both electrical work and programming. 
         explore my journey in these two exciting fields now.</p>
       <a href="#work"><button class="btn">
@@ -209,26 +209,22 @@
     <div class="container">
         <form action="https://formspree.io/f/mqkvpbwo" method="POST">
             <div class="form-group">
-                <input type="text" id="name" placeholder="" required>
+                <input type="text" name="name" placeholder="" required>
                 <label for="name">Name</label>
             </div>
             <div class="form-group">
-                <input type="text" id="lastname" placeholder="">
-                <label for="lastname">Last Name</label>
+              <input type="email" name="email" placeholder="" required>
+              <label>E-mail</label>
             </div>
             <div class="form-group">
-                <input type="text" id="subject" placeholder="">
-                <label for="subject">Subject</label>
+                <input type="text" name="address" placeholder="" required>
+                <label for="address">Subject</label>
             </div>
             <div class="form-group" style="width: 100%;">
-                <textarea id="message" placeholder="" rows="10" required></textarea>
+                <textarea name="message" placeholder="" rows="10" required></textarea>
                 <label for="message">Message</label>
             </div>
-            <div class="btn-box">
-              <a href="#" class="btn">
-                Send
-              </a>
-            </div>
+            <button type="submit" class="btn">Send</button>
         </form>
     </div>
   </section>

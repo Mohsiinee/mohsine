@@ -276,6 +276,13 @@
         margin: 2em 0em;
     }
 
+    .project-card .project-title {
+        font-size: 1.2rem;
+    }
+    .projects button {
+        font-size: 1rem;
+    }
+
     .client-slide {
         padding: 0px;
         margin: 0px;
