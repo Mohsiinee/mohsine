@@ -54,13 +54,3 @@ document.querySelectorAll('a[href^="#"]').forEach (anchor => {
       });
   });
 });
-
-
-AOS.init({
-  duration: 1500,
-  offset: 160, 
-  easing: 'ease-in-out',
-  once: true, 
-  mirror: false,
-  anchorPlacement: 'top-bottom',
-});
