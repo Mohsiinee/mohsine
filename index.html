@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohsine | Portfolio</title>
-    <link rel="icon" href="./img/icon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
-    <link rel="stylesheet" href="./assets/modal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Literata:opsz,wght@7..72,200;7..72,300;7..72,400;7..72,500;7..72,600;7..72,700;7..72,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohsine Bakhcha | Portfolio</title>
+  <link rel="icon" href="./img/icon/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/responsive.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <link href="https://db.onlinewebfonts.com/c/a805a4b60c9c57052338a06586ef67fb?family=GT+Sectra+Fine+Bold" rel="stylesheet">
+
+</head>
+
 <body id="body" class="not-scroll">
   <div id="loading">
     <p>Loading...</p>
-  </div>
-  <!-- The Modal -->
-  <div class="overlay-modal"></div>
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <button class="close">&times;</button>
-      <div id="modal-body"></div>
-    </div>
   </div>
   <div class="navbar-wrapper">
     <nav class="navbar">
@@ -53,23 +50,27 @@
       </div>
     </nav>
   </div>
-    <header class="hero">
-      <div class="hero-split">
-        <div class="hero-half electrician">
-          <h1>Electrician</h1>
-          <video src="./vd/vdelectrician.mp4" autoplay muted loop></video>
+    <header class="hero" >
+      <div class="hero-grid">
+        <div class="left-grid">
+          <div class="hero-h">
+            <h1>Innovate, Implement, Excel</h1>
+            <h2>Your Partner in Software Solutions & Industrial Electricity</h2>
+          </div>
+          <div class="hero-p">
+            <p><span id="staticText"></span><span id="dynamicText" style="color: var(--accents-color); font-size: 26px;"></span></p>
+          </div>
+          <a href="#intro" class="scroll-down"><div class="scroll"></div></a>
         </div>
-        <div class="hero-half programmer">
-          <h1>Developer</h1>
-          <video src="./vd/vdprogramming.mp4" autoplay muted loop></video>
+        <div class="right-grid" id="binary-container">         
         </div>
       </div>
       <div class="hero-info">
         <div class="contact-info">
           <div class="social-icons">
-            <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><img src="./img/icon/facebook-logo.svg"></a>
+            <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><img src="./img/icon/linkedin-icon.svg"></a>
+            <a href="https://github.com/Mohsiinee" target="_blank"><img src="./img/icon/github-logo.svg"></a>
           </div>
           <p>Available for new projects</p>
           <p>+212 06 15 67 70 47</p>
@@ -85,27 +86,56 @@
           Discover my work
       </button></a>
     </section> 
-    <section id="about" class="about">
-      <div class="title"><h1>About me</h1></div>
-      <div class="content">
+    <section id="video-section" class="about video-background">
+      
+      <div class="video-container">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="background-video">
+          <source src="./vd/earth-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <div class="title" id="about"><h1>About me</h1></div> 
+
+      <div class="content-container">
+        <div class="content" style="  border-top-right-radius: 3em; border-top-left-radius: 3em;">
           <div class="text-column">
-            <p style="font-size: 1.6rem; font-weight: 800;">
-              Mohsine Bakhcha
+            <p>In an ever-changing, increasingly complex world, I'm driven by an insatiable passion for electricity and computer science.</p>
+              <p>My name is Mohsine, an industrial electrician and self-taught computer scientist based in the heart of Morocco, Beni Mellal. With formal education in industrial electricity and years of independent exploration in the realm of computer science, I bring a unique blend of skills that are as diverse as they are complementary. 
+              </p><p>It's not merely a job to pay the bills; it's a vocation that fuels my soul. My endless curiosity is drawn to the endless potential of electrical systems and the transformative reach of computer science — two realms where calculated innovation can truly reshape our world.
             </p>
-              <p>
-                I'm an aspiring electrician and computer science enthusiast from Beni Mellal, Morocco. 
-              </p>
-              <p>
-                Each challenge, from experimenting with electrical circuits to crafting my first program, became an opportunity for growth and learning. 
-              </p>
-              <p>
-                Equipped with a spirit of independence and a creative mindset, I am excited to apply my skills in practical settings and look forward to leveraging my training to contribute to the electrical industry in Morocco.
-              </p>
           </div>
           <div class="image-column">
-              <img src="./img/Mohsine-bakhcha.png" alt="Your Name">
+              <img src="./img/Mohsine-bakhcha.png" alt="Mohsine Bakhcha">
           </div>
+        </div>
+  
+        <div class="content phone" style="flex-direction: row-reverse; border-top: none;">
+          <div class="text-column">
+              <p>
+                The core of my professional mission is simple yet transformative: to leverage the power of electrical energy and computer science to create innovative solutions that make businesses more efficient, homes more comfortable, and technologies more accessible. </p><br>
+                <p>I build partnerships that are founded on trust, fueled by innovation, and aimed at delivering high-impact results. </p><br>
+                  <p>From optimizing industrial operations to developing intuitive software, my mission is to elevate standards, exceed expectations, and contribute to a better, more sustainable future for all.
+              </p>
+          </div>
+          <div class="image-column" style="border-right: solid 2px var(--color);">
+            <h1>Mission</h1>
+          </div>
+        </div>
+  
+        <div class="content phone" style="  border-bottom-right-radius: 3em; border-bottom-left-radius: 3em; border-top: none;">
+          <div class="text-column">
+              <p>
+                As we journey deeper into the 21st century, the roles of electrical systems and computer science are becoming increasingly intertwined. My vision is to be at the forefront of this convergence, leading the way in integrated, sustainable solutions that are both technologically advanced and ethically grounded. </p>
+                <br><p>I see a future where the boundaries between electrical and digital realms blur, giving rise to smarter, more connected communities. A future where technology serves not just a utilitarian purpose but enriches lives in a meaningful way. </p>
+                <br><p>in this future, I aim to be more than just a service provider; I aspire to be a trusted partner, empowering individuals and businesses to reach their fullest potential in a world that is constantly being reshaped by technological advances, environmental considerations, and global trends.
+              </p>
+          </div>
+          <div class="image-column" style="border-left: solid 2px var(--color);">
+            <h1>Vision</h1>
+          </div>
+        </div>
       </div>
+      
     </section>  
  
 
@@ -115,31 +145,102 @@
         <div class="card">
           <img src="./img/icon/residential-electricity-icon.svg" alt="Service 1">
           <h3>Residential electrician</h3>
-          <a onclick="openModal('residential-electricity.html')">Learn More</a>
         </div>
         <div class="card">
           <img src="./img/icon/industrial-electricity-icon.svg" alt="Service 2">
           <h3>Industrial electrician</h3>
-          <a onclick="openModal('industrial-electricity.html')">Learn More</a>
         </div>
         <div class="card">
           <img src="./img/icon/software-developement-icon.svg" alt="Service 3">
           <h3>Software developer</h3>
-          <a onclick="openModal('software-developer.html')">Learn More</a>
         </div>
       </div>
 
-      
+      <div class="services-info">
+        
+        <div class="row">
+          <div class="column-txt">
+            <div class="title">
+              <h2>Web Development</h2>
+            </div>
+            <div class="txt">
+              <p>In an evolving digital environment, the need for a strong online presence extends beyond a mere static website. Specialized in both E-commerce and full-stack web development, the services offered encompass multiple platforms including Shopify, WooCommerce, and WordPress, as well as front-end and back-end technologies like HTML, CSS, JavaScript, Python, and Ruby on Rails. The focus is on constructing E-commerce platforms that are not only visually appealing but are also designed to convert visitor interactions into measurable outcomes. The services also extend to the development of custom CMS and dynamic web applications, all aimed at fulfilling specific business objectives. Each project is approached with a commitment to functional excellence and user-centric design, ensuring that the end product aligns with the strategic goals of the client while offering optimal performance across all devices.</p>
+            </div>
+          </div>
+          <div class="column-img">
+            <img src="./img/web-dev-illustration.svg" alt="">
+          </div>
+        </div>
+
+        <div class="dev-row">
+          <img src="./img/icon/shopify-logo.svg" alt="">
+          <img src="./img/icon/WordPress-Logo.svg" alt="">
+          <img src="./img/icon/html.svg" alt="">
+          <img src="./img/icon/css.svg" alt="">
+          <img src="./img/icon/javascript-icon.svg" alt="">
+          <img src="./img/icon/nodejs.svg" alt="">
+          <img src="./img/icon/php.svg" alt="">
+          <img src="./img/icon/mysql.svg" alt="">
+          <img src="./img/icon/python.svg" alt="">
+          <img src="./img/icon/graphql.svg" alt="">
+        </div>
+
+        <div class="row reverse">
+          <div class="column-txt col">
+            <div class="title">
+              <h2>Industrial Electrical Solutions & Repairs</h2>
+            </div>
+            <div class="txt">
+              <p>In a world that's increasingly powered by complex electrical systems, the need for reliable, efficient, and safe industrial electrical solutions has never been greater. Specializing in both the creation of new electrical systems and the repair of existing ones, I offer comprehensive services that cover everything from troubleshooting and maintenance to system design and implementation. With a solid grounding in the latest electrical technologies and best practices, I provide solutions that are not just robust but also tailored to meet your specific industrial needs. Whether you're looking to upgrade your current system for better performance, or need urgent repairs to ensure workplace safety and prevent operational downtime, you can count on me for solutions that deliver.</p>
+            </div>
+          </div>
+          <div class="column-img col">
+            <img src="./img/industrial-electricity.svg" alt="">
+          </div>
+        </div>
+
+        <div class="dev-row">
+          <img src="./img/icon/electric-motor.svg" alt="">
+          <img src="./img/icon/transformer.svg" alt="">
+          <img src="./img/icon/plc.svg" alt="">
+          <img src="./img/icon/arduino.svg" alt="">
+          <img src="./img/icon/raspberrypi.svg" alt="">
+          <img src="./img/icon/scada.svg" alt="">
+
+
+        </div>
+
+        <div class="row">
+          <div class="column-txt">
+            <div class="title">
+              <h2>IoT and Smart Homes</h2>
+            </div>
+            <div class="txt">
+              <p>As we transition into an age of smart, connected environments, the demand for IoT and Smart Home solutions has skyrocketed. Leveraging my background in both electrical systems and computer science, I offer custom-designed IoT solutions aimed at transforming your residential or commercial space into a fully integrated, intelligent environment. From smart lighting and climate control to advanced security systems, I provide a suite of services that encompass both design and implementation, ensuring seamless interoperability and maximum efficiency. By integrating cutting-edge sensors and software, I enable you to monitor and control your environment from anywhere, at any time, providing you with unprecedented levels of convenience, security, and energy efficiency.</p>
+            </div>
+          </div>
+          <div class="column-img">
+            <img src="./img/icon/smart-home.svg" alt="">
+          </div>
+        </div>
+        <div class="dev-row">
+          <img src="./img/icon/coap.svg" alt="">
+          <img src="./img/icon/mqtt.svg" alt="">
+
+        </div>
+
+      </div>
+    </section>
 
     
       <!-- Why Choose Me -->
-      <div class="why-choose-me">
-        <div>
-          <p>
-            But it's not just about <span style="text-decoration: underline; line-height: inherit;font-size: inherit;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
-          </p>
-        </div>
+    <section class="why-choose-me">
+      <div>
+        <p>
+          But it's not just about <span style="text-decoration: underline; line-height: inherit;font-size: inherit;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
+        </p>
       </div>
+      
 
       <div class="grid">
         <div class="grid-item">
@@ -163,24 +264,24 @@
       </div>
     </section>  
 
-    <section id="work" class="projects video-background">
-      <div class="vdoverlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="./vd/vd-earth.mp4" type="video/mp4">
-      </video>
+    <section id="work" class="projects">
       <div class="work-wrapper">
         <h1>Projects</h1>
-        <div class="categories">
+        <!-- Buttons to Switch Categories -->
+        <button id="softwareBtn" class="active btn">Software</button>
+        <button id="electricityBtn" class="btn">Electricity</button>
 
-              <button class="btn category-btn active" data-category="Programming">
-                Software
-              </button>
-
-              <button class="btn category-btn" data-category="Electricity">
-                Electricity
-              </button>
+        <!-- Slider -->
+        <div class="swiper" id="swiper">
+          <div class="swiper-wrapper">
+              <!-- Dynamic content will be inserted here -->
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div id="projects-container" class="projects-carousel"></div>
       </div>
     </section>
 
@@ -199,13 +300,13 @@
       </div>
       <div class="col social-info">
         <div class="social-icons">
-          <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><img src="./img/icon/facebook-logo.svg"></a>
+          <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><img src="./img/icon/linkedin-icon.svg"></a>
+          <a href="https://github.com/Mohsiinee" target="_blank"><img src="./img/icon/github-logo.svg"></a>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" >
         <form action="https://formspree.io/f/mqkvpbwo" method="POST">
             <div class="form-group">
                 <input type="text" name="name" placeholder="" required>
@@ -252,9 +353,9 @@
             </div>
             <div class="social-media">
               <div class="social-icons">
-                <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Mohsiinee" target="_blank"><i id="github" class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/bakhcha.mohsine/" target="_blank"><img src="./img/icon/facebook-logo.svg"></a>
+                <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><img src="./img/icon/linkedin-icon.svg"></a>
+                <a href="https://github.com/Mohsiinee" target="_blank"><img src="./img/icon/github-logo.svg"></a>
               </div>
             </div>
         </div>
@@ -277,12 +378,12 @@
     </div>
   </footer>
 
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
   <script src="./assets/script.js"></script>
+  
   <script src="./assets/projects.js"></script>
   <script src="./assets/clients.js"></script>
   <script src="./assets/blog.js"></script>
