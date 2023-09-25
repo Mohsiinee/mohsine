@@ -19,7 +19,7 @@ body {
   --color: #7dfcda; /*rgb(124, 252, 218)*/
   --white-color: #C5CAE9;
   --gray-color: rgb(93, 108, 131);
-  --accents-color: rgb(255, 81, 81);
+  --accents-color: #ff5151;/*#E05858*/
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -200,7 +200,7 @@ a.nav-link {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 70% 30%;
   height: 100%;
 }
 .right-grid {
@@ -733,6 +733,7 @@ a.nav-link {
 .contact-info p {
   margin: 1em 0em;
   font-weight: 600;
+  text-shadow: 0px 0px 10px black;
 }
 .contact .social-info {
   display: flex;

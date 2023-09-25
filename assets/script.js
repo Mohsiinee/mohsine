@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Animate random change
       setInterval(() => {
         binaryDigit.innerText = Math.floor(Math.random() * 2).toString();
-      }, Math.random() * 40000 + 5000);  // Random interval between 5000ms and 40000ms
+      }, Math.random() * 60000 + 10000);  // Random interval between 5000ms and 40000ms
     }
   }
 });

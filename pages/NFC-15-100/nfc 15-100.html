@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC 15-100</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+        :root {
+            --primary: #1b1f24;
+            --secondary: #7dfcda;
+            --color3: #c5cae9;
+            --color4: #e05858;
+            --white: white;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --heading-font: 'Roboto', sans-serif;
+            --text-font: 'Lato', sans-serif;
+            --heading-size: 3em;
+            --sub-heading-size: 2em;
+            --text-size: 1.1em
+        }
+        * {
+            box-sizing: border-box;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b6152;
+        }
+        ::selection {
+            color: var(--primary);
+            background: var(--secondary);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--primary);
+            color: var(--color3);
+        }
+        p {
+            font-family: var(--text-font);
+            color: var(--color3);
+            font-size: var(--text-size);
+            line-height: 1.4;
+        }
+        h1 {
+            font-family: var(--heading-font);
+            color: var(--color3);
+            font-size: var(--heading-size);
+            font-weight: 600;
+        }
+        h2 {
+            font-family: var(--heading-font);
+            color: var(--color3);
+            font-size: var(--sub-heading-size);
+            font-weight: 600;
+        }
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section div {
+            width: 100%;
+            margin: 2em 0em;
+        }
+        header {
+            position: relative;
+        }
+        .hero {
+            height: 80vh;
+            width: 100%;
+            background-image: url(./NFC.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(top, transparent 20%, var(--primary));
+            background: -moz-linear-gradient(top, transparent 20%, var(--primary));
+            background: -o-linear-gradient(top, transparent 20%, var(--primary));
+            background: linear-gradient(to bottom, transparent 20%, var(--primary));
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20vh;
+            background: -webkit-linear-gradient(top, transparent 20%, var(--primary));
+            background: -moz-linear-gradient(top, transparent 20%, var(--primary));
+            background: -o-linear-gradient(top, transparent 20%, var(--primary));
+            background: linear-gradient(to top, transparent 20%, var(--primary));
+        }
+        .author {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .plan {
+            width: 100%;
+            margin: 6em;
+        }
+        .plan li {
+            font-family: var(--text-font);
+            padding: 1em;
+            font-size: 1.5em;
+            transition: background-color .3s ease-in-out;
+            cursor: pointer;
+        }
+        .plan li:hover {
+            background-color: #1b1f2436;
+        }
+        a {
+            text-decoration: none;
+            color: var(--color3);
+        }
+
+        table {
+            border: 1px solid var(--color3);
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            table-layout: fixed;
+            font-family: var(--text-font);
+            margin: 0em auto;
+        }
+
+        table tr {
+            background-color: var(--dark);
+            padding: .35em;
+        }
+
+        table th,
+        table td {
+            padding: .625em;
+            text-align: center;
+            border: 1px solid var(--color3);
+        }
+
+        table th {
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        #distinction img {
+            height: 90vh;
+        }
+        .transport {
+            height: auto !important;
+            width: 100%;
+        }
+        .bg-wh {
+            background-color: var(--color3); 
+            
+        }
+        .bg-wh h2, .bg-wh li {
+            color: var(--primary) !important;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px; 
+        }
+
+        .card {
+            background-color: var(--dark);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #c5cae93b;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color .3s ease-in-out;
+            cursor: pointer;
+        }
+        .card:hover {
+            background-color: #30363b;
+            border: 1px solid white;
+        }
+        /* Styles pour le modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            margin: 0;
+        }
+
+        .modal-content {
+            background-color: var(--color3);
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid var(--secondary);
+            width: 60%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349);
+        }
+        .modal-content p, .modal-content h2 {
+            color: var(--primary);
+        }
+
+        .close {
+            color: red;
+            border: 2px solid red;
+            padding: 0px 10px;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            background-color: rgba(255, 0, 0, 0.164);
+            color: rgb(73, 7, 7);
+            border: 2px solid rgb(73, 7, 7);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <section class="hero"></section>
+        <div class="author"><p>Réaliser par Mohsine Bakhcha, Mohamed Kamouni</p></div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>La Norme NFC 15-100</h1>
+            <h2>Conception, Réalisation et Maintenance des Installations Basse Tension.</h2>
+            <div>
+                <p>
+                    Dans le domaine de l'électricité, la sécurité et la fiabilité sont des éléments essentiels. C'est là qu'intervient la norme NF C 15-100, une référence incontournable pour les installations électriques dans les bâtiments. Cette norme, établit des lignes directrices précises pour garantir la sécurité des personnes et des biens, ainsi que l'efficacité énergétique des installations électriques.
+
+                </p>
+                <p>
+                    L'objectif principal de cette recherche est d'entreprendre une analyse en profondeur de ses exigences et de son impact. Nous allons scruter de manière critique les diverses dispositions de cette norme, en examinant comment elles contribuent à assurer la sécurité et la performance des installations basse tension.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-wh">
+        <div class="container">
+            <div class="plan">
+                <h2>Plan :</h2>
+                <ol>
+                    <a href="#presentation"><li>Présentation de la norme NF C 15-100</li></a>
+                    <a href="#points"><li>Principaux Points de la Norme NFC 15-100</li></a>
+                    <a href="#tensions"><li>Analyse des Implications Pratiques</li></a>
+                    <a href="#distribution"><li>Future de la Norme (hypothèses)</li></a>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="presentation">
+                <h2>Présentation de la norme NF C 15-100</h2>
+                <p>
+                    La norme NF C 15-100 fixe les règles de conception, de réalisation et d’entretien des installations électriques basse tension en France, c'est-à-dire des installations dont la tension nominale est inférieure à 1 000 volts en courant alternatif (VCA) et 1 500 volts en courant continu (VCC). Elle veut ainsi offrir aux occupants une sécurité optimale et une garantie de bon fonctionnement. Cette norme est élaborée par l'Association Française de Normalisation (AFNOR), elle est mise à jour régulièrement pour s'adapter aux évolutions technologiques et aux besoins en matière de sécurité électrique.
+                </p>
+            </div>
+
+            <section id="distinction">
+                <div>
+                    <p>Les niveaux de tension sont définis par les normes NF C 15-100 ET NF C 13-200:</p>
+                    <table>
+                        <tr>
+                            <th>Tension Alternative</th>
+                            <th>Domaine de Tension</th>
+                            <th>Valeurs Usuelles en France (Tension d'Utilisation)</th>
+                        </tr>
+                        <tr>
+                            <td>Très Basse Tension (TBT)</td>
+                            <td>≤ 50 V</td>
+                            <td>12 - 24 - 48 V</td>
+                        </tr>
+                        <tr>
+                            <td>Basse tension A (BTA)</td>
+                            <td>≤ 500 V</td>
+                            <td rowspan="2">230 - 380 - 400 V</td>
+                        </tr>
+                        <tr>
+                            <td>Basse tension B (BTB)</td>
+                            <td>≤ 1000 V</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Haute Tension A (HTA)</td>
+                            <td>1 < U ≤ 50 kV</td>
+                            <td>5.5 - 6.6 - 10 - 15 - 20 - 36 kV</td>
+                        </tr>
+                        <tr>
+                            <td>Haute Tension B (HTB)</td>
+                            <td>U > 50 kV</td>
+                            <td>63 - 90 - 150 kV</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <p>Domaine d'application des normes d'installation :</p>
+                    <div style="text-align: center;"><img src="./DB422001_FR.svg" alt=""></div>
+                </div>
+            </section>
+
+            <section id="points">
+                <div>
+                    <h2>Principaux Points de la Norme NFC 15-100</h2>
+                    <div class="grid-container">
+                        <div class="card" onclick="openModal(1)">
+                            <p>1. Mise à la Terre</p>
+                        </div>
+                        <div class="card" onclick="openModal(2)">
+                            <p>2. Pièces d’Eau</p>
+                        </div>
+                        <div class="card" onclick="openModal(3)">
+                            <p>3. Disjoncteur d’Abonné</p>
+                        </div>
+                        <div class="card" onclick="openModal(4)">
+                            <p>4. la protection contre la foudre</p>
+                        </div>
+                        <div class="card" onclick="openModal(5)">
+                            <p>5. les protections des circuits</p>
+                        </div>
+                        <div class="card" onclick="openModal(6)">
+                            <p>6. les circuits lumières</p>
+                        </div>
+                        <div class="card" onclick="openModal(7)">
+                            <p>7. les circuits de prises de courant</p>
+                        </div>
+                        <div class="card" onclick="openModal(8)">
+                            <p>8. le réseau de communication</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Le modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const startPosition = window.pageYOffset;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                let startTime = null;
+                const duration = 500; // 2 seconds
+
+                function animateScroll(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    window.scrollTo(0, startPosition + (targetPosition - startPosition) * progress);
+
+                    if (timeElapsed < duration) {
+                        window.requestAnimationFrame(animateScroll);
+                    }
+                }
+
+                window.requestAnimationFrame(animateScroll);
+            });
+        });
+
+
+        // Fonction pour ouvrir le modal avec l'explication correspondante
+        function openModal(cardNumber) {
+            var modal = document.getElementById("myModal");
+            var modalTitle = document.getElementById("modal-title");
+            var modalText = document.getElementById("modal-text");
+
+            // Mettez ici les explications correspondant aux cartes
+            var cardData = [
+                { title: "la mise à la terre", explanation: "La mise à la terre consiste à relier électriquement les composants électriques, les équipements et les installations à la terre pour éviter les risques d'électrocution. En cas de défaillance électrique, la mise à la terre permet de dévier le courant électrique de manière sécuritaire vers la terre plutôt que de le laisser circuler à travers des personnes ou des équipements. Cela garantit une protection essentielle pour la sécurité des occupants des bâtiments et la durabilité des équipements électriques."},
+                { title: "les pièces d’eau", explanation: "La norme NFC 15-100 prévoit des règles spécifiques pour les pièces d'eau, telles que les salles de bains, les cuisines et les piscines. Ces zones présentent un risque accru d'humidité et d'eau, ce qui peut augmenter les dangers électriques. La norme exige l'utilisation de dispositifs de protection appropriés, tels que les prises électriques étanches et les équipements électriques résistants à l'humidité, pour minimiser les risques d'accidents électriques dans ces espaces."},
+                { title: "le disjoncteur d’abonné", explanation: "Le disjoncteur d'abonné est un élément de protection essentiel dans la norme NFC 15-100. Il est installé à la sortie du compteur électrique et permet de protéger l'ensemble du réseau électrique d'une installation en cas de surcharge ou de court-circuit. Le disjoncteur d'abonné joue un rôle clé dans la sécurité en interrompant automatiquement la fourniture d'électricité en cas de problème électrique grave, évitant ainsi les risques d'incendie ou d'électrocution."},
+                { title: "la protection contre la foudre", explanation: "La norme NFC 15-100 intègre des dispositions pour protéger les installations électriques contre les surtensions causées par la foudre. Cela implique l'utilisation de parafoudres et de dispositifs de protection spécifiques pour éviter que les surtensions ne causent des dommages aux équipements électriques."},
+                { title: "les protections des circuits", explanation: "La norme exige que les circuits électriques soient équipés de dispositifs de protection appropriés, tels que les disjoncteurs divisionnaires, pour éviter les surcharges et les courts-circuits. Ces protections garantissent que les circuits électriques fonctionnent en toute sécurité et protègent les équipements contre les dommages."},
+                { title: "les circuits lumières", explanation: "La norme NFC 15-100 spécifie des règles pour la conception et la réalisation des circuits d'éclairage. Elle précise les types de câbles et de dispositifs de commande à utiliser pour assurer un éclairage sûr et efficace dans les bâtiments."},
+                { title: "les circuits de prises de courant", explanation: "La norme définit également les exigences pour les circuits de prises de courant, garantissant qu'ils sont correctement dimensionnés et équipés de dispositifs de protection pour éviter les surcharges et garantir la sécurité des utilisateurs."},
+                { title: "le réseau de communication", explanation: "La norme prend en compte l'intégration du réseau de communication, y compris les câblages pour les données et les télécommunications. Elle établit des directives pour garantir la coexistence harmonieuse des infrastructures électriques et de communication dans les bâtiments."},
+                { title: "la Gaine Technique Logement (GTL)", explanation: "La GTL est un espace dédié dans les logements où sont regroupés les câblages et les équipements de communication. La norme NFC 15-100 définit les spécifications pour la GTL, permettant un accès facile aux câbles et aux équipements tout en assurant un espace organisé et sécurisé pour les installations électriques et de communication."}
+            ];
+
+            modalTitle.textContent = "Point " + cardNumber + " : " + cardData[cardNumber - 1].title;
+            modalText.textContent = cardData[cardNumber - 1].explanation;
+
+            modal.style.display = "block";
+        }
+
+        // Fonction pour fermer le modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
