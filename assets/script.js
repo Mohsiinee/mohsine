@@ -68,8 +68,16 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('binary-container');
   
-  for (let row = 0; row < 54; row++) {
-    for (let col = 0; col < 96; col++) {
+  const parentWidth = container.clientWidth;
+  const parentHeight = container.clientHeight;
+  
+  const cellSize = 23; // Adjust this value as needed
+  
+  const maxRows = Math.floor(parentHeight / cellSize);
+  const maxCols = Math.floor(parentWidth / cellSize);
+  
+  for (let row = 0; row < maxRows; row++) {
+    for (let col = 0; col < maxCols; col++) {
       const binaryDigit = document.createElement('div');
       binaryDigit.classList.add('binary-digit');
       
@@ -77,8 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
       binaryDigit.innerText = Math.floor(Math.random() * 2).toString();
       
       // Positioning
-      binaryDigit.style.top = `${row * 20}px`;
-      binaryDigit.style.left = `${col * 20}px`;
+      binaryDigit.style.top = `${row * cellSize}px`;
+      binaryDigit.style.left = `${col * cellSize}px`;
       
       // Add to container
       container.appendChild(binaryDigit);
@@ -86,10 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Animate random change
       setInterval(() => {
         binaryDigit.innerText = Math.floor(Math.random() * 2).toString();
-      }, Math.random() * 60000 + 10000);  // Random interval between 5000ms and 40000ms
+      }, Math.random() * 6000 + 3000);  // Random interval between 5000ms and 40000ms
     }
   }
 });
+
+
 
 
 // Function to initiate the dynamic typing

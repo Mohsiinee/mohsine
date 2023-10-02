@@ -440,13 +440,20 @@ a.nav-link {
   background-color: var(--darker-color);
   padding: 4em 0em;
   box-shadow: black 0px 0px 20px 3px;
+  border: solid 1px var(--darker-color);
+  transition: border .5s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+.services .card:hover {
+  border: solid 1px var(--accents-color);
+  background-color: #454f5f13;
 }
 
 .services .card img {
   height: 110px;
 }
 .services .card h3 {
-  margin: 1.5em;
+  margin: 1.5em 1.5em 0em 1.5em;
   color: var(--color);
   font-size: 1.4rem;
 }
@@ -769,6 +776,7 @@ form {
   color: var(--white-color);
   font-size: 1.2rem;
   outline: none;
+  font-family: 'Hind', sans-serif;
 }
 
 .form-group label {
