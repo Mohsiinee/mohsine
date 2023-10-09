@@ -16,7 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const startPosition = window.pageYOffset;
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
     let startTime = null;
-    const duration = 1000; // 2 seconds
+    const duration = 3000; // 3 seconds
 
     function animateScroll(currentTime) {
       if (startTime === null) startTime = currentTime;
@@ -65,39 +65,51 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
+  const canvas = document.getElementById('binary-canvas');
+  const ctx = canvas.getContext('2d');
+
   const container = document.getElementById('binary-container');
-  
-  const parentWidth = container.clientWidth;
-  const parentHeight = container.clientHeight;
-  
-  const cellSize = 23; // Adjust this value as needed
-  
-  const maxRows = Math.floor(parentHeight / cellSize);
-  const maxCols = Math.floor(parentWidth / cellSize);
-  
+  canvas.width = container.clientWidth;
+  canvas.height = container.clientHeight;
+
+  const cellSize = 30; // In pixels
+
+  const maxRows = Math.floor(canvas.height / cellSize);
+  const maxCols = Math.floor(canvas.width / cellSize);
+
+  const drawCell = (row, col, digit) => {
+    const x = col * cellSize;
+    const y = row * cellSize;
+
+    ctx.clearRect(x, y, cellSize, cellSize); // Clear previous digit
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'rgb(124, 252, 218, 0.3)';
+    ctx.fillText(digit, x + cellSize / 4, y + cellSize / 1.5);
+  };
+
+  const scheduleRandomUpdate = (row, col) => {
+    setTimeout(() => {
+      const newDigit = Math.floor(Math.random() * 2).toString();
+      drawCell(row, col, newDigit);
+      scheduleRandomUpdate(row, col);
+    }, Math.random() * 10000 + 800);
+  };
+
+  // Initial rendering and schedule updates
   for (let row = 0; row < maxRows; row++) {
     for (let col = 0; col < maxCols; col++) {
-      const binaryDigit = document.createElement('div');
-      binaryDigit.classList.add('binary-digit');
-      
-      // Initial random 0 or 1
-      binaryDigit.innerText = Math.floor(Math.random() * 2).toString();
-      
-      // Positioning
-      binaryDigit.style.top = `${row * cellSize}px`;
-      binaryDigit.style.left = `${col * cellSize}px`;
-      
-      // Add to container
-      container.appendChild(binaryDigit);
-
-      // Animate random change
-      setInterval(() => {
-        binaryDigit.innerText = Math.floor(Math.random() * 2).toString();
-      }, Math.random() * 6000 + 3000);  // Random interval between 5000ms and 40000ms
+      const digit = Math.floor(Math.random() * 2).toString();
+      drawCell(row, col, digit);
+      scheduleRandomUpdate(row, col);
     }
   }
 });
+
 
 
 

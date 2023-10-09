@@ -43,27 +43,32 @@
 
         <div class="navbar-right">
             <a href="#contact" class="nav-link">Contact Me</a>
-            <a href="#blog" class="nav-link">Blogs</a>
-            <a href="./documents/mohsine-bakhcha-cv.pdf" class="nav-link">Resume/CV</a>
+            <a href="#blog" class="nav-link">My insights</a>
+            <a href="" class="nav-link">Menu</a>
         </div>
         
       </div>
     </nav>
   </div>
     <header class="hero" >
+      <canvas class="plane-canvas" id="plane-canvas"></canvas>
+      <canvas class="main-canvas" id="main-canvas"></canvas>
+      <div class="mouse" id="mouse"></div>
       <div class="hero-grid">
         <div class="left-grid">
           <div class="hero-h">
             <h1>Innovate, Implement, Excel</h1>
-            <h2>Your Partner in Software Solutions & Industrial Electricity</h2>
+            <h2>Your Partner in Programming Solutions & Industrial Electricity</h2>
           </div>
           <div class="hero-p">
             <p><span id="staticText"></span><span id="dynamicText" style="color: var(--accents-color); font-size: 26px;"></span></p>
           </div>
           <a href="#intro" class="scroll-down"><div class="scroll"></div></a>
         </div>
-        <div class="right-grid" id="binary-container">         
+        <div id="binary-container" class="right-grid">
+          <canvas id="binary-canvas"></canvas>
         </div>
+        
       </div>
       <div class="hero-info">
         <div class="contact-info">
@@ -79,7 +84,7 @@
     </header>  
     <div class="section-separator"></div>
     <section id="intro">
-      <h2><span style="color: var(--accents-color); font-size: 3rem;"> Aspiring </span> electrician and software developer</h2>
+      <h2><span style="color: var(--accents-color); font-size: 3rem;"> Aspiring </span> electrician and Back-end developer</h2>
       <p><span style="font-size: 1.2rem; font-weight: 600;">Welcome</span> to my portfolio. <br>Here, you'll find projects that highlight my skills in both electrical work and programming. 
         explore my journey in these two exciting fields now.</p>
       <a href="#work"><button class="btn">
@@ -140,95 +145,98 @@
  
 
     <section id="services" class="services">
-      <h1>My services</h1>
-      <div class="services-cards">
-        <div class="card">
-          <img src="./img/icon/residential-electricity-icon.svg" alt="Service 1">
-          <h3>Residential electrician</h3>
-        </div>
-        <div class="card">
-          <img src="./img/icon/industrial-electricity-icon.svg" alt="Service 2">
-          <h3>Industrial electrician</h3>
-        </div>
-        <div class="card">
-          <img src="./img/icon/software-developement-icon.svg" alt="Service 3">
-          <h3>Software developer</h3>
+      <div class="bodytwo">       
+        <h1>My services</h1>
+        <div class="services-cards">
+          <div class="card">
+            <img src="./img/icon/residential-electricity-icon.svg" alt="Service 1">
+            <h3>Residential electrician</h3>
+          </div>
+          <div class="card">
+            <img src="./img/icon/industrial-electricity-icon.svg" alt="Service 2">
+            <h3>Industrial electrician</h3>
+          </div>
+          <div class="card">
+            <img src="./img/icon/software-developement-icon.svg" alt="Service 3">
+            <h3>Back-end developer</h3>
+          </div>
         </div>
       </div>
-
-      <div class="services-info">
-        
-        <div class="row">
-          <div class="column-txt">
-            <div class="title">
-              <h2>Web Development</h2>
+      <div class="container">
+        <div class="services-info">
+          
+          <div class="row">
+            <div class="column-txt">
+              <div class="title">
+                <h2>Web Development</h2>
+              </div>
+              <div class="txt">
+                <p>In an evolving digital environment, the need for a strong online presence extends beyond a mere static website. Specialized in both E-commerce and full-stack web development, the services offered encompass multiple platforms including Shopify, WooCommerce, and WordPress, as well as front-end and back-end technologies like HTML, CSS, JavaScript, Python, and Ruby on Rails. The focus is on constructing E-commerce platforms that are not only visually appealing but are also designed to convert visitor interactions into measurable outcomes. The services also extend to the development of custom CMS and dynamic web applications, all aimed at fulfilling specific business objectives. Each project is approached with a commitment to functional excellence and user-centric design, ensuring that the end product aligns with the strategic goals of the client while offering optimal performance across all devices.</p>
+              </div>
             </div>
-            <div class="txt">
-              <p>In an evolving digital environment, the need for a strong online presence extends beyond a mere static website. Specialized in both E-commerce and full-stack web development, the services offered encompass multiple platforms including Shopify, WooCommerce, and WordPress, as well as front-end and back-end technologies like HTML, CSS, JavaScript, Python, and Ruby on Rails. The focus is on constructing E-commerce platforms that are not only visually appealing but are also designed to convert visitor interactions into measurable outcomes. The services also extend to the development of custom CMS and dynamic web applications, all aimed at fulfilling specific business objectives. Each project is approached with a commitment to functional excellence and user-centric design, ensuring that the end product aligns with the strategic goals of the client while offering optimal performance across all devices.</p>
-            </div>
-          </div>
-          <div class="column-img">
-            <img src="./img/web-dev-illustration.svg" alt="">
-          </div>
-        </div>
-
-        <div class="dev-row">
-          <img src="./img/icon/shopify-logo.svg" alt="">
-          <img src="./img/icon/WordPress-Logo.svg" alt="">
-          <img src="./img/icon/html.svg" alt="">
-          <img src="./img/icon/css.svg" alt="">
-          <img src="./img/icon/javascript-icon.svg" alt="">
-          <img src="./img/icon/nodejs.svg" alt="">
-          <img src="./img/icon/php.svg" alt="">
-          <img src="./img/icon/mysql.svg" alt="">
-          <img src="./img/icon/python.svg" alt="">
-          <img src="./img/icon/graphql.svg" alt="">
-        </div>
-
-        <div class="row reverse">
-          <div class="column-txt col">
-            <div class="title">
-              <h2>Industrial Electrical Solutions & Repairs</h2>
-            </div>
-            <div class="txt">
-              <p>In a world that's increasingly powered by complex electrical systems, the need for reliable, efficient, and safe industrial electrical solutions has never been greater. Specializing in both the creation of new electrical systems and the repair of existing ones, I offer comprehensive services that cover everything from troubleshooting and maintenance to system design and implementation. With a solid grounding in the latest electrical technologies and best practices, I provide solutions that are not just robust but also tailored to meet your specific industrial needs. Whether you're looking to upgrade your current system for better performance, or need urgent repairs to ensure workplace safety and prevent operational downtime, you can count on me for solutions that deliver.</p>
+            <div class="column-img">
+              <img src="./img/web-dev-illustration.svg" alt="">
             </div>
           </div>
-          <div class="column-img col">
-            <img src="./img/industrial-electricity.svg" alt="">
+  
+          <div class="dev-row">
+            <img src="./img/icon/shopify-logo.svg" alt="">
+            <img src="./img/icon/WordPress-Logo.svg" alt="">
+            <img src="./img/icon/html.svg" alt="">
+            <img src="./img/icon/css.svg" alt="">
+            <img src="./img/icon/javascript-icon.svg" alt="">
+            <img src="./img/icon/nodejs.svg" alt="">
+            <img src="./img/icon/php.svg" alt="">
+            <img src="./img/icon/mysql.svg" alt="">
+            <img src="./img/icon/python.svg" alt="">
+            <img src="./img/icon/graphql.svg" alt="">
           </div>
-        </div>
-
-        <div class="dev-row">
-          <img src="./img/icon/electric-motor.svg" alt="">
-          <img src="./img/icon/transformer.svg" alt="">
-          <img src="./img/icon/plc.svg" alt="">
-          <img src="./img/icon/arduino.svg" alt="">
-          <img src="./img/icon/raspberrypi.svg" alt="">
-          <img src="./img/icon/scada.svg" alt="">
-
-
-        </div>
-
-        <div class="row">
-          <div class="column-txt">
-            <div class="title">
-              <h2>IoT and Smart Homes</h2>
+  
+          <div class="row reverse">
+            <div class="column-txt col">
+              <div class="title">
+                <h2>Industrial Electrical Solutions & Repairs</h2>
+              </div>
+              <div class="txt">
+                <p>In a world that's increasingly powered by complex electrical systems, the need for reliable, efficient, and safe industrial electrical solutions has never been greater. Specializing in both the creation of new electrical systems and the repair of existing ones, I offer comprehensive services that cover everything from troubleshooting and maintenance to system design and implementation. With a solid grounding in the latest electrical technologies and best practices, I provide solutions that are not just robust but also tailored to meet your specific industrial needs. Whether you're looking to upgrade your current system for better performance, or need urgent repairs to ensure workplace safety and prevent operational downtime, you can count on me for solutions that deliver.</p>
+              </div>
             </div>
-            <div class="txt">
-              <p>As we transition into an age of smart, connected environments, the demand for IoT and Smart Home solutions has skyrocketed. Leveraging my background in both electrical systems and computer science, I offer custom-designed IoT solutions aimed at transforming your residential or commercial space into a fully integrated, intelligent environment. From smart lighting and climate control to advanced security systems, I provide a suite of services that encompass both design and implementation, ensuring seamless interoperability and maximum efficiency. By integrating cutting-edge sensors and software, I enable you to monitor and control your environment from anywhere, at any time, providing you with unprecedented levels of convenience, security, and energy efficiency.</p>
+            <div class="column-img col">
+              <img src="./img/industrial-electricity.svg" alt="">
             </div>
           </div>
-          <div class="column-img">
-            <img src="./img/icon/smart-home.svg" alt="">
+  
+          <div class="dev-row">
+            <img src="./img/icon/electric-motor.svg" alt="">
+            <img src="./img/icon/transformer.svg" alt="">
+            <img src="./img/icon/plc.svg" alt="">
+            <img src="./img/icon/arduino.svg" alt="">
+            <img src="./img/icon/raspberrypi.svg" alt="">
+            <img src="./img/icon/scada.svg" alt="">
+  
+  
           </div>
+  
+          <div class="row">
+            <div class="column-txt">
+              <div class="title">
+                <h2>IoT and Smart Homes</h2>
+              </div>
+              <div class="txt">
+                <p>As we transition into an age of smart, connected environments, the demand for IoT and Smart Home solutions has skyrocketed. Leveraging my background in both electrical systems and computer science, I offer custom-designed IoT solutions aimed at transforming your residential or commercial space into a fully integrated, intelligent environment. From smart lighting and climate control to advanced security systems, I provide a suite of services that encompass both design and implementation, ensuring seamless interoperability and maximum efficiency. By integrating cutting-edge sensors and software, I enable you to monitor and control your environment from anywhere, at any time, providing you with unprecedented levels of convenience, security, and energy efficiency.</p>
+              </div>
+            </div>
+            <div class="column-img">
+              <img src="./img/icon/smart-home.svg" alt="">
+            </div>
+          </div>
+          <div class="dev-row">
+            <img src="./img/icon/coap.svg" alt="">
+            <img src="./img/icon/mqtt.svg" alt="">
+  
+          </div>
+  
         </div>
-        <div class="dev-row">
-          <img src="./img/icon/coap.svg" alt="">
-          <img src="./img/icon/mqtt.svg" alt="">
-
-        </div>
-
       </div>
     </section>
 
@@ -237,7 +245,7 @@
     <section class="why-choose-me">
       <div>
         <p>
-          But it's not just about <span style="text-decoration: underline; line-height: inherit;font-size: inherit;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
+          It's not just about <span style="text-decoration: underline; line-height: inherit;font-size: inherit;">what I can do </span> <br> it's also about <span class="glow-txt">how I do it </span> .
         </p>
       </div>
       
@@ -329,14 +337,13 @@
     </div>
   </section>
 
-  <!--<section id="blog">
-    <h1>Blog</h1>
-    <div class="page-count">
-      <h4>Page <span>1</span></h4>
-    </div>
-    <div class="blog-container"></div>
-    <div class="pagination-container"></div>
-  </section>-->
+  <section id="insights">
+    <h1>My Insights</h1>
+
+    <a href="./pages/régime de neutre.html"></a>
+    <a href="./pages/NFC-15-100/nfc 15-100.html"></a>
+
+  </section>
   
   <footer>
     <div class="section-separator"></div>
@@ -357,9 +364,6 @@
                 <a href="https://www.linkedin.com/in/mohsine-bakhcha/" target="_blank"><img src="./img/icon/linkedin-icon.svg"></a>
                 <a href="https://github.com/Mohsiinee" target="_blank"><img src="./img/icon/github-logo.svg"></a>
               </div>
-            </div>
-            <div style="margin-top: 4em;">
-              <a href="./pages/NFC-15-100/nfc 15-100.html" style="color: white; font-size: 24px;">NF C 15-100</a>
             </div>
         </div>
         <div class="right-column">
@@ -390,5 +394,6 @@
   <script src="./assets/projects.js"></script>
   <script src="./assets/clients.js"></script>
   <script src="./assets/blog.js"></script>
+  <script src="./assets/plane.js"></script>
 </body>
 </html>

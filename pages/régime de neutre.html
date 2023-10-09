@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Régimes de neutre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+        :root {
+            --primary: #1b1f24;
+            --secondary: #7dfcda;
+            --color3: #c5cae9;
+            --color4: #e05858;
+            --white: white;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --heading-font: 'Roboto', sans-serif;
+            --text-font: 'Lato', sans-serif;
+            --heading-size: 3em;
+            --sub-heading-size: 2em;
+            --text-size: 20px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b6152;
+        }
+        ::selection {
+            color: var(--primary);
+            background: var(--secondary);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--primary);
+            color: var(--color3);
+        }
+        p, li {
+            font-family: var(--text-font);
+            color: var(--color3);
+            font-size: var(--text-size);
+            line-height: 1.6;
+        }
+        h1 {
+            font-family: var(--heading-font);
+            color: var(--color3);
+            font-size: var(--heading-size);
+            font-weight: 600;
+        }
+        h2 {
+            font-family: var(--heading-font);
+            color: var(--color3);
+            font-size: var(--sub-heading-size);
+            font-weight: 600;
+        }
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section div {
+            width: 100%;
+            margin: 2em 0em;
+        }
+        header {
+            position: relative;
+        }
+        .hero {
+            height: 80vh;
+            width: 100%;
+            background-image: url(./earthing-system-icon.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(top, transparent 20%, var(--primary));
+            background: -moz-linear-gradient(top, transparent 20%, var(--primary));
+            background: -o-linear-gradient(top, transparent 20%, var(--primary));
+            background: linear-gradient(to bottom, transparent 20%, var(--primary));
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20vh;
+            background: -webkit-linear-gradient(top, transparent 20%, var(--primary));
+            background: -moz-linear-gradient(top, transparent 20%, var(--primary));
+            background: -o-linear-gradient(top, transparent 20%, var(--primary));
+            background: linear-gradient(to top, transparent 20%, var(--primary));
+        }
+        .author {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .plan {
+            width: 100%;
+            margin: 6em;
+        }
+        .plan li {
+            font-family: var(--text-font);
+            padding: 1em;
+            font-size: 1.5em;
+            transition: background-color .3s ease-in-out;
+            cursor: pointer;
+        }
+        .plan li:hover {
+            background-color: #1b1f2436;
+        }
+        a {
+            text-decoration: none;
+            color: var(--color3);
+        }
+
+        table {
+            border: 1px solid var(--color3);
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            table-layout: fixed;
+            font-family: var(--text-font);
+            margin: 0em auto;
+        }
+
+        table tr {
+            background-color: var(--dark);
+            padding: .35em;
+        }
+
+        table th,
+        table td {
+            padding: .625em;
+            text-align: center;
+            border: 1px solid var(--color3);
+        }
+
+        table th {
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        #distinction img {
+            height: 90vh;
+        }
+        .transport {
+            height: auto !important;
+            width: 100%;
+        }
+        .bg-wh {
+            background-color: var(--color3); 
+            
+        }
+        .bg-wh h2, .bg-wh li {
+            color: var(--primary) !important;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px; 
+        }
+
+        .card {
+            background-color: var(--dark);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #c5cae93b;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color .3s ease-in-out;
+            cursor: pointer;
+        }
+        .card:hover {
+            background-color: #30363b;
+            border: 1px solid white;
+        }
+        /* Styles pour le modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            margin: 0;
+        }
+
+        .modal-content {
+            background-color: var(--color3);
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid var(--secondary);
+            width: 60%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349);
+        }
+        .modal-content p, .modal-content h2 {
+            color: var(--primary);
+        }
+
+        .close {
+            color: red;
+            border: 2px solid red;
+            padding: 0px 10px;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            background-color: rgba(255, 0, 0, 0.164);
+            color: rgb(73, 7, 7);
+            border: 2px solid rgb(73, 7, 7);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        img {
+            margin: 5em 0em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <section class="hero"></section>
+        <div class="author"><p>Réalisé par Mohsine Bakhcha</p></div>
+    </header>
+    <section>
+        <div class="container">
+            <h1 style="text-align: center;">Régimes de neutre et schémas de liaisons à la terre utilisés en basse tension</h1>
+            <div>
+                <p>
+                    L’utilisation de l’énergie électrique présente des risques tant pour les personnes que pour les 
+                    matériels.
+                    Pour des raisons de sécurité, ces masses sont reliées par un conducteur de protection lui-même 
+                    relié à une prise de terre.
+                    La distribution de l’énergie électrique, en courant alternatif triphasé avec neutre permet, selon 
+                    les types d’installation, des combinaisons neutre-masse, qui optimisent la protection.
+                </p>
+                <p>
+                    En tant qu'électricien, la responsabilité vous incombe de minimiser ces risques en sélectionnant le régime de neutre le plus adapté au système que vous travaillez à mettre en place ou à optimiser.
+                </p>
+                <p>
+                    Le régime de neutre est la manière dont le fil neutre d'un système électrique est connecté à la terre. Cette connexion détermine comment le système gère les courants de défaut et affecte la sécurité et l'efficacité du réseau électrique.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-wh">
+        <div class="container">
+            <div class="plan">
+                <h2>Plan :</h2>
+                <ol>
+                    <a href="#points"><li>Les Types du Régime de Neutre</li></a>
+                    <a href="#tensions"><li>Schémas de Liaisons à la Terre</li></a>
+                    <a href="#distribution"><li>Calcul du Section du Conducteur de Protection PE</li></a>
+                    <a href="#distribution"><li>Calcul I<sub>D</sub>, I<sub>Limit</sub></li></a>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Les Types du Régime de Neutre</h2>
+            <div>
+                <p>
+                    Chaque régime de neutre est défini par 2 lettres et 3e lettre pour Uniquement le régime TN
+                </p>
+                <p>
+    
+                    1 ère Lettre : Type de raccordement du neutre de l'alimentation EDF par rapport à la terre.
+                </p>
+                <p>
+                    <ul>
+                        <li>T :  Liaison avec la terre .</li>
+                        <li>I :  Isolation par rapport à la terre ou liaison avec la terre par une impédance.</li>
+                    </ul>
+                </p>
+                <p>
+                    2e Lettre : Type de raccordement des masses de l’installation par rapport à la terre.
+                </p>
+                <p>
+                    <ul>
+                        <li>T :  Masses reliées à la terre.</li>
+                        <li>N :  Masses reliées au neutre lui-même relié à la terre.</li>
+                    </ul>
+                </p>
+                <p>
+                    3e lettre : Uniquement le régime TN.
+                </p>
+                <p>
+                    <ul>
+                        <li>(C) :  Les conducteurs de protection PE et de neutre N sont confondus .</li>
+                        <li>(S) :  Les conducteurs PE et de neutre N sont séparés.</li>
+                    </ul> 
+                </p>
+
+                <div style="margin-top: 6em;">
+                    <p>
+                        La distribution de la basse tension (230 V et 400 V) peut se faire de trois façons différentes concernant le « régime de neutre » : TT, TN (TNC, TNS) ou IT.
+                    </p>
+                    <table><thead><tr><th colspan="2" rowspan="1" scope="col">1<sup>ère</sup> lettre : neutre du transformateur<br> (côté distribution)</th>
+                        <th colspan="2" rowspan="1" scope="col">2<sup>ème</sup> lettre : masses des appareils<br> (côté utilisateur)</th>
+                    </tr></thead><tbody><tr><td>Raccordé à la terre</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>Raccordé à la terre</td>
+                    </tr><tr><td>Isolé de la terre</td>
+                        <td>I</td>
+                        <td>T</td>
+                        <td>Raccordé à la terre</td>
+                    </tr><tr><td>Raccordé à la terre</td>
+                        <td>T</td>
+                        <td>N</td>
+                        <td>Raccordé au neutre</td>
+                    </tr></tbody></table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Schémas de Liaisons à la Terre</h2>
+            <div>
+                <h2 style="color:#7dfcda;">Régime TT</h2>
+                <p>
+                    Le neutre du transformateur est relié à la terre, et les masses des équipements des utilisateurs disposent de leur propre raccordement à la terre.
+                </p>
+                <ul>
+                    <li>L'emploi d'un DDR (Dispositif Différentiel Résiduel) est obligatoire en tête d'installation pour assurer la protection des personnes. La valeur du courant résiduel maximum dépend de la règlementation du pays. Ainsi un DDR de 500 mA en tête d'installation ainsi que celui de valeur maximale 30 mA sur les circuits prises est obligatoire</li>
+                </ul>
+                <img style="width: 100%;" src="./Regime_TT.svg" alt="">
+            </div>
+            <div>
+                <h2 style="color:#7dfcda;">Régime TN</h2>
+                <p>
+                    Dans ce régime le neutre est mis à la terre et les masses sont reliées au neutre par un 
+                    conducteur de protection. Deux cas qui se présentent :                    
+                </p>
+                <p style="text-decoration: underline;">
+                    Régime TNC :
+                </p>
+                <p>
+                    Dans le TN-C (Terre Neutre Confondus), les conducteurs de neutre (N) et de protection (PE) sont confondus pour former le PEN.
+                </p>
+                <img style="width: 100%;" src="./Regime_TN-C.svg" alt="">
+
+                <p style="text-decoration: underline;">
+                    Régime TNS :
+                </p>
+                <p>
+                    Dans le TN-S, le conducteur de protection et le conducteur neutre sont reliés uniquement au poste de distribution et à aucun autre point.
+                </p>
+                <img style="width: 100%;" src="./Regime_TN-S.svg" alt="">
+            </div>
+            <div>
+                <h2 style="color:#7dfcda;">Régime IT</h2>
+                <p>
+                    Le neutre de la source de tension est isolé ou relié à la terre par une forte impédance, les 
+                    masses d’installation sont reliées à la terre comme l’indique la figure suivante.
+                </p>
+                <img style="width: 100%;max-height: 100vh;" src="./Regime_IT.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Calcule de Section du Conducteur de Protection PE</h2>
+            
+            <div>
+                <p>Méthode simplifiée</p>
+                <p>
+                    <strong> S <sub>ph</sub> < 16mm <sup>2</sup> :</strong> Dans cette catégorie, le conducteur de protection PE doit avoir la même section que le conducteur de phase. C'est une approche assez conservatrice qui vise à assurer un niveau de sécurité adéquat.
+                </p>
+                <p>
+                    <strong> 16 mm <sup>2</sup> < S <sub>ph</sub> < 35 mm <sup>2</sup></strong> : Ici, indépendamment de la taille du conducteur de phase dans cette plage, le conducteur de protection est fixé à 16 mm <sup>2</sup>  . C'est probablement basé sur des études empiriques et des tests qui ont prouvé que 16 mm <sup>2</sup> est suffisant pour gérer les conditions de défaut les plus courantes dans cette plage.
+                </p>
+                <p>
+                    <strong> S <sub>ph</sub> > 35 mm <sup>2</sup></strong> : Pour les conducteurs de phase plus grands, la section du conducteur de protection est fixée à la moitié de la taille du conducteur de phase. Encore une fois, cela est probablement basé sur des tests et des analyses montrant que la moitié de la taille est généralement suffisante pour fournir une protection efficace sans être excessivement conservatrice.
+                </p>
+                <label for="sph">Entrez la Section du Conducteur de Phase Sph (mm²):</label>
+                <input type="number" id="sph" name="sph">
+                
+                <button onclick="calculatePE()">Calculer la Section du PE</button>
+                
+                <p>Résultat: <span id="result"></span> mm²</p>
+            </div>
+            <div>
+                <p>Méthode Basée sur la Température :</p>
+                <p>
+                    \[ S_{\text{PE}} = \frac{I^2 \times t}{K} \]
+                </p>
+                <ul>
+                    <li>S <sub>PE</sub> : Section du conducteur de protection en mm<sup>2</sup>.</li>
+                    <li>I : Courant de défaut en ampères (A).</li>
+                    <li>t : Temps de défaut en secondes (s). Il s'agit du temps que prend le dispositif de protection pour couper le courant.</li>
+                    <li>K : Coefficient de température, représentant les propriétés thermiques du matériau du conducteur.</li>
+                </ul>
+                <label for="current">Courant (I) :</label>
+                <input type="number" id="current" name="current">
+                <label for="time">Temps (t) :</label>
+                <input type="number" id="time" name="time">
+                <label for="k">Facteur Thermique (k) :</label>
+                <input type="number" id="k" name="k">
+                <button onclick="calculateTemperatureMethod()">Calculer</button>
+                <p>Résultat : <span id="resultTemp"></span> mm²</p>
+
+            </div>
+            <div>
+                <p>Méthode Basée sur l'Impédance</p>
+
+                <p>
+                \[ S_{\text{PE}} = \frac{I_{\text{défaut}} \times L}{\sqrt{3} \times U \times \sqrt{t}} \]
+                </p>
+
+                <ul>
+                    <li> \( S_{\text{PE}} \) : La section du conducteur de protection en mm<sup>2</sup></li>
+                    <li> \( I_{\text{défaut}} \) : Le courant de défaut en ampères (A)</li>
+                    <li> \( L \) : La longueur du conducteur en mètres (m)</li>
+                    <li> \( \sqrt{3} \) : La racine carrée de 3, un facteur de conversion nécessaire pour les systèmes triphasés</li>
+                    <li> \( U \) : La tension nominale du système en volts (V)</li>
+                    <li> \( t \) : Le temps du défaut en secondes (s)</li>
+                    <li> \( \sqrt{t} \) : La racine carrée du temps du défaut, souvent utilisée pour ajuster le temps en relation avec d'autres paramètres du système</li>
+                </ul>
+                <label for="faultCurrent">Courant de défaut (I<sub>défaut</sub>) :</label>
+                <input type="number" id="faultCurrent" name="faultCurrent">
+                <label for="length">Longueur (L) :</label>
+                <input type="number" id="length" name="length">
+                <label for="voltage">Tension (U) :</label>
+                <input type="number" id="voltage" name="voltage">
+                <label for="timeRoot">Temps (√t) :</label>
+                <input type="number" id="timeRoot" name="timeRoot">
+                <button onclick="calculateImpedanceMethod()">Calculer</button>
+                <p>Résultat : <span id="resultImpedance"></span> mm²</p>
+
+            </div>
+            <div>
+                <p>Méthode Basée sur la Résistivité :</p>
+                <p>
+                    \[ S_{\text{PE}} = \frac{I \times L}{\rho} \]
+                </p>
+                <ul>
+                    <li>S <sub>PE</sub> : Section du conducteur de protection en mm<sup>2</sup>.</li>
+                    <li>I : Courant de défaut en ampères (A).</li>
+                    <li>L : Longueur du câble en mètres (m).</li>
+                    <li>ρ : Résistivité du matériau du conducteur en Ωm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Calcule de I <sub>D</sub></h2>
+            <div>
+                <img style="width: 100%;max-height: 100vh;" src="./Schéma_équivalent_dft_regime_TT.svg" alt="">
+                <p>
+                    \[ I_D = \frac{U}{Z + R} \]
+                    </p>
+                    
+
+                    
+                    <ul>
+                        <li> \( I_D \) : Le courant de défaut en ampères (A)</li>
+                        <li> \( U \) : La tension du système en volts (V)</li>
+                        <li> \( Z \) : L'impédance du système en ohms (\( \Omega \))</li>
+                        <li> \( R \) : La résistance de défaut en ohms (\( \Omega \))</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const startPosition = window.pageYOffset;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                let startTime = null;
+                const duration = 500; // 2 seconds
+
+                function animateScroll(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    window.scrollTo(0, startPosition + (targetPosition - startPosition) * progress);
+
+                    if (timeElapsed < duration) {
+                        window.requestAnimationFrame(animateScroll);
+                    }
+                }
+
+                window.requestAnimationFrame(animateScroll);
+            });
+        });
+    </script>
+    <script>
+        function calculatePE() {
+            // Récupérer la valeur de Sph du champ d'entrée
+            let sph = parseFloat(document.getElementById('sph').value);
+            
+            let spe;  // Variable pour stocker la valeur calculée de Spe
+            
+            // Appliquer la méthode simplifiée pour calculer Spe
+            if(sph <= 16) {
+                spe = sph;
+            } else if (sph > 16 && sph <= 35) {
+                spe = 16;
+            } else if (sph > 35) {
+                spe = sph / 2;
+            }
+            
+            // Afficher le résultat dans le paragraphe HTML avec l'ID 'result'
+            document.getElementById('result').innerText = spe;
+        }
+
+    </script>
+    <script>
+        function calculateTemperatureMethod() {
+            let current = parseFloat(document.getElementById("current").value);
+            let time = parseFloat(document.getElementById("time").value);
+            let k = parseFloat(document.getElementById("k").value);
+
+            let spe = (Math.pow(current, 2) * time) / k;
+
+            document.getElementById("resultTemp").innerText = spe;
+        }
+
+    </script>
+    <script>
+        function calculateImpedanceMethod() {
+            let faultCurrent = parseFloat(document.getElementById("faultCurrent").value);
+            let length = parseFloat(document.getElementById("length").value);
+            let voltage = parseFloat(document.getElementById("voltage").value);
+            let timeRoot = Math.sqrt(parseFloat(document.getElementById("timeRoot").value));
+
+            let spe = (faultCurrent * length) / (Math.sqrt(3) * voltage * timeRoot);
+
+            document.getElementById("resultImpedance").innerText = spe;
+        }
+
+    </script>
+</body>
+</html>
