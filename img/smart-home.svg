@@ -1,0 +1,613 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 468" width="500" height="468">
+	<title>smart-home-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m112.67 218.83h118v105h-118z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #1b1f24 } 
+		.s1 { fill: #c96a50;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s2 { fill: #66d17a;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s3 { fill: #1b1f24;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s4 { fill: #16191c } 
+		.s5 { fill: #7dfcda;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s6 { fill: none;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s7 { fill: #efd154;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s8 { fill: #6bdd91;stroke: #4fc1a2;stroke-miterlimit:10;stroke-width: .6 } 
+		.s9 { fill: #f26d8c;stroke: #4fc1a2;stroke-miterlimit:10;stroke-width: .6 } 
+		.s10 { fill: #4fc1a2 } 
+		.s11 { fill: #9696aa;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s12 { fill: #ff5151;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s13 { fill: #c17561;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s14 { fill: #ff5151;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .6 } 
+		.s15 { fill: #c17561;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .6 } 
+		.s16 { fill: #c96a50;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .6 } 
+		.s17 { fill: #ff5151;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .4 } 
+		.s18 { fill: #c17561;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .4 } 
+		.s19 { fill: #c96a50;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .4 } 
+		.s20 { fill: #0d0d0d;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: .9 } 
+		.s21 { fill: none;stroke: #4fc1a2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2 } 
+	</style>
+	<g id="BACKGROUND">
+		<g id="Layer">
+			<path id="XMLID_1550_" class="s0" d="m464.6 166.8h-44.6c0.9-2.6 3-4.6 5.7-5.3 0.8-3.7 4.1-6.4 8.1-6.4 1.3 0 2.7 0.3 3.8 0.9 1.4-1 3.1-1.6 5-1.6 1.1 0 2.3 0.2 3.3 0.7q0.9-0.2 1.9-0.2c3.8 0 7 2.5 8 5.9q0.4-0.1 0.8-0.1c3.8 0 7.1 2.6 8 6.1z"/>
+			<path id="XMLID_1555_" class="s0" d="m330.2 106.8h-46.3c0.8-3.8 4.2-6.6 8.2-6.6q0.4 0 0.9 0.1c0.8-3.8 4.1-6.7 8.2-6.7 1.4 0 2.6 0.3 3.8 0.9 1.4-1.3 3.3-2 5.3-2 1.4 0 2.6 0.3 3.7 0.9q0.8-0.2 1.6-0.2c3.9 0 7.1 2.6 8 6.2 3.6 0.7 6.3 3.7 6.6 7.4z"/>
+			<path id="XMLID_1541_" class="s0" d="m55.1 178.2h39.3c-0.7-3.2-3.5-5.6-6.9-5.6q-0.4 0-0.8 0c-0.6-3.2-3.5-5.7-6.9-5.7-1.2 0-2.3 0.3-3.2 0.8-1.3-1-2.9-1.7-4.6-1.7-1.1 0-2.2 0.3-3.1 0.8q-0.7-0.2-1.4-0.2c-3.2 0-6 2.2-6.8 5.2-3 0.7-5.3 3.2-5.6 6.4z"/>
+		</g>
+	</g>
+	<g id="OBJECTS">
+		<g id="Layer">
+			<g id="XMLID_1551_">
+				<g id="XMLID_1444_">
+					<g id="XMLID_470_">
+						<g id="XMLID_471_">
+							<path id="XMLID_473_" class="s1" d="m486.3 368.2h1.6v4.3h-1.6z"/>
+							<path id="XMLID_472_" class="s2" d="m494.1 339.1v22.6c0 4-3.3 7.2-7.3 7.2q-0.8 0-1.6-0.1c-3.2-0.8-5.6-3.6-5.6-7.1v-22.6c0-3.5 2.4-6.3 5.6-7.1q0.8-0.1 1.6-0.1c4 0 7.3 3.2 7.3 7.2z"/>
+						</g>
+					</g>
+					<g id="XMLID_1435_">
+						<g id="XMLID_1436_">
+							<path id="XMLID_1438_" class="s1" d="m13.7 368.2h1.6v4.3h-1.6z"/>
+							<path id="XMLID_1437_" class="s2" d="m21.5 339.1v22.6c0 4-3.3 7.2-7.3 7.2q-0.8 0-1.6-0.1c-3.2-0.8-5.6-3.6-5.6-7.1v-22.6c0-3.5 2.4-6.3 5.6-7.1q0.8-0.1 1.6-0.1c4 0 7.3 3.2 7.3 7.2z"/>
+						</g>
+					</g>
+					<g id="XMLID_703_">
+						<path id="XMLID_1087_" class="s3" d="m485.1 242.2v130.7h-103.3v-130.7l53-30.1z"/>
+						<path id="XMLID_1086_" class="s4" d="m484.5 246v7.8l-51.1-33-51 33-0.1-7.7 51.1-33z"/>
+						<path id="XMLID_1085_" class="s5" d="m493.4 253.8l-60-38.7-59.9 38.7v-7.7l59.9-38.7 60 38.7z"/>
+						<path id="XMLID_1076_" class="s4" d="m413.8 305h8.4v4h-8.4z"/>
+						<path id="XMLID_964_" class="s4" d="m442.1 300.9h8.5v4h-8.5z"/>
+						<path id="XMLID_1075_" class="s4" d="m433.3 239.1h8.4v4h-8.4z"/>
+						<path id="XMLID_1074_" class="s0" d="m388.1 289.3h8.4v4.1h-8.4z"/>
+						<path id="XMLID_1073_" class="s4" d="m464.4 291.3h8.5v4.1h-8.5z"/>
+						<path id="XMLID_963_" class="s4" d="m434.9 357.3h8.4v4h-8.4z"/>
+						<g id="XMLID_1052_">
+							<g id="XMLID_1054_">
+								<g id="XMLID_1068_">
+									<path id="XMLID_1072_" class="s5" d="m398.9 257.9h11.4v11.5h-11.4z"/>
+									<path id="XMLID_1071_" class="s5" d="m410.4 257.9h11.4v11.5h-11.4z"/>
+									<path id="XMLID_1070_" class="s5" d="m398.9 269.4h11.4v11.5h-11.4z"/>
+									<path id="XMLID_1069_" class="s5" d="m410.4 269.4h11.4v11.5h-11.4z"/>
+								</g>
+								<path id="XMLID_1067_" class="s3" d="m397.4 280.9h25.9v2.1h-25.9z"/>
+								<g id="XMLID_1055_">
+									<path id="XMLID_1066_" class="s3" d="m416.8 280.5h-2.4l-0.8-5.4h4z"/>
+									<path id="XMLID_1065_" fill-rule="evenodd" class="s6" d="m415.3 275c0 0-0.7-1.8 1-2.8 1.6-1.1 1.4-2.3 1.4-2.3"/>
+									<path id="XMLID_1064_" class="s7" d="m418.5 269.5c0 0.4-0.4 0.8-0.9 0.8-0.4 0-0.8-0.4-0.8-0.8 0-0.5 0.4-0.9 0.8-0.9 0.5 0 0.9 0.4 0.9 0.9z"/>
+									<path id="XMLID_1063_" class="s8" d="m415 271.9c0.4 0.6 0 1.5 0 1.5 0 0-1 0-1.4-0.7-0.4-0.6 0-1.5 0-1.5 0 0 1 0 1.4 0.7z"/>
+									<path id="XMLID_1062_" class="s8" d="m417.3 274.2c-0.7 0.2-1.5-0.3-1.5-0.3 0 0 0.3-1 1-1.2 0.7-0.3 1.5 0.3 1.5 0.3 0 0-0.3 0.9-1 1.2z"/>
+									<path id="XMLID_1061_" class="s9" d="m419.3 267.7c-0.2 0.7-1.2 1-1.2 1 0 0-0.6-0.9-0.3-1.6 0.3-0.7 1.3-0.9 1.3-0.9 0 0 0.5 0.8 0.2 1.5z"/>
+									<path id="XMLID_1060_" class="s9" d="m417 267.1c0.5 0.6 0.2 1.6 0.2 1.6 0 0-1 0-1.5-0.6-0.4-0.5-0.2-1.5-0.2-1.5 0 0 1-0.1 1.5 0.5z"/>
+									<path id="XMLID_1059_" class="s9" d="m415.3 268.9c0.7-0.2 1.5 0.6 1.5 0.6 0 0-0.5 0.9-1.2 1-0.8 0.1-1.5-0.6-1.5-0.6 0 0 0.5-0.9 1.2-1z"/>
+									<path id="XMLID_1058_" class="s9" d="m416 271.2c0.2-0.7 1.2-1 1.2-1 0 0 0.6 0.9 0.3 1.6-0.3 0.7-1.3 0.9-1.3 0.9 0 0-0.5-0.8-0.2-1.5z"/>
+									<path id="XMLID_1057_" class="s9" d="m418.3 271.8c-0.4-0.6-0.2-1.6-0.2-1.6 0 0 1 0 1.5 0.5 0.5 0.6 0.2 1.6 0.2 1.6 0 0-1 0-1.5-0.5z"/>
+									<path id="XMLID_1056_" class="s9" d="m420 270c-0.7 0.1-1.4-0.6-1.4-0.6 0 0 0.4-0.9 1.2-1 0.7-0.1 1.4 0.6 1.4 0.6 0 0-0.5 0.9-1.2 1z"/>
+								</g>
+							</g>
+							<path id="XMLID_1053_" class="s4" d="m396.9 283.3l4.4 4.5 27.5 0.2-5.1-5.1z"/>
+						</g>
+						<g id="XMLID_1019_">
+							<g id="XMLID_1021_">
+								<g id="XMLID_1023_">
+									<path id="XMLID_1029_" class="s5" d="m444.6 257.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1028_" class="s5" d="m456.1 257.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1027_" class="s10" d="m444.6 257.9h11.4v4.9h-11.4z"/>
+									<path id="XMLID_1026_" class="s10" d="m456.1 257.9h11.4v4.9h-11.4z"/>
+									<path id="XMLID_1025_" class="s5" d="m444.6 269.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1024_" class="s5" d="m456.1 269.4h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_1022_" class="s3" d="m443.1 280.8h25.9v2.2h-25.9z"/>
+							</g>
+							<path id="XMLID_1020_" class="s4" d="m442.7 283.3l4.5 4.5 27.5 0.2-5.1-5.1z"/>
+						</g>
+						<g id="XMLID_966_">
+							<g id="XMLID_1270_">
+								<g id="XMLID_1272_">
+									<path id="XMLID_1278_" class="s5" d="m444.6 315.7h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1277_" class="s5" d="m456.1 315.7h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1276_" class="s10" d="m444.6 315.7h11.4v5h-11.4z"/>
+									<path id="XMLID_1275_" class="s10" d="m456.1 315.7h11.4v5h-11.4z"/>
+									<path id="XMLID_1274_" class="s5" d="m444.6 327.2h11.4v11.4h-11.4z"/>
+									<path id="XMLID_1273_" class="s5" d="m456.1 327.2h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_1271_" class="s3" d="m443.1 338.7h25.9v2.1h-25.9z"/>
+							</g>
+							<path id="XMLID_1269_" class="s4" d="m442.7 341.1l4.5 4.5 27.5 0.2-5.1-5z"/>
+						</g>
+						<g id="XMLID_1279_">
+							<g id="XMLID_1281_">
+								<g id="XMLID_1283_">
+									<path id="XMLID_1289_" class="s5" d="m399.7 315.7h11.5v11.4h-11.5z"/>
+									<path id="XMLID_1288_" class="s5" d="m411.2 315.7h11.5v11.4h-11.5z"/>
+									<path id="XMLID_1287_" class="s10" d="m399.7 315.7h11.5v5h-11.5z"/>
+									<path id="XMLID_1286_" class="s10" d="m411.2 315.7h11.5v5h-11.5z"/>
+									<path id="XMLID_1285_" class="s5" d="m399.7 327.2h11.5v11.4h-11.5z"/>
+									<path id="XMLID_1284_" class="s5" d="m411.2 327.2h11.5v11.4h-11.5z"/>
+								</g>
+								<path id="XMLID_1282_" class="s3" d="m398.3 338.7h25.8v2.1h-25.8z"/>
+							</g>
+							<path id="XMLID_1280_" class="s4" d="m397.9 341.1l4.5 4.5 27.4 0.2-5.1-5z"/>
+						</g>
+						<path id="XMLID_1009_" class="s3" d="m19 272.6h149.7v100.3h-149.7z"/>
+						<path id="XMLID_1008_" class="s4" d="m19.5 273.9h149.2v6.1h-149.2z"/>
+						<path id="XMLID_1007_" class="s4" d="m34.3 372.1l68.9-96.5v95.7z"/>
+						<path id="XMLID_1006_" class="s5" d="m264.6 273.3h-247.8l32.3-40.6h183.2z"/>
+						<path id="XMLID_1005_" class="s10" d="m315.8 273.3h-247.7l32.2-40.6h183.3z"/>
+						<g id="XMLID_973_">
+							<path id="XMLID_1004_" class="s11" d="m40.2 314.5h87.2v58.2h-87.2z"/>
+							<path id="XMLID_1003_" class="s3" d="m42.7 317h82.2v55.7h-82.2z"/>
+							<g id="XMLID_999_">
+								<path id="XMLID_1002_" class="s3" d="m45.6 332h76.3v4h-76.3z"/>
+								<path id="XMLID_1001_" class="s3" d="m45.8 332.2h75.8v3.6h-75.8z"/>
+								<path id="XMLID_1000_" class="s3" d="m46.2 332.5h75.1v3.1h-75.1z"/>
+							</g>
+							<g id="XMLID_995_">
+								<path id="XMLID_998_" class="s3" d="m45.6 325.4h76.3v4h-76.3z"/>
+								<path id="XMLID_997_" class="s3" d="m45.8 325.6h75.8v3.6h-75.8z"/>
+								<path id="XMLID_996_" class="s3" d="m46.2 325.8h75.1v3.1h-75.1z"/>
+							</g>
+							<g id="XMLID_991_">
+								<path id="XMLID_994_" class="s3" d="m45.6 338.8h76.3v3.9h-76.3z"/>
+								<path id="XMLID_993_" class="s3" d="m45.8 338.9h75.8v3.7h-75.8z"/>
+								<path id="XMLID_992_" class="s3" d="m46.2 339.2h75.1v3.1h-75.1z"/>
+							</g>
+							<g id="XMLID_987_">
+								<path id="XMLID_990_" class="s3" d="m45.6 345.5h76.3v4h-76.3z"/>
+								<path id="XMLID_989_" class="s3" d="m45.8 345.7h75.8v3.6h-75.8z"/>
+								<path id="XMLID_988_" class="s3" d="m46.2 345.9h75.1v3.1h-75.1z"/>
+							</g>
+							<g id="XMLID_983_">
+								<path id="XMLID_986_" class="s3" d="m45.6 352.2h76.3v4h-76.3z"/>
+								<path id="XMLID_985_" class="s3" d="m45.8 352.4h75.8v3.6h-75.8z"/>
+								<path id="XMLID_984_" class="s3" d="m46.2 352.6h75.1v3.2h-75.1z"/>
+							</g>
+							<g id="XMLID_979_">
+								<path id="XMLID_982_" class="s3" d="m45.6 358.9h76.3v4h-76.3z"/>
+								<path id="XMLID_981_" class="s3" d="m45.8 359.1h75.8v3.6h-75.8z"/>
+								<path id="XMLID_980_" class="s3" d="m46.2 359.3h75.1v3.2h-75.1z"/>
+							</g>
+							<g id="XMLID_975_">
+								<path id="XMLID_978_" class="s3" d="m45.6 365.6h76.3v4h-76.3z"/>
+								<path id="XMLID_977_" class="s3" d="m45.8 365.8h75.8v3.6h-75.8z"/>
+								<path id="XMLID_976_" class="s3" d="m46.2 366.1h75.1v3.1h-75.1z"/>
+							</g>
+							<path id="XMLID_974_" class="s0" d="m43.3 317h79 3.2v2.7 53h-58.2l27.9-53h-51.9z"/>
+						</g>
+						<path id="XMLID_972_" class="s3" d="m102.2 243.7h310.5v129.2h-310.5z"/>
+						<path id="XMLID_971_" class="s0" d="m412.1 282l-309.3-31.3v-5.4h309.3z"/>
+						<path id="XMLID_970_" class="s5" d="m379.9 314.3h-33.4c0-6.3 5.1-11.4 11.5-11.4h10.5c6.3 0 11.4 5.1 11.4 11.4z"/>
+						<path id="XMLID_969_" class="s5" d="m346.4 317h33.6v55.3h-33.6z"/>
+						<path id="XMLID_968_" class="s10" d="m346.4 317.3h33.6v2.5h-33.6z"/>
+						<path id="XMLID_967_" class="s10" d="m376.1 319.1h3.9v53.5h-3.9z"/>
+						<path id="XMLID_962_" class="s6" d="m45.4 260.1h12.2"/>
+						<path id="XMLID_961_" class="s6" d="m64.7 245.4h12.2"/>
+						<path id="XMLID_960_" class="s6" d="m86 256.1h12.2"/>
+						<path id="XMLID_959_" class="s6" d="m362.8 303.3v10.9"/>
+						<path id="XMLID_958_" class="s6" d="m379 310.3h-31.6"/>
+						<path id="XMLID_957_" class="s5" d="m351.7 345c-1 0-1.7-0.8-1.7-1.7 0-0.9 0.7-1.7 1.7-1.7 0.9 0 1.6 0.8 1.6 1.7 0 0.9-0.7 1.7-1.6 1.7z"/>
+						<path id="XMLID_956_" class="s0" d="m243.2 298h8.5v4h-8.5z"/>
+						<path id="XMLID_955_" class="s0" d="m386.4 295.3h8.4v4h-8.4z"/>
+						<path id="XMLID_954_" class="s0" d="m246.9 324.6h8.5v4h-8.5z"/>
+						<path id="XMLID_953_" class="s0" d="m114.3 347.9h8.4v4.1h-8.4z"/>
+						<path id="XMLID_952_" class="s0" d="m331.7 285.4h8.4v4h-8.4z"/>
+						<path id="XMLID_951_" class="s0" d="m253.9 353.4h8.4v4.1h-8.4z"/>
+						<path id="XMLID_950_" class="s4" d="m25.7 363.8h5.8v2.8h-5.8z"/>
+						<path id="XMLID_949_" class="s4" d="m68.9 293.3h5.9v2.8h-5.9z"/>
+						<path id="XMLID_948_" class="s4" d="m35.9 289.4h5.9v2.8h-5.9z"/>
+						<path id="XMLID_947_" class="s4" d="m45.1 305.1h5.8v2.8h-5.8z"/>
+						<path id="XMLID_946_" class="s4" d="m22.2 336.3h5.8v2.8h-5.8z"/>
+						<path id="XMLID_945_" class="s0" d="m271.9 319.4h8.5v4h-8.5z"/>
+						<path id="XMLID_1319_" class="s0" d="m323 352.4h8.4v4h-8.4z"/>
+						<path id="XMLID_944_" class="s0" d="m185.9 288h8.4v4.1h-8.4z"/>
+						<path id="XMLID_943_" class="s0" d="m120.2 308.4h8.5v4h-8.5z"/>
+						<g id="XMLID_934_">
+							<path id="XMLID_942_" class="s0" d="m134 287.9l4.5 4.5 27.5 0.1-5.1-5z"/>
+							<g id="XMLID_935_">
+								<g id="XMLID_937_">
+									<path id="XMLID_941_" class="s10" d="m136 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_940_" class="s10" d="m147.5 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_939_" class="s5" d="m136 273.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_938_" class="s5" d="m147.5 273.9h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_936_" class="s3" d="m134.6 285.4h25.8v2.1h-25.8z"/>
+							</g>
+						</g>
+						<g id="XMLID_925_">
+							<path id="XMLID_933_" class="s0" d="m210.4 287.9l4.5 4.5 27.5 0.1-5.1-5z"/>
+							<g id="XMLID_926_">
+								<g id="XMLID_928_">
+									<path id="XMLID_932_" class="s10" d="m212.4 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_931_" class="s10" d="m223.9 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_930_" class="s5" d="m212.4 273.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_929_" class="s5" d="m223.9 273.9h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_927_" class="s3" d="m210.9 285.4h25.9v2.1h-25.9z"/>
+							</g>
+						</g>
+						<g id="XMLID_914_">
+							<path id="XMLID_924_" class="s0" d="m286.8 287.9l4.5 4.5 27.5 0.1-5.2-5z"/>
+							<g id="XMLID_915_">
+								<g id="XMLID_917_">
+									<path id="XMLID_923_" class="s12" d="m288.8 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_922_" class="s12" d="m300.3 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_921_" class="s10" d="m288.8 262.4h11.4v5.9h-11.4z"/>
+									<path id="XMLID_920_" class="s10" d="m300.3 262.4h11.4v5.9h-11.4z"/>
+									<path id="XMLID_919_" class="s12" d="m288.8 273.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_918_" class="s12" d="m300.3 273.9h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_916_" class="s3" d="m287.3 285.4h25.8v2.1h-25.8z"/>
+							</g>
+						</g>
+						<g id="XMLID_889_">
+							<path id="XMLID_913_" class="s0" d="m363.2 287.9l4.5 4.5 27.4 0.1-5.1-5z"/>
+							<g id="XMLID_890_">
+								<g id="XMLID_892_">
+									<path id="XMLID_912_" class="s5" d="m365.2 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_911_" class="s5" d="m376.7 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_910_" class="s5" d="m136 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_909_" class="s5" d="m147.5 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_908_" class="s5" d="m212.4 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_907_" class="s5" d="m223.9 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_906_" class="s5" d="m365.2 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_905_" class="s5" d="m376.7 262.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_904_" class="s10" d="m136 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_903_" class="s10" d="m147.5 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_902_" class="s10" d="m212.4 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_901_" class="s10" d="m223.9 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_900_" class="s10" d="m136 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_899_" class="s10" d="m147.5 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_898_" class="s10" d="m212.4 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_897_" class="s10" d="m223.9 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_896_" class="s10" d="m365.2 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_895_" class="s10" d="m376.7 262.4h11.4v3.7h-11.4z"/>
+									<path id="XMLID_894_" class="s5" d="m365.2 273.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_893_" class="s5" d="m376.7 273.9h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_891_" class="s3" d="m363.7 285.4h25.8v2.1h-25.8z"/>
+							</g>
+						</g>
+						<g id="XMLID_842_">
+							<path id="XMLID_888_" class="s0" d="m148.8 356.3l4.5 4.5 74 0.2-5.1-5z"/>
+							<g id="XMLID_843_">
+								<g id="XMLID_845_">
+									<g id="XMLID_883_">
+										<path id="XMLID_887_" class="s5" d="m150.9 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_886_" class="s5" d="m162.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_885_" class="s5" d="m150.9 319h11.4v11.4h-11.4z"/>
+										<path id="XMLID_884_" class="s5" d="m162.4 319h11.4v11.4h-11.4z"/>
+									</g>
+									<g id="XMLID_878_">
+										<path id="XMLID_882_" class="s5" d="m173.9 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_881_" class="s5" d="m185.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_880_" class="s5" d="m173.9 319h11.4v11.4h-11.4z"/>
+										<path id="XMLID_879_" class="s5" d="m185.4 319h11.4v11.4h-11.4z"/>
+									</g>
+									<g id="XMLID_861_">
+										<path id="XMLID_877_" class="s5" d="m196.9 307.5h11.5v11.4h-11.5z"/>
+										<path id="XMLID_876_" class="s5" d="m208.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_875_" class="s5" d="m150.9 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_874_" class="s5" d="m162.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_873_" class="s5" d="m173.9 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_872_" class="s5" d="m185.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_871_" class="s5" d="m196.9 307.5h11.5v11.4h-11.5z"/>
+										<path id="XMLID_870_" class="s5" d="m208.4 307.5h11.4v11.4h-11.4z"/>
+										<path id="XMLID_869_" class="s10" d="m150.9 307.5h11.4v16.5h-11.4z"/>
+										<path id="XMLID_868_" class="s10" d="m162.4 307.5h11.4v16.5h-11.4z"/>
+										<path id="XMLID_867_" class="s10" d="m173.9 307.5h11.4v16.5h-11.4z"/>
+										<path id="XMLID_866_" class="s10" d="m185.4 307.5h11.4v16.5h-11.4z"/>
+										<path id="XMLID_865_" class="s10" d="m196.9 307.5h11.5v16.5h-11.5z"/>
+										<path id="XMLID_864_" class="s10" d="m208.4 307.5h11.4v16.5h-11.4z"/>
+										<path id="XMLID_863_" class="s5" d="m196.9 319h11.5v11.4h-11.5z"/>
+										<path id="XMLID_862_" class="s5" d="m208.4 319h11.4v11.4h-11.4z"/>
+									</g>
+									<g id="XMLID_856_">
+										<path id="XMLID_860_" class="s5" d="m150.9 330.6h11.4v11.4h-11.4z"/>
+										<path id="XMLID_859_" class="s5" d="m162.4 330.6h11.4v11.4h-11.4z"/>
+										<path id="XMLID_858_" class="s5" d="m150.9 342.1h11.4v11.4h-11.4z"/>
+										<path id="XMLID_857_" class="s5" d="m162.4 342.1h11.4v11.4h-11.4z"/>
+									</g>
+									<g id="XMLID_851_">
+										<path id="XMLID_855_" class="s5" d="m173.9 330.6h11.4v11.4h-11.4z"/>
+										<path id="XMLID_854_" class="s5" d="m185.4 330.6h11.4v11.4h-11.4z"/>
+										<path id="XMLID_853_" class="s5" d="m173.9 342.1h11.4v11.4h-11.4z"/>
+										<path id="XMLID_852_" class="s5" d="m185.4 342.1h11.4v11.4h-11.4z"/>
+									</g>
+									<g id="XMLID_846_">
+										<path id="XMLID_850_" class="s5" d="m196.9 330.6h11.5v11.4h-11.5z"/>
+										<path id="XMLID_849_" class="s5" d="m208.4 330.6h11.4v11.4h-11.4z"/>
+										<path id="XMLID_848_" class="s5" d="m196.9 342.1h11.5v11.4h-11.5z"/>
+										<path id="XMLID_847_" class="s5" d="m208.4 342.1h11.4v11.4h-11.4z"/>
+									</g>
+								</g>
+								<path id="XMLID_844_" class="s3" d="m149 353.7h72.8v2.2h-72.8z"/>
+							</g>
+						</g>
+						<g id="XMLID_833_">
+							<path id="XMLID_841_" class="s1" d="m341.8 153.9h11.1v29.7h-11.1z"/>
+							<path id="XMLID_840_" class="s12" d="m330 153.9h18.6v29.7h-18.6z"/>
+							<path id="XMLID_839_" class="s13" d="m333.4 162.9h6v3.2h-6z"/>
+							<path id="XMLID_838_" class="s12" d="m329.8 168.8h6v3.2h-6z"/>
+							<path id="XMLID_837_" class="s13" d="m343.1 156.7h6v3.3h-6z"/>
+							<path id="XMLID_836_" class="s1" d="m342.8 168.9h6v3.2h-6z"/>
+							<path id="XMLID_835_" class="s1" d="m344 162.8h6v3.2h-6z"/>
+							<path id="XMLID_834_" class="s1" d="m329.3 157.3h5.9v3.3h-5.9z"/>
+						</g>
+						<g id="XMLID_722_">
+							<path id="XMLID_1295_" class="s14" d="m97.2 357.3h18.6v15.2h-18.6z"/>
+							<path id="XMLID_1294_" class="s15" d="m100.6 361.9h6v1.6h-6z"/>
+							<path id="XMLID_1293_" class="s14" d="m97 364.9h6v1.6h-6z"/>
+							<path id="XMLID_1292_" class="s15" d="m110.3 358.8h6v1.6h-6z"/>
+							<path id="XMLID_1291_" class="s16" d="m110 365h6v1.6h-6z"/>
+							<path id="XMLID_1297_" class="s16" d="m96.9 369.3h6v1.7h-6z"/>
+							<path id="XMLID_1296_" class="s16" d="m110.4 368.5h6v1.7h-6z"/>
+							<path id="XMLID_1290_" class="s16" d="m110.6 361.8h6v1.7h-6z"/>
+							<path id="XMLID_965_" class="s16" d="m96.5 359.1h5.9v1.6h-5.9z"/>
+						</g>
+						<g id="XMLID_1298_">
+							<path id="XMLID_1307_" class="s14" d="m397.3 357.7h18.5v15.2h-18.5z"/>
+							<path id="XMLID_1306_" class="s15" d="m400.7 362.4h6v1.6h-6z"/>
+							<path id="XMLID_1305_" class="s14" d="m397.1 365.3h6v1.7h-6z"/>
+							<path id="XMLID_1304_" class="s15" d="m410.4 359.2h6v1.6h-6z"/>
+							<path id="XMLID_1303_" class="s16" d="m410.1 365.4h6v1.6h-6z"/>
+							<path id="XMLID_1302_" class="s16" d="m396.9 369.8h6v1.6h-6z"/>
+							<path id="XMLID_1301_" class="s16" d="m410.5 369h6v1.6h-6z"/>
+							<path id="XMLID_1300_" class="s16" d="m410.7 362.3h6v1.6h-6z"/>
+							<path id="XMLID_1299_" class="s16" d="m396.5 359.5h6v1.6h-6z"/>
+						</g>
+						<g id="XMLID_1308_">
+							<path id="XMLID_1317_" class="s17" d="m474 362.1h13.5v11h-13.5z"/>
+							<path id="XMLID_1316_" class="s18" d="m476.5 365.4h4.4v1.2h-4.4z"/>
+							<path id="XMLID_1315_" class="s17" d="m473.9 367.6h4.4v1.2h-4.4z"/>
+							<path id="XMLID_1314_" class="s18" d="m483.6 363.1h4.3v1.2h-4.3z"/>
+							<path id="XMLID_1313_" class="s19" d="m483.3 367.6h4.4v1.2h-4.4z"/>
+							<path id="XMLID_1312_" class="s19" d="m473.8 370.8h4.3v1.2h-4.3z"/>
+							<path id="XMLID_1311_" class="s19" d="m483.6 370.2h4.4v1.2h-4.4z"/>
+							<path id="XMLID_1310_" class="s19" d="m483.8 365.3h4.3v1.2h-4.3z"/>
+							<path id="XMLID_1309_" class="s19" d="m473.5 363.3h4.3v1.2h-4.3z"/>
+						</g>
+						<path id="XMLID_832_" class="s5" d="m417.7 246h-320.5l41.7-71.3h237.1z"/>
+						<path id="XMLID_831_" class="s10" d="m166.8 192.7l48.2 53.2h32.3l-57.4-63.3z"/>
+						<path id="XMLID_830_" class="s5" d="m357.6 326h11.4v11.4h-11.4z"/>
+						<path id="XMLID_829_" class="s5" d="m357.6 355.3h11.4v3h-11.4z"/>
+						<path id="XMLID_828_" class="s10" d="m208.4 224.9l20.4 20.5h141.2l-57.4-57.4z"/>
+						<path id="XMLID_827_" class="s3" d="m311.7 151.1v73.8h-103.3v-73.8l53-30.1z"/>
+						<path id="XMLID_826_" class="s0" d="m311.1 154.9v7.8l-51-32.9-51.1 33-0.1-7.7 51.2-33z"/>
+						<path id="XMLID_825_" class="s5" d="m320 162.7l-59.9-38.7-60 38.7v-7.7l60-38.7 59.9 38.7z"/>
+						<path id="XMLID_824_" class="s6" d="m154.6 187.3h12.1"/>
+						<path id="XMLID_823_" class="s6" d="m181.6 198.3h12.2"/>
+						<path id="XMLID_822_" class="s6" d="m321.3 183.9h12.2"/>
+						<path id="XMLID_821_" class="s6" d="m357.7 192.7h12.2"/>
+						<path id="XMLID_820_" class="s6" d="m337.8 209.6h12.2"/>
+						<path id="XMLID_819_" class="s6" d="m377.5 231.6h12.1"/>
+						<path id="XMLID_818_" class="s6" d="m133.1 212.9h12.2"/>
+						<path id="XMLID_817_" class="s6" d="m178.7 231.2h12.2"/>
+						<path id="XMLID_816_" class="s0" d="m240.4 213.9h8.5v4.1h-8.5z"/>
+						<path id="XMLID_815_" class="s0" d="m259.9 148h8.5v4h-8.5z"/>
+						<path id="XMLID_814_" class="s0" d="m214.7 198.3h8.4v4h-8.4z"/>
+						<path id="XMLID_813_" class="s0" d="m291.1 200.3h8.4v4h-8.4z"/>
+						<g id="XMLID_765_">
+							<g id="XMLID_767_">
+								<g id="XMLID_782_">
+									<path id="XMLID_812_" class="s5" d="m225.5 166.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_785_" class="s5" d="m237 166.9h11.4v11.4h-11.4z"/>
+									<path id="XMLID_784_" class="s5" d="m225.5 178.4h11.4v11.4h-11.4z"/>
+									<path id="XMLID_783_" class="s5" d="m237 178.4h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_781_" class="s3" d="m224.1 189.8h25.8v2.2h-25.8z"/>
+								<g id="XMLID_768_">
+									<path id="XMLID_780_" class="s3" d="m243.4 189.4h-2.4l-0.8-5.3h4z"/>
+									<path id="XMLID_779_" fill-rule="evenodd" class="s6" d="m241.9 183.9c0 0-0.6-1.7 1-2.8 1.6-1 1.5-2.2 1.5-2.2"/>
+									<path id="XMLID_778_" class="s7" d="m244.3 179.3c-0.5 0-0.9-0.4-0.9-0.9 0-0.5 0.4-0.9 0.9-0.9 0.5 0 0.9 0.4 0.9 0.9 0 0.5-0.4 0.9-0.9 0.9z"/>
+									<path id="XMLID_777_" class="s8" d="m241.6 180.8c0.4 0.6 0.1 1.6 0.1 1.6 0 0-1-0.1-1.4-0.7-0.4-0.7-0.1-1.6-0.1-1.6 0 0 1 0.1 1.4 0.7z"/>
+									<path id="XMLID_776_" class="s8" d="m244 183.1c-0.7 0.3-1.6-0.3-1.6-0.3 0 0 0.3-1 1-1.2 0.7-0.3 1.6 0.3 1.6 0.3 0 0-0.3 1-1 1.2z"/>
+									<path id="XMLID_775_" class="s9" d="m246 176.6c-0.3 0.7-1.3 1-1.3 1 0 0-0.5-0.9-0.2-1.6 0.2-0.7 1.2-0.9 1.2-0.9 0 0 0.5 0.8 0.3 1.5z"/>
+									<path id="XMLID_774_" class="s9" d="m243.6 176c0.5 0.6 0.2 1.6 0.2 1.6 0 0-1 0-1.4-0.5-0.5-0.6-0.2-1.6-0.2-1.6 0 0 1 0 1.4 0.5z"/>
+									<path id="XMLID_773_" class="s9" d="m242 177.8c0.7-0.1 1.4 0.6 1.4 0.6 0 0-0.5 0.9-1.2 1-0.7 0.1-1.4-0.6-1.4-0.6 0 0 0.4-0.9 1.2-1z"/>
+									<path id="XMLID_772_" class="s9" d="m242.6 180.1c0.3-0.7 1.3-0.9 1.3-0.9 0 0 0.5 0.8 0.2 1.5-0.2 0.7-1.2 0.9-1.2 0.9 0 0-0.6-0.8-0.3-1.5z"/>
+									<path id="XMLID_770_" class="s9" d="m245 180.7c-0.5-0.6-0.2-1.6-0.2-1.6 0 0 1 0 1.4 0.6 0.5 0.6 0.2 1.5 0.2 1.5 0 0-1 0.1-1.4-0.5z"/>
+									<path id="XMLID_769_" class="s9" d="m246.6 179c-0.7 0.1-1.4-0.7-1.4-0.7 0 0 0.5-0.8 1.2-1 0.7-0.1 1.4 0.7 1.4 0.7 0 0-0.4 0.8-1.2 1z"/>
+								</g>
+							</g>
+							<path id="XMLID_766_" class="s0" d="m223.5 192.2l4.5 4.5 27.4 0.2-5.1-5z"/>
+						</g>
+						<g id="XMLID_743_">
+							<g id="XMLID_756_">
+								<path id="XMLID_764_" class="s0" d="m288.3 337.6l4.5 4.5 27.4 0.2-5.1-5z"/>
+								<g id="XMLID_757_">
+									<g id="XMLID_759_">
+										<path id="XMLID_763_" class="s5" d="m290.4 312.3h11.4v11.4h-11.4z"/>
+										<path id="XMLID_762_" class="s5" d="m301.9 312.3h11.4v11.4h-11.4z"/>
+										<path id="XMLID_761_" class="s5" d="m290.4 323.8h11.4v11.4h-11.4z"/>
+										<path id="XMLID_760_" class="s5" d="m301.9 323.8h11.4v11.4h-11.4z"/>
+									</g>
+									<path id="XMLID_758_" class="s3" d="m288.9 335.2h25.9v2.2h-25.9z"/>
+								</g>
+							</g>
+							<g id="XMLID_744_">
+								<path id="XMLID_755_" class="s3" d="m307.7 334.7h-2.4l-0.8-5.3h4z"/>
+								<path id="XMLID_754_" fill-rule="evenodd" class="s6" d="m306.2 329.2c0 0-0.7-1.7 1-2.8 1.6-1 1.4-2.2 1.4-2.2"/>
+								<path id="XMLID_753_" class="s7" d="m308.6 324.6c-0.5 0-0.9-0.4-0.9-0.9 0-0.5 0.4-0.9 0.9-0.9 0.4 0 0.8 0.4 0.8 0.9 0 0.5-0.4 0.9-0.8 0.9z"/>
+								<path id="XMLID_752_" class="s8" d="m305.9 326.1c0.4 0.6 0.1 1.6 0.1 1.6 0 0-1.1-0.1-1.5-0.7-0.4-0.6 0-1.6 0-1.6 0 0 1 0.1 1.4 0.7z"/>
+								<path id="XMLID_751_" class="s8" d="m308.3 328.4c-0.7 0.3-1.6-0.3-1.6-0.3 0 0 0.3-0.9 1-1.2 0.7-0.2 1.5 0.3 1.5 0.3 0 0-0.2 1-0.9 1.2z"/>
+								<path id="XMLID_750_" class="s9" d="m310.2 322c-0.2 0.6-1.2 0.9-1.2 0.9 0 0-0.5-0.9-0.3-1.5 0.3-0.7 1.3-1 1.3-1 0 0 0.5 0.9 0.2 1.6z"/>
+								<path id="XMLID_749_" class="s9" d="m307.9 321.4c0.5 0.6 0.2 1.5 0.2 1.5 0 0-1 0.1-1.5-0.5-0.4-0.6-0.2-1.6-0.2-1.6 0 0 1 0 1.5 0.6z"/>
+								<path id="XMLID_748_" class="s9" d="m306.2 323.1c0.8-0.1 1.5 0.6 1.5 0.6 0 0-0.5 0.9-1.2 1-0.8 0.1-1.5-0.6-1.5-0.6 0 0 0.5-0.9 1.2-1z"/>
+								<path id="XMLID_747_" class="s9" d="m306.9 325.4c0.3-0.7 1.2-0.9 1.2-0.9 0 0 0.6 0.8 0.3 1.5-0.3 0.7-1.2 1-1.2 1 0 0-0.6-0.9-0.3-1.6z"/>
+								<path id="XMLID_746_" class="s9" d="m309.2 326c-0.4-0.6-0.2-1.5-0.2-1.5 0 0 1-0.1 1.5 0.5 0.5 0.6 0.2 1.6 0.2 1.6 0 0-1 0-1.5-0.6z"/>
+								<path id="XMLID_745_" class="s9" d="m310.9 324.3c-0.7 0.1-1.4-0.6-1.4-0.6 0 0 0.4-0.9 1.2-1 0.7-0.1 1.4 0.6 1.4 0.6 0 0-0.5 0.9-1.2 1z"/>
+							</g>
+						</g>
+						<g id="XMLID_732_">
+							<g id="XMLID_734_">
+								<g id="XMLID_736_">
+									<path id="XMLID_742_" class="s5" d="m271.2 166.8h11.4v11.4h-11.4z"/>
+									<path id="XMLID_741_" class="s5" d="m282.7 166.8h11.4v11.4h-11.4z"/>
+									<path id="XMLID_740_" class="s10" d="m271.2 166.8h11.4v5h-11.4z"/>
+									<path id="XMLID_739_" class="s10" d="m282.7 166.8h11.4v5h-11.4z"/>
+									<path id="XMLID_738_" class="s5" d="m271.2 178.3h11.4v11.4h-11.4z"/>
+									<path id="XMLID_737_" class="s5" d="m282.7 178.3h11.4v11.4h-11.4z"/>
+								</g>
+								<path id="XMLID_735_" class="s3" d="m269.8 189.8h25.8v2.1h-25.8z"/>
+							</g>
+							<path id="XMLID_733_" class="s0" d="m269.4 192.2l4.5 4.5 27.4 0.2-5.1-5z"/>
+						</g>
+						<g id="XMLID_723_">
+							<path id="XMLID_731_" class="s1" d="m189.7 183.1l-4.5 9.6-6.6-29.7h11.1z"/>
+							<path id="XMLID_730_" class="s12" d="m166.8 163h18.6v29.7h-18.6z"/>
+							<path id="XMLID_729_" class="s13" d="m170.2 172h6v3.2h-6z"/>
+							<path id="XMLID_728_" class="s12" d="m166.6 177.9h6v3.2h-6z"/>
+							<path id="XMLID_727_" class="s13" d="m179.9 165.9h6v3.2h-6z"/>
+							<path id="XMLID_726_" class="s1" d="m179.6 178h6v3.2h-6z"/>
+							<path id="XMLID_1542_" class="s1" d="m168.9 185.9h6v3.2h-6z"/>
+							<path id="XMLID_725_" class="s1" d="m180.8 171.9h6v3.2h-6z"/>
+							<path id="XMLID_724_" class="s1" d="m166 166.5h6v3.2h-6z"/>
+							<path id="XMLID_1545_" class="s1" d="m179.1 184.9h5.9v3.2h-5.9z"/>
+						</g>
+					</g>
+					<g id="XMLID_462_">
+						<path id="XMLID_466_" class="s4" d="m465.9 323.3q-1 0-1.9 0.2c-3.9 0.9-6.8 4.4-6.8 8.5v27.4c0 4.2 2.9 7.7 6.8 8.6q0.6 0.1 1.3 0.2v4.3h1.9v-4.4c4.2-0.6 7.5-4.3 7.5-8.7v-27.4c0-4.8-3.9-8.7-8.8-8.7z"/>
+						<g id="XMLID_460_">
+							<path id="XMLID_474_" class="s1" d="m460.9 367.3h1.9v5.2h-1.9z"/>
+							<path id="XMLID_461_" class="s2" d="m470.3 332v27.4c0 4.9-3.9 8.8-8.8 8.8q-1 0-1.9-0.2c-3.9-0.9-6.8-4.4-6.8-8.6v-27.4c0-4.1 2.9-7.6 6.8-8.5q0.9-0.2 1.9-0.2c4.9 0 8.8 3.9 8.8 8.7z"/>
+						</g>
+					</g>
+					<g id="XMLID_464_">
+						<path id="XMLID_469_" class="s4" d="m260.5 311.8q-1.3 0-2.4 0.3c-4.9 1.1-8.4 5.4-8.4 10.5v33.8c0 5.1 3.5 9.4 8.4 10.5q0.8 0.2 1.6 0.2v5.4h2.4v-5.4c5.2-0.8 9.2-5.3 9.2-10.7v-33.8c0-6-4.9-10.8-10.8-10.8z"/>
+						<g id="XMLID_465_">
+							<path id="XMLID_468_" class="s1" d="m254.3 366h2.3v6.5h-2.3z"/>
+							<path id="XMLID_467_" class="s2" d="m265.8 322.6v33.8c0 6-4.8 10.8-10.8 10.8q-1.2 0-2.4-0.3c-4.8-1.1-8.4-5.4-8.4-10.5v-33.8c0-5.1 3.6-9.4 8.4-10.5q1.2-0.3 2.4-0.3c6 0 10.8 4.8 10.8 10.8z"/>
+						</g>
+					</g>
+					<g id="XMLID_1439_">
+						<path id="XMLID_1443_" class="s4" d="m134.1 328.5q-0.9 0-1.8 0.2c-3.5 0.8-6.1 3.9-6.1 7.6v24.5c0 3.7 2.6 6.9 6.1 7.7q0.6 0.1 1.2 0.1v3.9h1.7v-3.9c3.8-0.6 6.7-3.9 6.7-7.8v-24.5c0-4.3-3.5-7.8-7.8-7.8z"/>
+						<g id="XMLID_1440_">
+							<path id="XMLID_1442_" class="s1" d="m129.6 367.8h1.7v4.7h-1.7z"/>
+							<path id="XMLID_1441_" class="s2" d="m138 336.3v24.5c0 4.3-3.5 7.9-7.9 7.9q-0.9-0.1-1.7-0.2c-3.5-0.8-6.1-4-6.1-7.7v-24.5c0-3.7 2.6-6.8 6.1-7.6q0.8-0.2 1.7-0.2c4.4 0 7.9 3.5 7.9 7.8z"/>
+						</g>
+					</g>
+					<path id="XMLID_463_" class="s6" d="m0.9 372.8h510.6"/>
+				</g>
+				<g id="XMLID_1549_">
+					<path id="XMLID_1506_" class="s20" d="m386.3 397.3h78.4"/>
+					<path id="XMLID_1508_" class="s6" d="m246.6 383.7h38.4"/>
+					<path id="XMLID_1509_" class="s6" d="m29.3 439.2h179.1"/>
+					<path id="XMLID_1516_" class="s6" d="m-31 399.4h69.2"/>
+					<path id="XMLID_1517_" class="s6" d="m298.1 417h29.8"/>
+					<path id="XMLID_1518_" class="s6" d="m488.7 428.2h29.8"/>
+					<path id="XMLID_1519_" class="s6" d="m230.6 460.6h20"/>
+				</g>
+				<g id="XMLID_1507_">
+				</g>
+			</g>
+			<g id="XMLID_1548_">
+				<g id="XMLID_1447_">
+					<g id="Clip-Path: XMLID_1457_" clip-path="url(#cp1)">
+						<path id="XMLID_1457_" class="s4" d="m183.7 246.7h-8.9v-0.7h-12.5v0.7h-61.9c-3.2 0-5.7 2.5-5.7 5.7v32.8h-0.7v12.6h0.7v4.2h-0.7v18.1h0.7v113.6c0 3.2 2.5 5.7 5.7 5.7h83.3c3.2 0 5.7-2.5 5.7-5.7v-181.3c0-3.2-2.5-5.7-5.7-5.7z"/>
+					</g>
+				</g>
+				<g id="XMLID_1412_">
+					<path id="XMLID_1415_" class="s3" d="m85.2 285.2h2.8v12.6h-2.8z"/>
+					<path id="XMLID_1414_" class="s3" d="m153.5 246h12.6v2.9h-12.6z"/>
+					<path id="XMLID_1413_" class="s3" d="m85.2 302h2.8v18.1h-2.8z"/>
+					<path id="XMLID_1421_" class="s3" d="m85.9 250.7c0-2.2 1.8-4 4.1-4h86.6c2.2 0 4.1 1.8 4.1 4v184.6c0 2.3-1.9 4.1-4.1 4.1h-86.6c-2.3 0-4.1-1.8-4.1-4.1z"/>
+					<path id="XMLID_1420_" class="s5" d="m89.9 268.8c0-0.8 0.6-1.5 1.4-1.5h83.9c0.8 0 1.5 0.7 1.5 1.5v145.1c0 0.8-0.7 1.4-1.5 1.4h-83.9c-0.8 0-1.4-0.6-1.4-1.4z"/>
+					<path id="XMLID_1419_" class="s3" d="m144.4 258.8h-22.7c-0.8 0-1.5-0.6-1.5-1.4 0-0.8 0.7-1.5 1.5-1.5h22.7c0.8 0 1.5 0.7 1.5 1.5 0 0.8-0.7 1.4-1.5 1.4z"/>
+					<path id="XMLID_1418_" class="s3" d="m153.5 257.4c0 0.7-0.5 1.2-1.2 1.2-0.7 0-1.2-0.5-1.2-1.2 0-0.7 0.5-1.3 1.2-1.3 0.7 0 1.2 0.6 1.2 1.3z"/>
+					<path id="XMLID_1417_" class="s3" d="m161.9 257.4c0 0.4-0.3 0.7-0.7 0.7-0.4 0-0.8-0.3-0.8-0.7 0-0.4 0.4-0.8 0.8-0.8 0.4 0 0.7 0.4 0.7 0.8z"/>
+					<path id="XMLID_1416_" class="s3" d="m138.1 431.3h-10.2c-2.9 0-5.2-2.4-5.2-5.3 0-2.9 2.3-5.2 5.2-5.2h10.2c2.9 0 5.3 2.3 5.3 5.2 0 2.9-2.4 5.3-5.3 5.3z"/>
+				</g>
+				<g id="XMLID_1449_">
+					<g id="XMLID_1460_">
+						<g id="XMLID_1498_">
+							<path id="XMLID_1499_" class="s0" d="m149.1 344.7c-2.1 8.7-10.7 14-19.3 11.9-8.7-2-14-10.7-12-19.3 2.1-8.6 10.7-14 19.4-11.9 8.6 2 13.9 10.7 11.9 19.3z"/>
+						</g>
+						<g id="XMLID_1461_">
+							<g id="XMLID_1462_">
+								<path id="XMLID_1463_" fill-rule="evenodd" class="s10" d="m140 336.7v11.2h-13v-11.2h2v-0.5c0-2.5 2-4.5 4.5-4.5 2.5 0 4.5 2 4.5 4.5v0.5zm-4.6 8.5l-0.8-2.6c0.5-0.4 0.8-0.9 0.8-1.5 0-1-0.9-1.9-1.9-1.9-1.1 0-1.9 0.9-1.9 1.9 0 0.6 0.3 1.1 0.7 1.5l-0.7 2.6zm0.6-9c0-1.4-1.1-2.5-2.5-2.5-1.4 0-2.6 1.1-2.6 2.5v0.5h5.1z"/>
+							</g>
+						</g>
+					</g>
+					<g id="XMLID_1450_">
+						<g id="XMLID_1453_">
+							<path id="XMLID_1454_" fill-rule="evenodd" class="s10" d="m133.4 374c-18.2 0-32.9-14.7-32.9-33 0-18.2 14.7-33 32.9-33 18.3 0 33 14.8 33 33 0 18.3-14.7 33-33 33zm23.4-33c0-12.9-10.4-23.4-23.4-23.4-12.9 0-23.3 10.5-23.3 23.4 0 12.9 10.4 23.4 23.3 23.4 13 0 23.4-10.5 23.4-23.4z"/>
+						</g>
+						<g id="XMLID_1451_">
+							<path id="XMLID_1452_" class="s0" d="m156.6 337.7c-1.6-11.4-11.6-20.1-23.2-20.1v-9.6c16.4 0 30.4 12.2 32.7 28.3z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="Layer">
+			<g id="XMLID_1528_">
+				<g id="XMLID_1533_">
+					<g id="XMLID_1538_">
+						<path id="XMLID_1539_" class="s10" d="m466 98.5c0 2.7-0.9 5.2-2.4 7.3-2.3 3.2-3.5 7-3.5 11v0.4h-13.3v-0.4c0-4-1.4-7.9-3.7-11.2-1.6-2.4-2.4-5.3-2.1-8.5 0.6-5.8 5.3-10.4 11-11.1 7.6-0.8 14 5.1 14 12.5z"/>
+					</g>
+					<g id="XMLID_1536_">
+						<path id="XMLID_1537_" class="s10" d="m448 118.3h11v3.8h-11z"/>
+					</g>
+					<g id="XMLID_1534_">
+						<path id="XMLID_1535_" class="s10" d="m449.6 123.2h7.7v2.6h-7.7z"/>
+					</g>
+				</g>
+				<g id="XMLID_1529_">
+					<path id="XMLID_1530_" fill-rule="evenodd" class="s10" d="m452.8 136.5c-16.8 0-30.5-13.6-30.5-30.5 0-16.8 13.7-30.4 30.5-30.4 16.9 0 30.5 13.6 30.5 30.4 0 16.9-13.6 30.5-30.5 30.5zm26.9-30.5c0-14.8-12-26.8-26.9-26.8-14.9 0-26.9 12-26.9 26.8 0 14.9 12 26.9 26.9 26.9 14.9 0 26.9-12 26.9-26.9z"/>
+				</g>
+			</g>
+			<path id="XMLID_1459_" fill-rule="evenodd" class="s10" d="m157.5 88c-16.9 0-30.5-13.6-30.5-30.5 0-16.8 13.6-30.4 30.5-30.4 16.8 0 30.4 13.6 30.4 30.4 0 16.9-13.6 30.5-30.4 30.5zm26.9-30.5c0-14.8-12-26.8-26.9-26.8-14.9 0-26.9 12-26.9 26.8 0 14.9 12 26.9 26.9 26.9 14.9 0 26.9-12 26.9-26.9z"/>
+			<g id="XMLID_1445_">
+				<path id="XMLID_1468_" fill-rule="evenodd" class="s10" d="m157.5 77.6c-11.1 0-20.1-9-20.1-20.1 0-11.1 9-20 20.1-20 11.1 0 20.1 8.9 20.1 20 0 11.1-9 20.1-20.1 20.1zm17.2-18.5h-2.7c-0.8 0-1.4-0.6-1.4-1.4 0-0.7 0.6-1.4 1.4-1.4h2.7c-0.2-3.7-1.7-7.2-4-9.9l-2 2c-0.2 0.2-0.6 0.4-0.9 0.4-0.4 0-0.7-0.2-1-0.4-0.5-0.6-0.5-1.4 0-2l2-2c-2.7-2.3-6.2-3.8-9.9-4.1v2.8c0 0.8-0.7 1.4-1.4 1.4-0.8 0-1.4-0.6-1.4-1.4v-2.8c-3.8 0.3-7.2 1.8-9.9 4.1l1.9 1.9c0.6 0.6 0.6 1.5 0 2-0.2 0.3-0.6 0.4-0.9 0.4-0.4 0-0.7-0.1-1-0.4l-1.9-1.9c-2.3 2.7-3.8 6.1-4.1 9.8h2.7c0.7 0 1.3 0.6 1.3 1.4 0 0.8-0.6 1.4-1.3 1.4h-2.7c0.3 3.7 1.8 7.1 4.1 9.7l1.8-1.8c0.6-0.5 1.4-0.5 2 0 0.5 0.6 0.5 1.5 0 2l-1.8 1.8c2.6 2.3 6 3.8 9.7 4.1v-2.6c0-0.7 0.6-1.4 1.4-1.4 0.7 0 1.3 0.7 1.3 1.4v2.6c3.8-0.3 7.2-1.7 9.9-4l-1.9-1.8c-0.5-0.6-0.5-1.4 0-2 0.6-0.5 1.4-0.5 2 0l1.8 1.9c2.4-2.7 3.9-6.1 4.2-9.8z"/>
+				<path id="XMLID_1469_" class="s10" d="m158.9 57.9v-7.6c0-0.7-0.7-1.4-1.4-1.4-0.8 0-1.4 0.7-1.4 1.4v8.1q0 0 0 0.1 0 0 0 0.1 0.1 0.5 0.4 0.8l2.5 4c0.3 0.4 0.7 0.6 1.2 0.6q0.4 0 0.7-0.2c0.7-0.4 0.9-1.2 0.5-1.9z"/>
+			</g>
+			<g id="XMLID_1478_">
+				<g id="XMLID_1492_">
+					<path id="XMLID_1493_" fill-rule="evenodd" class="s10" d="m368.1 88.2c-16.5 0-29.9-13.3-29.9-29.8 0-16.5 13.4-29.9 29.9-29.9 16.5 0 29.8 13.4 29.8 29.9 0 16.5-13.3 29.8-29.8 29.8zm26.3-29.8c0-14.6-11.8-26.4-26.3-26.4-14.6 0-26.4 11.8-26.4 26.4 0 14.5 11.8 26.3 26.4 26.3 14.5 0 26.3-11.8 26.3-26.3z"/>
+				</g>
+				<g id="XMLID_1479_">
+					<g id="XMLID_1489_">
+						<g id="XMLID_1490_">
+							<path id="XMLID_1491_" class="s10" d="m367.8 72.6c-2.3 0-4.1-1.9-4.1-4.2 0-2.3 1.8-4.2 4.1-4.2 2.3 0 4.2 1.9 4.2 4.2 0 2.3-1.9 4.2-4.2 4.2z"/>
+						</g>
+					</g>
+					<g id="XMLID_1486_">
+						<g id="XMLID_1487_">
+							<path id="XMLID_1488_" class="s10" d="m375.5 63.5c-0.4 0-0.8-0.2-1.1-0.5-1.7-1.9-4.1-2.9-6.6-2.9-2.3 0-4.4 0.9-6.1 2.5-0.6 0.5-1.5 0.5-2.1-0.1-0.6-0.6-0.6-1.5 0-2.1 2.2-2.2 5.1-3.4 8.2-3.4 3.4 0 6.6 1.5 8.8 4 0.6 0.6 0.5 1.5-0.1 2.1-0.3 0.3-0.7 0.4-1 0.4z"/>
+						</g>
+					</g>
+					<g id="XMLID_1483_">
+						<g id="XMLID_1484_">
+							<path id="XMLID_1485_" class="s10" d="m379.5 59.5c-0.4 0-0.8-0.2-1.1-0.5-2.8-2.9-6.5-4.6-10.6-4.6-3.8 0-7.4 1.5-10.1 4.1-0.6 0.6-1.5 0.6-2.1 0-0.6-0.6-0.6-1.5 0-2.1 3.3-3.2 7.6-5 12.2-5 4.8 0 9.5 2 12.8 5.5 0.6 0.7 0.5 1.6-0.1 2.2-0.3 0.3-0.7 0.4-1 0.4z"/>
+						</g>
+					</g>
+					<g id="XMLID_1480_">
+						<g id="XMLID_1481_">
+							<path id="XMLID_1482_" class="s10" d="m383.8 55.2c-0.4 0-0.8-0.1-1.1-0.5-3.9-4.1-9.2-6.3-14.9-6.3-5.4 0-10.5 2.1-14.4 5.9-0.6 0.5-1.5 0.5-2.1-0.1-0.6-0.6-0.6-1.5 0-2.1 4.4-4.4 10.3-6.8 16.5-6.8 6.5 0 12.6 2.6 17.1 7.3 0.5 0.7 0.5 1.6-0.1 2.2-0.3 0.3-0.7 0.4-1 0.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g id="XMLID_1470_">
+				<g id="XMLID_1475_">
+					<g id="XMLID_1476_">
+						<path id="XMLID_1477_" class="s10" d="m265.8 55.8c-8.3-5.3-13.4-14.4-13.4-24.3v-3.1l13.4-3.7 13.3 3.7v3.1c0 9.9-5 19-13.3 24.3z"/>
+					</g>
+				</g>
+				<g id="XMLID_1471_">
+					<path id="XMLID_1472_" fill-rule="evenodd" class="s10" d="m265.8 68.6c-16.6 0-29.9-13.3-29.9-29.8 0-16.5 13.3-29.9 29.9-29.9 16.5 0 29.8 13.4 29.8 29.9 0 16.5-13.3 29.8-29.8 29.8zm26.3-29.8c0-14.6-11.8-26.4-26.3-26.4-14.6 0-26.4 11.8-26.4 26.4 0 14.5 11.8 26.3 26.4 26.3 14.5 0 26.3-11.8 26.3-26.3z"/>
+				</g>
+			</g>
+			<g id="XMLID_1448_">
+				<path id="XMLID_1543_" fill-rule="evenodd" class="s10" d="m60.4 118.5c0 5-4.3 8.9-9.3 8.3-3.8-0.4-6.9-3.3-7.4-7.1-0.4-3.4 1.1-6.5 3.7-8.2v-22.9c0-1.2 0.5-2.4 1.4-3.2 0.8-0.9 1.9-1.4 3.2-1.4 2.6 0 4.6 2.1 4.6 4.6v0.6h1.4v2.3h-1.4v1.3h1.4v2.2h-1.4v1.3h1.4v2.3h-1.4v1.3h1.4v2.2h-1.4v1.3h1.4v2.3h-1.4v1.3h1.4v2.2h-1.4v2.3c2.3 1.5 3.8 4.1 3.8 7zm-1.4 0c0-2.3-1.2-4.5-3.2-5.8l-0.6-0.4v-23.7c0-1.7-1.4-3.1-3.2-3.1-1.7 0-3.1 1.4-3.1 3.1v23.7l-0.7 0.4c-2.3 1.5-3.4 4.1-3.1 6.8 0.5 3.1 3 5.6 6.1 5.9q0.4 0.1 0.8 0.1c1.9 0 3.6-0.8 4.9-2.1 1.3-1.3 2.1-3 2.1-4.9z"/>
+				<path id="XMLID_1544_" class="s10" d="m55.3 113.5l-1.1-0.7v-24.2c0-1.2-1-2.2-2.2-2.2-1.2 0-2.2 1-2.2 2.2v24.2l-1.1 0.7c-1.9 1.3-2.9 3.5-2.6 5.9 0.4 2.6 2.6 4.8 5.2 5.1q0.4 0 0.7 0c1.6 0 3.1-0.6 4.3-1.8 1.1-1.1 1.7-2.6 1.7-4.2 0-2-1-3.9-2.7-5z"/>
+			</g>
+			<path id="XMLID_1547_" fill-rule="evenodd" class="s10" d="m52 135.5c-16.5 0-29.8-13.4-29.8-29.9 0-16.5 13.3-29.8 29.8-29.8 16.5 0 29.9 13.3 29.9 29.8 0 16.5-13.4 29.9-29.9 29.9zm26.4-29.9c0-14.5-11.8-26.3-26.4-26.3-14.5 0-26.3 11.8-26.3 26.3 0 14.6 11.8 26.4 26.3 26.4 14.6 0 26.4-11.8 26.4-26.4z"/>
+			<path id="XMLID_1500_" class="s21" d="m66.8 129.3l20 20.1"/>
+			<path id="XMLID_1502_" class="s21" d="m166.5 85.7l10.6 22.5"/>
+			<path id="XMLID_1505_" class="s21" d="m435.5 129.3l-20 20.1"/>
+			<path id="XMLID_1504_" class="s21" d="m356.3 83.4l-12.1 24.8"/>
+			<path id="XMLID_1503_" class="s21" d="m266.7 67.1v26.3"/>
+		</g>
+	</g>
+</svg>

@@ -114,11 +114,7 @@
             background: -o-linear-gradient(top, transparent 20%, var(--primary));
             background: linear-gradient(to top, transparent 20%, var(--primary));
         }
-        .author {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-        }
+
         .container {
             width: 70%;
             display: flex;
@@ -421,10 +417,6 @@
                 <p>
                     <strong> S <sub>ph</sub> > 35 mm <sup>2</sup></strong> : Pour les conducteurs de phase plus grands, la section du conducteur de protection est fixée à la moitié de la taille du conducteur de phase. Encore une fois, cela est probablement basé sur des tests et des analyses montrant que la moitié de la taille est généralement suffisante pour fournir une protection efficace sans être excessivement conservatrice.
                 </p>
-                <label for="sph">Entrez la Section du Conducteur de Phase Sph (mm²):</label>
-                <input type="number" id="sph" name="sph">
-                
-                <button onclick="calculatePE()">Calculer la Section du PE</button>
                 
                 <p>Résultat: <span id="result"></span> mm²</p>
             </div>
@@ -439,14 +431,6 @@
                     <li>t : Temps de défaut en secondes (s). Il s'agit du temps que prend le dispositif de protection pour couper le courant.</li>
                     <li>K : Coefficient de température, représentant les propriétés thermiques du matériau du conducteur.</li>
                 </ul>
-                <label for="current">Courant (I) :</label>
-                <input type="number" id="current" name="current">
-                <label for="time">Temps (t) :</label>
-                <input type="number" id="time" name="time">
-                <label for="k">Facteur Thermique (k) :</label>
-                <input type="number" id="k" name="k">
-                <button onclick="calculateTemperatureMethod()">Calculer</button>
-                <p>Résultat : <span id="resultTemp"></span> mm²</p>
 
             </div>
             <div>
@@ -465,16 +449,6 @@
                     <li> \( t \) : Le temps du défaut en secondes (s)</li>
                     <li> \( \sqrt{t} \) : La racine carrée du temps du défaut, souvent utilisée pour ajuster le temps en relation avec d'autres paramètres du système</li>
                 </ul>
-                <label for="faultCurrent">Courant de défaut (I<sub>défaut</sub>) :</label>
-                <input type="number" id="faultCurrent" name="faultCurrent">
-                <label for="length">Longueur (L) :</label>
-                <input type="number" id="length" name="length">
-                <label for="voltage">Tension (U) :</label>
-                <input type="number" id="voltage" name="voltage">
-                <label for="timeRoot">Temps (√t) :</label>
-                <input type="number" id="timeRoot" name="timeRoot">
-                <button onclick="calculateImpedanceMethod()">Calculer</button>
-                <p>Résultat : <span id="resultImpedance"></span> mm²</p>
 
             </div>
             <div>

@@ -16,6 +16,9 @@
     }
 }
 @media (max-width:601px) {
+    .wrapper {
+        padding: 0em 0em;
+    }
     .navbar-wrapper {
         display: none;
     }
@@ -46,7 +49,7 @@
         padding-top: 5em;
     }
     .right-grid {
-        height: 60vh;
+        height: 80vh;
     }
     .hero-info .social-icons {
         display: none;
