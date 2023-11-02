@@ -803,7 +803,7 @@ form {
   border: none;
   border-bottom: 1px solid var(--color);
   background: transparent;
-  padding: 0.5em 0.5em 0.5em 0;
+  padding: 5px 10px;
   color: var(--white-color);
   font-size: 1.2rem;
   outline: none;
@@ -812,7 +812,7 @@ form {
 
 .form-group label {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   transition: 0.5s;
   color: var(--color);
@@ -827,7 +827,7 @@ form {
 
 .form-group input:focus + label, .form-group textarea:focus + label,
 .form-group input:valid + label, .form-group textarea:valid + label {
-  transform: translateY(-20px);
+  transform: translateY(-40px);
   font-size: 0.8em;
   color: var(--color);
 }
