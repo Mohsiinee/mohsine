@@ -290,44 +290,12 @@
         width: 100%;
     }
 
-    .blog-container {
-        flex-direction: column;
-        gap: 20em;
-        margin-top: 10em;
-    }
-    .blog-post {
-        gap: 0em;
-        flex-direction: column;
-    }
-    .post-image {
-        width: 100%;
-        transform: scale(1);
-        left: 0em;
-        border: none;
-    }
-    .post-image img {
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        border-bottom-left-radius: 0px;
-    }
-    .post-content {
-        width: 100%;
-        flex-direction: column;
-        padding: 1em;
-    }
-    .post-buttons {
+    #insights .card-container {
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         flex-direction: column;
+        gap: 60px;
     }
-    .post-buttons p {
-        margin: 1em 0em;
-    }
-    .blog-post.reverse-order .post-image {
-        order: 1;
-        left: 0em !important;
-    }
+
     footer {
         width: 100%;
     }

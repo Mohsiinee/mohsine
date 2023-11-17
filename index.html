@@ -27,6 +27,8 @@
   <div id="loading">
     <p>Loading...</p>
   </div>
+    
+  </div>
   <div class="navbar-wrapper">
     <nav class="navbar">
       <span class="close-nav">&times;</span>
@@ -43,8 +45,8 @@
 
         <div class="navbar-right">
             <a href="#contact" class="nav-link">Contact Me</a>
-            <a href="#blog" class="nav-link">My insights</a>
-            <a href="" class="nav-link">Menu</a>
+            <a href="#insights" class="nav-link">My insights</a>
+            <a href="" class="nav-link" style="color: var(--accents-color);">Menu</a>
         </div>
         
       </div>
@@ -61,7 +63,7 @@
             <h2>Your Partner in Computer Solutions & Industrial Electricity</h2>
           </div>
           <div class="hero-p">
-            <p><span id="staticText"></span><span id="dynamicText" style="color: var(--accents-color); font-size: 26px;"></span></p>
+            <p><span>It's not just about being a service provider; it's about being a trusted advisor partner. </span><span id="staticText"></span><span id="dynamicText" style="color: var(--accents-color); font-size: 26px;"></span></p>
           </div>
           <a href="#intro" class="scroll-down"><div class="scroll"></div></a>
         </div>
@@ -105,8 +107,8 @@
         <div class="content-container">
           <div class="content" style="  border-top-right-radius: 3em; border-top-left-radius: 3em;">
             <div class="text-column">
-              <p>In an ever-changing, increasingly complex world, I'm driven by an insatiable passion for electric work and computer science.</p>
-                <p>My name is Mohsine, an industrial electrician and self-taught software developer based in Beni Mellal, Morocco. With formal education in industrial electricity and years of independent exploration in the realm of computer science, I bring a unique blend of skills that are as diverse as they are complementary. 
+              <p>In an ever-changing, increasingly complex world, I'm driven by the passion for electricity and computer</p>
+                <p>My name is Mohsine, an industrial electrician and self-taught software developer based in Beni Mellal, Morocco. With formal education in industrial electricity and years of independent exploration of computer science, I bring a unique blend of skills that are as diverse as they are complementary. 
                 </p><p>It's not merely a job to pay the bills; it's a vocation that fuels my soul. My endless curiosity is drawn to the endless potential of electrical systems and the transformative reach of computer science — two realms where calculated innovation can truly reshape our world.
               </p>
             </div>
@@ -148,7 +150,6 @@
       </div>
       
     </section>  
- 
 
     <section id="services" class="services">
       <div class="bodytwo">       
@@ -168,7 +169,9 @@
           </div>
         </div>
       </div>
+      
       <div class="container">
+        
         <div class="services-info">
           <div class="row">
             <div class="column-txt col">
@@ -188,10 +191,29 @@
             <p>Electric Motor</p>
             <p>Transformer Machine</p>
             <p>PLC</p>
-            <img src="./img/icon/arduino.svg" alt="">
-            <img src="./img/icon/raspberrypi.svg" alt="">
-            <p>SCADA</p>
           </div>
+
+
+            <div class="explain-container">
+              <div class="explain-card">
+                <img src="https://eriks.com/en/know-how-hub/blogs/electric-motor-in-6-steps/_jcr_content/content_mainpar/section_1/par/image.coreimg.jpeg/1686854592140/eriks-0638.jpeg" alt="">
+                <div class="explain-overlay"></div>
+              </div>
+              <div class="explain-card">
+                <img src="https://www.chauvin-arnoux-energy.com/sites/default/files/u227687/img_0004.jpg" alt="">
+                <div class="explain-overlay"></div>
+              </div>
+            </div>
+            <div class="explain-container">
+              <div class="explain-card">
+                <img src="https://f.hubspotusercontent10.net/hubfs/5382318/Webp.net-compress-image-Sep-13-2021-03-08-08-98-PM.jpg" alt="">
+                <div class="explain-overlay"></div>
+              </div>
+              <div class="explain-card">
+                <img src="https://img.freepik.com/photos-gratuite/tour-eclairage-voir_1088-131.jpg?w=1380&t=st=1698969538~exp=1698970138~hmac=61cbf97a2a3a4e692de558573cd3c2c38920e689edb91ec4e49493ad174b34fe" alt="">
+                <div class="explain-overlay"></div>
+              </div>
+            </div>
           
           <div class="row reverse">
             <div class="column-txt">
@@ -208,6 +230,7 @@
           </div>
   
           <div class="dev-row">
+            <img src="./img/icon/arduino.svg" alt="">
             <img src="./img/icon/shopify-logo.svg" alt="">
             <img src="./img/icon/WordPress-Logo.svg" alt="">
             <img src="./img/icon/html.svg" alt="">
@@ -222,17 +245,7 @@
             <img src="./img/icon/java.svg" alt="">
             <img src="./img/icon/graphql.svg" alt="">
           </div>
-          <!--
-          <div class="explain">
-            <div>
-            </div>
-          </div>
-          <div class="explain">
-            <div>
-              <img src="./img/screenshot.png" alt="">
-            </div>
-          </div>
-          -->
+
           <div class="row">
             <div class="column-txt">
               <div class="title">
@@ -248,6 +261,7 @@
           </div>
           <div class="dev-row">
             <p>CoAP</p>
+            <img src="./img/icon/arduino.svg" alt="">
             <img src="./img/icon/mqtt.svg" alt="">
             <p>ESP32/ESP8266</p>
   
@@ -357,13 +371,25 @@
       </div>
     </div>
   </section>
-  <!--
+
   <section id="insights">
     <div class="insights-title">
-      <h1>My Insights</h1>
+      <h1>My Insights</h1>    
+    </div>
+    <div class="card-container">
+      <a href="./pages/niveaux-de-maintenance-industrielle.html">
+        <div class="card">
+          <img src="./img/industrial-factory.png" alt="Mountain view">
+          <div class="card-content">
+              <p class="category">Electricity</p>
+              <h3>Les niveaux de maintenance industrielle</h3>
+              <p class="description"></p>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
-  -->
+
   <footer>
     <div class="section-separator"></div>
     <div class="footer-bg"></div>

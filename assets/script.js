@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
   setTimeout(function() {
     bodyScroll.style.overflowY = "scroll";
     loading.style.display = "none";
-  }, 3000);
+  }, 1000);
 });
 
 
@@ -142,7 +142,7 @@ new TypeIt("#staticText", {
   speed: 60
 })
 .type(
-  "It's not just about being a service provider; it's about being a trusted advisor partner. Together, we can build something that is "
+  "Together, we can build something that is "
 )
 .exec(() => {
   document.querySelector("#staticText .ti-cursor").style.display = "none";
