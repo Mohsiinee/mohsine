@@ -143,9 +143,7 @@ header {
     box-shadow: black 0px 0px 20px 5px;
     border-bottom: solid 2px #7cfcda2c;
 }
-.mobile-logo {
-  display: none;
-}
+
 .navbar-container {
     display: flex;
     justify-content: space-around;
@@ -189,9 +187,7 @@ a.nav-link {
     font-weight: 900;
     margin: 5em;
 }
-.close-nav {
-  display: none;
-}
+
 /*--------------------------------- Hero - START -------------------------*/
 .hero {
   position: relative;
