@@ -19,7 +19,7 @@ body {
   --color: #7dfcda; /*rgb(124, 252, 218)*/
   --white-color: #C5CAE9;
   --gray-color: rgb(93, 108, 131);
-  --accents-color: #fd4e3c;/*#E05858*/
+  --accents-color: #ff5151;/*#fd4e3/*c/*#E05858*/
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -44,6 +44,9 @@ a {
   text-decoration: none;
   color: var(--white-color);
   font-family: var(--text-font);
+}
+p {
+  text-align: justify;
 }
 #loading {
   position: fixed;
@@ -382,7 +385,6 @@ a.nav-link {
   justify-content: space-between;
   box-shadow: 0px 0px 20px 5px rgb(124 252 218 / 10%);
   margin: auto;
-  max-height: 70vh;
   border: solid 2px var(--color);
 }
 
